@@ -253,12 +253,13 @@
             properti; dikerjakan secara profesional, terstruktur, dan tepat
             waktu.
           </p>
-          <a
-            href="#layanan"
+          <button
+            id="tentangBtn"
+            type="button"
             class="inline-block bg-brand-red hover:bg-brand-darkred transition text-white font-semibold text-sm px-6 py-3"
           >
             Pelajari lebih lanjut
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -607,9 +608,13 @@
               <h4 class="text-white font-bold mb-4 tracking-wide">Go-Mandor</h4>
               <ul class="space-y-2 text-sm text-white">
                 <li>
-                  <a href="#" class="hover:text-brand-red transition"
-                    >Tentang Go-Mandor</a
+                  <button
+                    id="tentangBtn"
+                    type="button"
+                    class="hover:text-brand-red transition"
                   >
+                    Tentang Go-Mandor
+                  </button>
                 </li>
                 <li>
                   <a href="#" class="hover:text-brand-red transition"
@@ -789,6 +794,148 @@
       </div>
     </div>
 
+    <!-- TENTANG GO-MANDOR MODAL -->
+    <div
+      id="tentangModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="tentangBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-3xl w-full h-fit my-auto">
+        <button
+          id="tentangClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+          >
+            PERJALANAN KAMI
+          </h3>
+          <p class="font-bold text-brand-dark mb-4">
+            Bisnis yang skalabel dengan dampak sosial yang nyata!
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+            Dengan pengalaman bertahun-tahun di industri konstruksi, pendiri
+            kami menyadari beberapa masalah mendasar yang sudah lama membutuhkan
+            perubahan. Kesulitan besar dalam menemukan tukang yang berkualitas
+            dan dapat diandalkan, serta pendapatan yang sangat rendah bagi para
+            pekerja keras, menjadi dua hal utama dalam daftar tersebut.
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+            PT Niaga Makmur Berjaya, melalui aplikasi seluler sederhana bernama
+            Go-Mandor, menghubungkan konsumen dengan tukang. Platform daring
+            kami hadir untuk meningkatkan taraf hidup para tenaga kerja (tukang)
+            sekaligus menyelesaikan masalah yang meresahkan konsumen dalam
+            menemukan tukang yang tepat untuk setiap pekerjaan. Sejak
+            diluncurkan pada Oktober 2019, Go-Mandor telah mengalami pertumbuhan
+            yang pesat dan membuktikan dirinya sebagai solusi yang sangat
+            dinantikan.
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+            Dengan beragam layanan yang tersedia dalam satu platform, pengguna
+            dapat memilih layanan yang tepat untuk setiap pekerjaan yang mereka
+            butuhkan, baik itu pekerjaan konstruksi, perbaikan, maupun
+            perawatan. Survei lokasi untuk semua pekerjaan diberikan secara
+            gratis dan tidak mengikat.
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
+            Unduh aplikasi kami yang ramah pengguna dari Google Play Store dan
+            App Store, dan serahkan kebutuhan tukang Anda kepada Go-Mandor.
+          </p>
+
+          <hr class="border-gray-200 mb-8" />
+
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+          >
+            SKALA PROYEK
+          </h3>
+          <p class="font-bold text-brand-dark mb-4">
+            Go-Mandor Melayani Semua Skala Proyek
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+            Go-Mandor adalah mitra konstruksi dan properti yang komprehensif dan
+            inklusif. Kami memahami bahwa setiap kebutuhan konstruksi atau
+            perbaikan—baik besar maupun kecil—memiliki tingkat kepentingan dan
+            urgensi yang sama.
+          </p>
+
+          <h4 class="font-bold text-brand-dark mb-2">
+            Untuk Segmen Bisnis (B2B)
+          </h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+            Kami memiliki pengalaman dalam menangani proyek skala besar dengan
+            tingkat kompleksitas tinggi untuk korporasi, institusi, dan
+            pengembang, seperti:
+          </p>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
+          >
+            <li>Pembangunan Gedung Perkantoran &amp; Ruko</li>
+            <li>
+              Pengembangan Fasilitas Komersial (hotel, restoran, bar, pusat
+              olahraga, dll.)
+            </li>
+            <li>Proyek Institusional (sekolah, klinik, tempat ibadah, dll.)</li>
+            <li>Renovasi Skala Besar &amp; Desain Interior</li>
+          </ul>
+
+          <h4 class="font-bold text-brand-dark mb-2">
+            Untuk Segmen Konsumen Langsung (B2C)
+          </h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+            Kami juga siap membantu individu dan keluarga dalam mewujudkan atau
+            meningkatkan ruang hunian mereka:
+          </p>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
+          >
+            <li>Pembangunan &amp; Renovasi Rumah Tinggal</li>
+            <li>Perbaikan Terfokus: atap bocor, plafon, lantai, pagar, dll.</li>
+            <li>Instalasi &amp; Perbaikan Kelistrikan dan Perpipaan</li>
+            <li>Desain Interior &amp; Renovasi Kecil</li>
+          </ul>
+
+          <h4 class="font-bold text-brand-dark mb-2">
+            Untuk Proyek Kecil &amp; Perbaikan Ringan
+          </h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+            Kami tidak mengabaikan apa yang terlihat &ldquo;kecil,&rdquo; karena
+            kami percaya bahwa pelayanan terbaik dibuktikan melalui perhatian
+            terhadap detail dan komitmen pada proyek dengan skala apa pun.
+            Contoh:
+          </p>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed space-y-1"
+          >
+            <li>Pengecatan Ulang Ruangan</li>
+            <li>Perbaikan Keramik atau Sanitair</li>
+            <li>Pemasangan Kanopi atau Teralis</li>
+            <li>Servis dan Perawatan Berkala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script>
       const btn = document.getElementById("mobileMenuBtn");
       const menu = document.getElementById("mobileMenu");
@@ -825,6 +972,31 @@
         .addEventListener("click", closeCaraPesan);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeCaraPesan();
+      });
+
+      const tentangModal = document.getElementById("tentangModal");
+      const openTentang = () => {
+        tentangModal.classList.remove("hidden");
+        tentangModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeTentang = () => {
+        tentangModal.classList.add("hidden");
+        tentangModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document
+        .getElementById("tentangBtn")
+        .addEventListener("click", openTentang);
+      document
+        .getElementById("tentangClose")
+        .addEventListener("click", closeTentang);
+      document
+        .getElementById("tentangBackdrop")
+        .addEventListener("click", closeTentang);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeTentang();
       });
     </script>
   </body>
