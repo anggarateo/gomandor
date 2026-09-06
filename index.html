@@ -266,7 +266,7 @@
 
     <!-- PROYEK KAMI -->
     <section class="bg-brand-red py-16">
-      <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 text-center">
         <h2
           class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-6"
         >
@@ -278,80 +278,87 @@
           bentuk profesionalisme dan integritas kami.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-10 text-left">
           <!-- Card 1 -->
-          <div
-            class="rounded-lg overflow-hidden shadow-sm border border-gray-100 group"
-          >
+          <div class="overflow-hidden bg-brand-dark group">
             <div class="overflow-hidden h-56">
               <img
-                src="assets/images/Cara-Order.jpg"
+                src="assets/projects/SBI-Grogol.jpeg"
                 alt="Grogol, Jakarta"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
             </div>
-            <div class="p-5">
-              <h3 class="font-bold text-brand-dark mb-1 tracking-wide">
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">
                 GROGOL, JAKARTA
               </h3>
-              <p class="text-sm text-gray-500 mb-3">
-                Restaurant Renovation including Façade, Kitchen, etc
+              <p>
+                Restaurant Renovation including Façade, Kitchen...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Grogol, Jakarta"
+                  data-category="Restoran"
+                  data-description="Renovasi Restoran Meliputi Pekerjaan Fasad, Dapur, MEP, Instalasi Gas, dan Saluran Pembuangan (Exhaust Ducting)"
+                  data-location="Grogol Petamburan, Jakarta Barat"
+                  data-image="assets/projects/SBI-Grogol.jpeg"
+                >
+                  more
+                </button>
               </p>
-              <a
-                href="#"
-                class="text-brand-red text-sm font-semibold hover:underline"
-                >Lihat detail &rarr;</a
-              >
             </div>
           </div>
           <!-- Card 2 -->
-          <div
-            class="rounded-lg overflow-hidden shadow-sm border border-gray-100 group"
-          >
+          <div class="overflow-hidden bg-brand-dark group">
             <div class="overflow-hidden h-56">
               <img
-                src="assets/images/Image-3.jpg"
+                src="assets/projects/JLM-Bogor.jpeg"
                 alt="Cibinong, Kab Bogor"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
             </div>
-            <div class="p-5">
-              <h3 class="font-bold text-brand-dark mb-1 tracking-wide">
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">
                 CIBINONG, KAB BOGOR
               </h3>
-              <p class="text-sm text-gray-500 mb-3">
-                Pengecatan &amp; Area Parkir / Area Parking
+              <p>
+                Pengaspalan di Area Parkir dan Area...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Cibinong, Kab Bogor"
+                  data-category="Area Komersial"
+                  data-description="Pengaspalan di Area Parkir dan Area Sekitar Gudang"
+                  data-location="Cibinong, Kabupaten Bogor"
+                  data-image="assets/projects/JLM-Bogor.jpeg"
+                >
+                  more
+                </button>
               </p>
-              <a
-                href="#"
-                class="text-brand-red text-sm font-semibold hover:underline"
-                >Lihat detail &rarr;</a
-              >
             </div>
           </div>
           <!-- Card 3 -->
-          <div
-            class="rounded-lg overflow-hidden shadow-sm border border-gray-100 group"
-          >
+          <div class="overflow-hidden bg-brand-dark group">
             <div class="overflow-hidden h-56">
               <img
-                src="assets/images/Image4.jpg"
+                src="assets/projects/Umalas-Bali.jpg"
                 alt="Umalas, Bali"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
             </div>
-            <div class="p-5">
-              <h3 class="font-bold text-brand-dark mb-1 tracking-wide">
-                UMALAS, BALI
-              </h3>
-              <p class="text-sm text-gray-500 mb-3">
-                Front Office Renovation Painting and Window Replace...
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">UMALAS, BALI</h3>
+              <p>
+                Front Office Renovation Painting and Window Replace...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Umalas, Bali"
+                  data-category="Perkantoran"
+                  data-description="Front Office Renovation Painting and Window Replacement"
+                  data-location="Umalas, Bali"
+                  data-image="assets/projects/Umalas-Bali.jpg"
+                >
+                  more
+                </button>
               </p>
-              <a
-                href="#"
-                class="text-brand-red text-sm font-semibold hover:underline"
-                >Lihat detail &rarr;</a
-              >
             </div>
           </div>
         </div>
@@ -377,7 +384,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-10 text-left">
           <!-- Layanan 1 -->
           <div
-            class="bg-brand-red rounded-lg py-8 px-4 flex flex-col items-center text-center"
+            class="bg-brand-red py-8 px-4 flex flex-col items-center text-center"
           >
             <img
               src="assets/icons/Perawatan-Perbaikan.webp"
@@ -936,6 +943,158 @@
       </div>
     </div>
 
+    <!-- PROJECT DETAIL MODAL -->
+    <div
+      id="projectModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="projectBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-2xl w-full h-fit my-auto">
+        <button
+          id="projectClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div class="bg-white rounded-lg shadow-2xl">
+          <div class="relative p-5 pb-0">
+            <img
+              id="projectModalImage"
+              src=""
+              alt=""
+              class="w-full h-64 md:h-96 object-cover"
+            />
+            <button
+              id="projectPrev"
+              type="button"
+              aria-label="Sebelumnya"
+              class="hidden absolute left-8 md:left-9 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-brand-dark flex items-center justify-center transition"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              id="projectNext"
+              type="button"
+              aria-label="Berikutnya"
+              class="hidden absolute right-8 md:right-9 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-brand-dark flex items-center justify-center transition"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-5 space-y-5">
+            <div
+              class="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
+            >
+              <svg
+                class="w-6 h-6 text-brand-dark shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01"
+                />
+              </svg>
+              <span id="projectModalCategory" class="text-sm text-brand-dark"
+                >Restoran</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
+            >
+              <svg
+                class="w-6 h-6 text-brand-dark shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-5 8l2 2 4-4"
+                />
+              </svg>
+              <span
+                id="projectModalDescription"
+                class="text-sm text-brand-dark"
+              ></span>
+            </div>
+            <div
+              class="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
+            >
+              <svg
+                class="w-6 h-6 text-brand-dark shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span
+                id="projectModalLocation"
+                class="text-sm text-brand-dark"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       const btn = document.getElementById("mobileMenuBtn");
       const menu = document.getElementById("mobileMenu");
@@ -997,6 +1156,81 @@
         .addEventListener("click", closeTentang);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeTentang();
+      });
+
+      const projectModal = document.getElementById("projectModal");
+      const projectModalImage = document.getElementById("projectModalImage");
+      const projectModalCategory = document.getElementById(
+        "projectModalCategory",
+      );
+      const projectModalDescription = document.getElementById(
+        "projectModalDescription",
+      );
+      const projectModalLocation = document.getElementById(
+        "projectModalLocation",
+      );
+      const projectPrev = document.getElementById("projectPrev");
+      const projectNext = document.getElementById("projectNext");
+
+      let projectImages = [];
+      let projectImageIndex = 0;
+
+      const renderProjectImage = () => {
+        projectModalImage.src = projectImages[projectImageIndex];
+        const hasMultiple = projectImages.length > 1;
+        projectPrev.classList.toggle("hidden", !hasMultiple);
+        projectNext.classList.toggle("hidden", !hasMultiple);
+      };
+
+      const openProject = (data) => {
+        projectImages = [data.image];
+        projectImageIndex = 0;
+        projectModalImage.alt = data.title;
+        projectModalCategory.textContent = data.category;
+        projectModalDescription.textContent = data.description;
+        projectModalLocation.textContent = data.location;
+        renderProjectImage();
+
+        projectModal.classList.remove("hidden");
+        projectModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeProject = () => {
+        projectModal.classList.add("hidden");
+        projectModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document.querySelectorAll(".project-more").forEach((button) => {
+        button.addEventListener("click", () => {
+          openProject({
+            title: button.dataset.title,
+            category: button.dataset.category,
+            description: button.dataset.description,
+            location: button.dataset.location,
+            image: button.dataset.image,
+          });
+        });
+      });
+
+      projectPrev.addEventListener("click", () => {
+        projectImageIndex =
+          (projectImageIndex - 1 + projectImages.length) % projectImages.length;
+        renderProjectImage();
+      });
+      projectNext.addEventListener("click", () => {
+        projectImageIndex = (projectImageIndex + 1) % projectImages.length;
+        renderProjectImage();
+      });
+
+      document
+        .getElementById("projectClose")
+        .addEventListener("click", closeProject);
+      document
+        .getElementById("projectBackdrop")
+        .addEventListener("click", closeProject);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeProject();
       });
     </script>
   </body>
