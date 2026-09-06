@@ -206,35 +206,106 @@
           </svg>
         </button>
       </div>
+    </header>
 
-      <!-- Mobile menu -->
+    <!-- MOBILE MENU SIDE DRAWER -->
+    <div
+      id="mobileMenuOverlay"
+      class="hidden fixed inset-0 bg-black/50 z-40 lg:hidden"
+    ></div>
+    <aside
+      id="mobileMenuPanel"
+      class="fixed top-0 right-0 h-full w-72 max-w-[80%] bg-brand-red z-50 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col"
+    >
       <div
-        id="mobileMenu"
-        class="hidden lg:hidden border-t border-white/20 px-4 pb-4"
+        class="flex items-center justify-between px-4 py-4 border-b border-white/20"
       >
-        <nav class="flex flex-col gap-3 pt-3 text-sm font-semibold text-white">
-          <a href="#beranda" class="hover:text-brand-dark">BERANDA</a>
-          <a href="#" class="hover:text-brand-dark">PROYEK KAMI</a>
-          <a href="#layanan" class="hover:text-brand-dark">LAYANAN</a>
-          <button
-            id="caraPesanBtnMobile"
-            type="button"
-            class="text-left hover:text-brand-dark"
+        <img
+          src="assets/logo/Logo-Text.webp"
+          alt="GO-MANDOR"
+          class="h-8 w-auto"
+        />
+        <button id="mobileMenuClose" aria-label="Tutup menu" class="text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            CARA PESAN
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        class="flex-1 overflow-y-auto px-4 py-4 flex flex-col text-sm font-semibold text-white"
+      >
+        <a href="#beranda" class="py-2" data-mobile-link>BERANDA</a>
+
+        <div>
+          <button
+            id="mobileProyekToggle"
+            type="button"
+            class="w-full flex items-center justify-between py-2"
+          >
+            PROYEK KAMI
+            <svg
+              id="mobileProyekChevron"
+              class="w-4 h-4 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
           </button>
-          <a href="#testimoni" class="hover:text-brand-dark">TESTIMONI</a>
-        </nav>
-        <div class="flex items-center gap-2 mt-4">
+          <div id="mobileProyekSubmenu" class="hidden pl-4 pb-2 flex flex-col">
+            <a href="#" class="py-1.5 font-normal text-white" data-mobile-link
+              >Kontraktor Jakarta</a
+            >
+          </div>
+        </div>
+
+        <a href="#layanan" class="py-2" data-mobile-link>LAYANAN</a>
+        <button id="caraPesanBtnMobile" type="button" class="text-left py-2">
+          CARA PESAN
+        </button>
+        <a href="#testimoni" class="py-2" data-mobile-link>TESTIMONI</a>
+      </nav>
+
+      <div class="flex items-center gap-3 px-4 py-4 border-t border-white/20">
+        <button
+          title="Bahasa Indonesia"
+          class="flex items-center gap-2 text-sm text-white"
+        >
           <img
             src="assets/icons/ID-Flag.webp"
             alt="ID"
-            class="w-5 h-5 rounded-full object-cover"
+            class="w-6 h-6 rounded-full object-cover"
           />
-          <span class="text-sm font-medium text-white">ID</span>
-        </div>
+        </button>
+        <button
+          title="English"
+          class="flex items-center gap-2 text-sm text-white"
+        >
+          <img
+            src="assets/icons/EN-Flag.webp"
+            alt="EN"
+            class="w-6 h-6 rounded-full object-cover"
+          />
+        </button>
       </div>
-    </header>
+    </aside>
 
     <!-- HERO SECTION -->
     <section
@@ -1096,10 +1167,42 @@
     </div>
 
     <script>
-      const btn = document.getElementById("mobileMenuBtn");
-      const menu = document.getElementById("mobileMenu");
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+      const mobileMenuPanel = document.getElementById("mobileMenuPanel");
+      const mobileMenuClose = document.getElementById("mobileMenuClose");
+
+      const openMobileMenu = () => {
+        mobileMenuOverlay.classList.remove("hidden");
+        mobileMenuPanel.classList.remove("translate-x-full");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeMobileMenu = () => {
+        mobileMenuOverlay.classList.add("hidden");
+        mobileMenuPanel.classList.add("translate-x-full");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      mobileMenuBtn.addEventListener("click", openMobileMenu);
+      mobileMenuClose.addEventListener("click", closeMobileMenu);
+      mobileMenuOverlay.addEventListener("click", closeMobileMenu);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMobileMenu();
+      });
+      document.querySelectorAll("[data-mobile-link]").forEach((link) => {
+        link.addEventListener("click", closeMobileMenu);
+      });
+
+      const mobileProyekToggle = document.getElementById("mobileProyekToggle");
+      const mobileProyekSubmenu = document.getElementById(
+        "mobileProyekSubmenu",
+      );
+      const mobileProyekChevron = document.getElementById(
+        "mobileProyekChevron",
+      );
+      mobileProyekToggle.addEventListener("click", () => {
+        mobileProyekSubmenu.classList.toggle("hidden");
+        mobileProyekChevron.classList.toggle("rotate-180");
       });
 
       const caraPesanModal = document.getElementById("caraPesanModal");
@@ -1120,7 +1223,7 @@
       document
         .getElementById("caraPesanBtnMobile")
         .addEventListener("click", () => {
-          menu.classList.add("hidden");
+          closeMobileMenu();
           openCaraPesan();
         });
       document
