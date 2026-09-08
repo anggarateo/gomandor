@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go-Mandor | Kontraktor Andalan Anda</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/Logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lato: ["Lato", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                red: "#8A1C1C",
+                darkred: "#6E1616",
+                dark: "#1C1C1C",
+                darker: "#141414",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Thin.ttf") format("truetype");
+        font-weight: 100;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Italic.ttf") format("truetype");
+        font-weight: 400;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Semibold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Heavy.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("assets/fonts/lato/Lato-Black.ttf") format("truetype");
+        font-weight: 900;
+        font-style: normal;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      .hero-bg {
+        background-image: url("assets/images/Image-1.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .quote-bg {
+        background-image: url("assets/images/Image-2.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .secondary-bg {
+        background-color: #2e2e2e;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-brand-dark antialiased">
+    <!-- HEADER / NAV -->
+    <header class="w-full bg-brand-dark shadow-sm relative z-30">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-6"
+      >
+        <div class="flex items-center gap-4 shrink-0">
+          <a href="#" class="flex items-center shrink-0">
+            <img
+              src="assets/logo/Logo-Text.webp"
+              alt="Go-Mandor"
+              class="h-9 md:h-10 w-auto"
+            />
+          </a>
+        </div>
+
+        <nav
+          class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white"
+        >
+          <a href="#beranda" class="hover:text-brand-red transition">BERANDA</a>
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 hover:text-brand-red transition"
+            >
+              PROYEK KAMI
+              <svg
+                class="w-3 h-3 mt-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="absolute left-0 top-full w-44 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+            >
+              <div class="bg-white shadow-lg py-2">
+                <a
+                  href="jakarta.html"
+                  class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
+                  >Kontraktor Jakarta</a
+                >
+              </div>
+            </div>
+          </div>
+          <a href="#layanan" class="hover:text-brand-red transition">LAYANAN</a>
+          <button
+            id="caraPesanBtn"
+            type="button"
+            class="hover:text-brand-red transition"
+          >
+            CARA PESAN
+          </button>
+          <a href="review.html" class="hover:text-brand-red transition"
+            >TESTIMONI</a
+          >
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <button
+            title="Bahasa Indonesia"
+            class="flex items-center gap-2 w-full text-sm text-brand-dark"
+          >
+            <img
+              src="assets/icons/ID-Flag.webp"
+              alt="ID"
+              class="w-6 h-6 rounded-full object-cover"
+            />
+          </button>
+
+          <button
+            title="English"
+            class="flex items-center gap-2 w-full text-sm text-brand-dark"
+          >
+            <img
+              src="assets/icons/EN-Flag.webp"
+              alt="EN"
+              class="w-6 h-6 rounded-full object-cover"
+            />
+          </button>
+        </div>
+
+        <button id="mobileMenuBtn" class="lg:hidden text-white">
+          <svg
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU SIDE DRAWER -->
+    <div
+      id="mobileMenuOverlay"
+      class="hidden fixed inset-0 bg-black/50 z-40 lg:hidden"
+    ></div>
+    <aside
+      id="mobileMenuPanel"
+      class="fixed top-0 right-0 h-full w-72 max-w-[80%] bg-brand-dark z-50 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col"
+    >
+      <div
+        class="flex items-center justify-between px-4 py-4 border-b border-white/20"
+      >
+        <img
+          src="assets/logo/Logo-Text.webp"
+          alt="Go-Mandor"
+          class="h-8 w-auto"
+        />
+        <button id="mobileMenuClose" aria-label="Tutup menu" class="text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        class="flex-1 overflow-y-auto px-4 py-4 flex flex-col text-sm font-semibold text-white"
+      >
+        <a href="#beranda" class="py-2" data-mobile-link>BERANDA</a>
+
+        <div>
+          <button
+            id="mobileProyekToggle"
+            type="button"
+            class="w-full flex items-center justify-between py-2"
+          >
+            PROYEK KAMI
+            <svg
+              id="mobileProyekChevron"
+              class="w-4 h-4 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div id="mobileProyekSubmenu" class="hidden pl-4 pb-2 flex flex-col">
+            <a
+              href="jakarta.html"
+              class="py-1.5 font-normal text-white"
+              data-mobile-link
+              >Kontraktor Jakarta</a
+            >
+          </div>
+        </div>
+
+        <a href="#layanan" class="py-2" data-mobile-link>LAYANAN</a>
+        <button id="caraPesanBtnMobile" type="button" class="text-left py-2">
+          CARA PESAN
+        </button>
+        <a href="review.html" class="py-2" data-mobile-link>TESTIMONI</a>
+      </nav>
+
+      <div class="flex items-center gap-3 px-4 py-4 border-t border-white/20">
+        <button
+          title="Bahasa Indonesia"
+          class="flex items-center gap-2 text-sm text-white"
+        >
+          <img
+            src="assets/icons/ID-Flag.webp"
+            alt="ID"
+            class="w-6 h-6 rounded-full object-cover"
+          />
+        </button>
+        <button
+          title="English"
+          class="flex items-center gap-2 text-sm text-white"
+        >
+          <img
+            src="assets/icons/EN-Flag.webp"
+            alt="EN"
+            class="w-6 h-6 rounded-full object-cover"
+          />
+        </button>
+      </div>
+    </aside>
+
+    <!-- TESTIMONI -->
+    <section class="bg-brand-red py-16">
+      <div class="max-w-6xl mx-auto px-4 md:px-8">
+        <h2
+          class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-12 text-center"
+        >
+          Testimoni Klien
+        </h2>
+
+        <div class="relative">
+          <button
+            id="reviewPrev"
+            type="button"
+            aria-label="Sebelumnya"
+            class="hidden md:flex absolute -left-5 lg:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <div class="overflow-hidden">
+            <div
+              id="reviewPagesWrapper"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <!-- PAGE 1 -->
+              <div
+                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 content-start"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Go-Mandor benar-benar membantu saya dari awal sampai akhir.
+                    Timnya profesional, komunikasinya lancar, dan hasil renovasi
+                    rumah saya melebihi ekspektasi. Saya pasti pakai jasa mereka
+                    lagi.
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      AW
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      ANDI WIJAYA
+                    </p>
+                    <p class="text-gray-500 text-xs">Renovasi Rumah</p>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Proyek ruko saya selesai tepat waktu dan sesuai anggaran.
+                    Go-Mandor punya tim yang bertanggung jawab dan materialnya
+                    berkualitas. Sangat puas!
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      SR
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      SITI RAHMAWATI
+                    </p>
+                    <p class="text-gray-500 text-xs">Pembangunan Ruko</p>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Saya sudah beberapa kali pakai jasa kontraktor, tapi
+                    Go-Mandor yang paling oke. Pengerjaan rapi, cepat, dan
+                    mereka selalu kasih solusi kalau ada kendala di lapangan.
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      BS
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      BUDI SANTOSO
+                    </p>
+                    <p class="text-gray-500 text-xs">Renovasi Kantor</p>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Proses pembangunan rumah impian saya jadi lebih tenang
+                    karena Go-Mandor mengurus semuanya. Dari perizinan sampai
+                    finishing, semua terkelola dengan baik. Terima kasih
+                    Go-Mandor!
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      DP
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      DIAN PERMATA
+                    </p>
+                    <p class="text-gray-500 text-xs">Pembangunan Rumah</p>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Restoran saya harus cepat selesai karena mau buka. Go-Mandor
+                    berhasil menyelesaikan renovasi tepat waktu tanpa mengurangi
+                    kualitas. Pelanggan saya juga puas dengan tampilan barunya.
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      RH
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      RUDI HARTONO
+                    </p>
+                    <p class="text-gray-500 text-xs">Renovasi Restoran</p>
+                  </div>
+                </div>
+                <!-- Card 6 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Go-Mandor memberikan rekomendasi desain yang efisien untuk
+                    gudang saya. Pengerjaan kokoh, hemat biaya, dan koordinasi
+                    dengan tim sangat mudah. Rekomendasi banget!
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      MA
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      MAYA ANGGRAINI
+                    </p>
+                    <p class="text-gray-500 text-xs">Pembangunan Gudang</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PAGE 2 -->
+              <div
+                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 content-start"
+              >
+                <!-- Card 7 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Go-Mandor transformed our outdated villa into a modern
+                    tropical masterpiece. Their team was punctual,
+                    detail-oriented, and handled everything from design to
+                    construction. Highly recommended!
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      JA
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      JAMES ANDERSON
+                    </p>
+                    <p class="text-gray-500 text-xs">Villa Renovation</p>
+                  </div>
+                </div>
+                <!-- Card 8 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    We entrusted Go-Mandor with our boutique hotel project in
+                    Ubud, and they exceeded our expectations. Excellent project
+                    management, quality materials, and they truly understand the
+                    local building culture. Absolutely satisfied.
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      LC
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      LAURA CHEN
+                    </p>
+                    <p class="text-gray-500 text-xs">Hotel Construction</p>
+                  </div>
+                </div>
+                <!-- Card 9 -->
+                <div
+                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                >
+                  <span class="text-brand-red text-9xl font-bold leading-none"
+                    >&ldquo;</span
+                  >
+                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
+                    Go-Mandor delivered our beach club project on time and on
+                    budget. Their professionalism and problem-solving skills
+                    were outstanding. We're already planning our next project
+                    with them.
+                  </p>
+                  <div class="mt-auto flex flex-col items-center">
+                    <div
+                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    >
+                      DR
+                    </div>
+                    <p class="font-bold text-brand-dark text-sm tracking-wide">
+                      DAVID ROBERTS
+                    </p>
+                    <p class="text-gray-500 text-xs">Club Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            id="reviewNext"
+            type="button"
+            aria-label="Berikutnya"
+            class="hidden md:flex absolute -right-5 lg:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div id="reviewDots" class="flex justify-center gap-2 mt-10">
+          <button
+            type="button"
+            class="review-dot w-2.5 h-2.5 rounded-full bg-white transition"
+            data-index="0"
+            aria-label="Halaman 1"
+          ></button>
+          <button
+            type="button"
+            class="review-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
+            data-index="1"
+            aria-label="Halaman 2"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+          <div class="flex flex-col items-center">
+            <img
+              src="assets/logo/Logo.svg"
+              alt="Go-Mandor"
+              class="h-auto w-auto -mt-12"
+            />
+
+            <p class="text-white -mt-10">© 2026 PT Niaga Makmur Berjaya.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+              <h4 class="text-white font-bold mb-4 tracking-wide">Go-Mandor</h4>
+              <ul class="space-y-2 text-sm text-white">
+                <li>
+                  <button
+                    id="tentangBtn"
+                    type="button"
+                    class="hover:text-brand-red transition"
+                  >
+                    Tentang Go-Mandor
+                  </button>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand-red transition"
+                    >Hak Kekayaan Intelektual</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/6285214985827"
+                    target="_blank"
+                    class="hover:text-brand-red transition"
+                    >Gabung Ahli</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand-red transition"
+                    >Unduh Profil Perusahaan</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-4 tracking-wide">
+                Kontak Kami
+              </h4>
+              <ul class="space-y-2 text-sm text-white">
+                <li>Alamat</li>
+                <li>
+                  <a
+                    href="tel:+622129619596"
+                    target="_blank"
+                    class="hover:text-brand-red transition"
+                  >
+                    Pusat Panggilan
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/6285214985827"
+                    target="_blank"
+                    class="hover:text-brand-red transition"
+                  >
+                    WhatsApp
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-4 tracking-wide">Legalitas</h4>
+              <ul class="space-y-2 text-sm text-white">
+                <li>Akta Pendirian</li>
+                <li>NIB</li>
+                <li>NPWP</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-4 tracking-wide">
+                Bantuan dan Panduan
+              </h4>
+              <ul class="space-y-2 text-sm text-white">
+                <li>
+                  <a
+                    href="https://wa.me/6285214985827"
+                    target="_blank"
+                    class="hover:text-brand-red transition"
+                  >
+                    Go-Mandor Care
+                  </a>
+                </li>
+                <li>Syarat dan Ketentuan</li>
+                <li>Kebijakan Privasi</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-10">
+            <div>
+              <p class="text-white text-sm mb-4">
+                Buka aplikasi dengan scan QR atau klik tombol:
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="assets/logo/QR-Download-Apps.webp"
+                  alt="QR Code Download"
+                  class="w-40 h-40"
+                />
+
+                <div class="relative h-20 w-full">
+                  <img
+                    src="assets/logo/app-store-google-play.svg"
+                    alt="App Store & Google Play"
+                    class="absolute h-full w-auto z-0"
+                  />
+
+                  <div class="absolute h-full w-full">
+                    <a
+                      href="https://apps.apple.com/id/app/go-mandor/id1444717285?l=id"
+                      target="_blank"
+                    >
+                      <div title="App Store" class="h-8 w-full mb-2"></div>
+                    </a>
+
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.gomandor&pcampaignid=web_share"
+                      target="_blank"
+                    >
+                      <div title="Google Playstore" class="h-8 w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-white font-bold mb-4 tracking-wide">
+                Ikuti Kami
+              </h4>
+
+              <div class="flex items-center gap-3">
+                <a href="#" aria-label="Instagram"
+                  ><img
+                    src="assets/icons/Instagram.webp"
+                    alt="Instagram"
+                    class="w-8 h-8"
+                /></a>
+                <a href="#" aria-label="Facebook"
+                  ><img
+                    src="assets/icons/Facebook.webp"
+                    alt="Facebook"
+                    class="w-8 h-8"
+                /></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><img
+                    src="assets/icons/Linkedin.webp"
+                    alt="LinkedIn"
+                    class="w-8 h-8"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CARA PESAN MODAL -->
+    <div
+      id="caraPesanModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="caraPesanBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-2xl w-full h-fit my-auto">
+        <button
+          id="caraPesanClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <img
+          src="assets/images/Cara-Order.jpg"
+          alt="Cara Pesan"
+          class="w-full h-auto rounded-lg shadow-2xl"
+        />
+      </div>
+    </div>
+
+    <!-- TENTANG Go-Mandor MODAL -->
+    <div
+      id="tentangModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="tentangBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-3xl w-full h-fit my-auto">
+        <button
+          id="tentangClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+          >
+            PERJALANAN KAMI
+          </h3>
+          <p class="font-bold text-brand-dark mb-4">
+            Bisnis yang skalabel dengan dampak sosial yang nyata!
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+            Dengan pengalaman bertahun-tahun di industri konstruksi, pendiri
+            kami menyadari beberapa masalah mendasar yang sudah lama membutuhkan
+            perubahan. Kesulitan besar dalam menemukan tukang yang berkualitas
+            dan dapat diandalkan, serta pendapatan yang sangat rendah bagi para
+            pekerja keras, menjadi dua hal utama dalam daftar tersebut.
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+            PT Niaga Makmur Berjaya, melalui aplikasi seluler sederhana bernama
+            Go-Mandor, menghubungkan konsumen dengan tukang. Platform daring
+            kami hadir untuk meningkatkan taraf hidup para tenaga kerja (tukang)
+            sekaligus menyelesaikan masalah yang meresahkan konsumen dalam
+            menemukan tukang yang tepat untuk setiap pekerjaan. Sejak
+            diluncurkan pada Oktober 2019, Go-Mandor telah mengalami pertumbuhan
+            yang pesat dan membuktikan dirinya sebagai solusi yang sangat
+            dinantikan.
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+            Dengan beragam layanan yang tersedia dalam satu platform, pengguna
+            dapat memilih layanan yang tepat untuk setiap pekerjaan yang mereka
+            butuhkan, baik itu pekerjaan konstruksi, perbaikan, maupun
+            perawatan. Survei lokasi untuk semua pekerjaan diberikan secara
+            gratis dan tidak mengikat.
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
+            Unduh aplikasi kami yang ramah pengguna dari Google Play Store dan
+            App Store, dan serahkan kebutuhan tukang Anda kepada Go-Mandor.
+          </p>
+
+          <hr class="border-gray-200 mb-8" />
+
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+          >
+            SKALA PROYEK
+          </h3>
+          <p class="font-bold text-brand-dark mb-4">
+            Go-Mandor Melayani Semua Skala Proyek
+          </p>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+            Go-Mandor adalah mitra konstruksi dan properti yang komprehensif dan
+            inklusif. Kami memahami bahwa setiap kebutuhan konstruksi atau
+            perbaikan—baik besar maupun kecil—memiliki tingkat kepentingan dan
+            urgensi yang sama.
+          </p>
+
+          <h4 class="font-bold text-brand-dark mb-2">
+            Untuk Segmen Bisnis (B2B)
+          </h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+            Kami memiliki pengalaman dalam menangani proyek skala besar dengan
+            tingkat kompleksitas tinggi untuk korporasi, institusi, dan
+            pengembang, seperti:
+          </p>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
+          >
+            <li>Pembangunan Gedung Perkantoran &amp; Ruko</li>
+            <li>
+              Pengembangan Fasilitas Komersial (hotel, restoran, bar, pusat
+              olahraga, dll.)
+            </li>
+            <li>Proyek Institusional (sekolah, klinik, tempat ibadah, dll.)</li>
+            <li>Renovasi Skala Besar &amp; Desain Interior</li>
+          </ul>
+
+          <h4 class="font-bold text-brand-dark mb-2">
+            Untuk Segmen Konsumen Langsung (B2C)
+          </h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+            Kami juga siap membantu individu dan keluarga dalam mewujudkan atau
+            meningkatkan ruang hunian mereka:
+          </p>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
+          >
+            <li>Pembangunan &amp; Renovasi Rumah Tinggal</li>
+            <li>Perbaikan Terfokus: atap bocor, plafon, lantai, pagar, dll.</li>
+            <li>Instalasi &amp; Perbaikan Kelistrikan dan Perpipaan</li>
+            <li>Desain Interior &amp; Renovasi Kecil</li>
+          </ul>
+
+          <h4 class="font-bold text-brand-dark mb-2">
+            Untuk Proyek Kecil &amp; Perbaikan Ringan
+          </h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+            Kami tidak mengabaikan apa yang terlihat &ldquo;kecil,&rdquo; karena
+            kami percaya bahwa pelayanan terbaik dibuktikan melalui perhatian
+            terhadap detail dan komitmen pada proyek dengan skala apa pun.
+            Contoh:
+          </p>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed space-y-1"
+          >
+            <li>Pengecatan Ulang Ruangan</li>
+            <li>Perbaikan Keramik atau Sanitair</li>
+            <li>Pemasangan Kanopi atau Teralis</li>
+            <li>Servis dan Perawatan Berkala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div
+      id="projectModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="projectBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-2xl w-full h-fit my-auto">
+        <button
+          id="projectClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div class="bg-white rounded-lg shadow-2xl">
+          <div class="relative p-5 pb-0">
+            <img
+              id="projectModalImage"
+              src=""
+              alt=""
+              class="w-full h-64 md:h-96 object-cover"
+            />
+            <button
+              id="projectPrev"
+              type="button"
+              aria-label="Sebelumnya"
+              class="hidden absolute left-8 md:left-9 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-brand-dark flex items-center justify-center transition"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              id="projectNext"
+              type="button"
+              aria-label="Berikutnya"
+              class="hidden absolute right-8 md:right-9 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-brand-dark flex items-center justify-center transition"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-5 space-y-5">
+            <div
+              class="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
+            >
+              <svg
+                class="w-6 h-6 text-brand-dark shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01"
+                />
+              </svg>
+              <span id="projectModalCategory" class="text-sm text-brand-dark"
+                >Restoran</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
+            >
+              <svg
+                class="w-6 h-6 text-brand-dark shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-5 8l2 2 4-4"
+                />
+              </svg>
+              <span
+                id="projectModalDescription"
+                class="text-sm text-brand-dark"
+              ></span>
+            </div>
+            <div
+              class="flex items-center gap-3 border border-gray-200 rounded-md px-4 py-3"
+            >
+              <svg
+                class="w-6 h-6 text-brand-dark shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span
+                id="projectModalLocation"
+                class="text-sm text-brand-dark"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+      const mobileMenuPanel = document.getElementById("mobileMenuPanel");
+      const mobileMenuClose = document.getElementById("mobileMenuClose");
+
+      const openMobileMenu = () => {
+        mobileMenuOverlay.classList.remove("hidden");
+        mobileMenuPanel.classList.remove("translate-x-full");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeMobileMenu = () => {
+        mobileMenuOverlay.classList.add("hidden");
+        mobileMenuPanel.classList.add("translate-x-full");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      mobileMenuBtn.addEventListener("click", openMobileMenu);
+      mobileMenuClose.addEventListener("click", closeMobileMenu);
+      mobileMenuOverlay.addEventListener("click", closeMobileMenu);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMobileMenu();
+      });
+      document.querySelectorAll("[data-mobile-link]").forEach((link) => {
+        link.addEventListener("click", closeMobileMenu);
+      });
+
+      const mobileProyekToggle = document.getElementById("mobileProyekToggle");
+      const mobileProyekSubmenu = document.getElementById(
+        "mobileProyekSubmenu",
+      );
+      const mobileProyekChevron = document.getElementById(
+        "mobileProyekChevron",
+      );
+      mobileProyekToggle.addEventListener("click", () => {
+        mobileProyekSubmenu.classList.toggle("hidden");
+        mobileProyekChevron.classList.toggle("rotate-180");
+      });
+
+      const caraPesanModal = document.getElementById("caraPesanModal");
+      const openCaraPesan = () => {
+        caraPesanModal.classList.remove("hidden");
+        caraPesanModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeCaraPesan = () => {
+        caraPesanModal.classList.add("hidden");
+        caraPesanModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document
+        .getElementById("caraPesanBtn")
+        .addEventListener("click", openCaraPesan);
+      document
+        .getElementById("caraPesanBtnMobile")
+        .addEventListener("click", () => {
+          closeMobileMenu();
+          openCaraPesan();
+        });
+      document
+        .getElementById("caraPesanClose")
+        .addEventListener("click", closeCaraPesan);
+      document
+        .getElementById("caraPesanBackdrop")
+        .addEventListener("click", closeCaraPesan);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeCaraPesan();
+      });
+
+      const tentangModal = document.getElementById("tentangModal");
+      const openTentang = () => {
+        tentangModal.classList.remove("hidden");
+        tentangModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeTentang = () => {
+        tentangModal.classList.add("hidden");
+        tentangModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document
+        .getElementById("tentangBtn")
+        .addEventListener("click", openTentang);
+      document
+        .getElementById("tentangClose")
+        .addEventListener("click", closeTentang);
+      document
+        .getElementById("tentangBackdrop")
+        .addEventListener("click", closeTentang);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeTentang();
+      });
+
+      const projectModal = document.getElementById("projectModal");
+      const projectModalImage = document.getElementById("projectModalImage");
+      const projectModalCategory = document.getElementById(
+        "projectModalCategory",
+      );
+      const projectModalDescription = document.getElementById(
+        "projectModalDescription",
+      );
+      const projectModalLocation = document.getElementById(
+        "projectModalLocation",
+      );
+      const projectPrev = document.getElementById("projectPrev");
+      const projectNext = document.getElementById("projectNext");
+
+      let projectImages = [];
+      let projectImageIndex = 0;
+
+      const renderProjectImage = () => {
+        projectModalImage.src = projectImages[projectImageIndex];
+        const hasMultiple = projectImages.length > 1;
+        projectPrev.classList.toggle("hidden", !hasMultiple);
+        projectNext.classList.toggle("hidden", !hasMultiple);
+      };
+
+      const openProject = (data) => {
+        projectImages = [data.image];
+        projectImageIndex = 0;
+        projectModalImage.alt = data.title;
+        projectModalCategory.textContent = data.category;
+        projectModalDescription.textContent = data.description;
+        projectModalLocation.textContent = data.location;
+        renderProjectImage();
+
+        projectModal.classList.remove("hidden");
+        projectModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeProject = () => {
+        projectModal.classList.add("hidden");
+        projectModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document.querySelectorAll(".project-more").forEach((button) => {
+        button.addEventListener("click", () => {
+          openProject({
+            title: button.dataset.title,
+            category: button.dataset.category,
+            description: button.dataset.description,
+            location: button.dataset.location,
+            image: button.dataset.image,
+          });
+        });
+      });
+
+      projectPrev.addEventListener("click", () => {
+        projectImageIndex =
+          (projectImageIndex - 1 + projectImages.length) % projectImages.length;
+        renderProjectImage();
+      });
+      projectNext.addEventListener("click", () => {
+        projectImageIndex = (projectImageIndex + 1) % projectImages.length;
+        renderProjectImage();
+      });
+
+      document
+        .getElementById("projectClose")
+        .addEventListener("click", closeProject);
+      document
+        .getElementById("projectBackdrop")
+        .addEventListener("click", closeProject);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeProject();
+      });
+
+      const reviewPagesWrapper = document.getElementById("reviewPagesWrapper");
+      const reviewPages = reviewPagesWrapper.children;
+      const reviewDots = document.querySelectorAll(".review-dot");
+      const reviewPrev = document.getElementById("reviewPrev");
+      const reviewNext = document.getElementById("reviewNext");
+      let reviewIndex = 0;
+
+      const renderReview = () => {
+        reviewPagesWrapper.style.transform = `translateX(-${reviewIndex * 100}%)`;
+        reviewDots.forEach((dot, i) => {
+          dot.classList.toggle("bg-white", i === reviewIndex);
+          dot.classList.toggle("bg-white/40", i !== reviewIndex);
+        });
+      };
+
+      reviewPrev.addEventListener("click", () => {
+        reviewIndex =
+          (reviewIndex - 1 + reviewPages.length) % reviewPages.length;
+        renderReview();
+      });
+      reviewNext.addEventListener("click", () => {
+        reviewIndex = (reviewIndex + 1) % reviewPages.length;
+        renderReview();
+      });
+      reviewDots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          reviewIndex = Number(dot.dataset.index);
+          renderReview();
+        });
+      });
+    </script>
+  </body>
+</html>
