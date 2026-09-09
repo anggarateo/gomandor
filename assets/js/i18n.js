@@ -44,7 +44,7 @@
       "project.gastro.category": "Bar & Lounge",
       "project.gastro.desc":
         "Pembangunan Bar & Lounge: Pekerjaan Arsitektur, MEP, dan Furniture",
-      "project.gastro.location": "Sanur, Bali",
+      "project.gastro.location": "Canggu, Bali",
 
       "project.osteria.title": "OSTERIA, ULUWATU",
       "project.osteria.short": "Pembangunan Restoran Baru",
@@ -86,6 +86,40 @@
       "project.umalas.desc":
         "Front Office Renovation Painting and Window Replacement",
       "project.umalas.location": "Umalas, Bali",
+
+      "project.colombia.short": "Proyek Konstruksi Rumah Sakit",
+      "project.shopdrive_matraman.short":
+        "Renovasi Kecil Bengkel (Fasad, Papan Nama, Pengecatan)...",
+      "project.shopdrive_grandwisata.short":
+        "Pemasangan Panel dan Tower Sign, Pengecatan Trimdeks...",
+      "project.shopdrive_summarecon.short":
+        "Pekerjaan Fasade, Panel Sign, Area Kasir, dan MEP...",
+      "project.felixpadel.short":
+        "Pekerjaan Interior, Lantai Vinyl, HPL, Kusen Pintu Geser...",
+      "project.bouncestreet.short": "Proyek Konstruksi Arena Trampolin",
+      "project.adhi.short":
+        "Renovasi Area Lapangan, Toilet, dan Plafon Gypsum...",
+      "project.jlmcibinong.short":
+        "Pengaspalan di Area Parkir dan Area Sekitar Gudang",
+      "project.sbi.short":
+        "Renovasi Restoran Meliputi Fasad, Dapur, MEP, Gas...",
+      "project.naughtyolive.short": "Proyek Pembangunan Restoran Baru",
+      "project.paksyam.short":
+        "Renovasi Rumah 1 Lantai: Sipil, Arsitektur, MEP...",
+      "project.moreaucafe.short": "Renovasi Cafe: Pekerjaan Sipil dan MEP...",
+
+      "project.lacielo_fo.short":
+        "Renovasi Front Office (Pengecatan dan Penggantian Jendela)",
+      "project.lacielo_bungalow.short":
+        "Renovasi Bungalow: Pengecatan, Perbaikan Bocor, Keramik...",
+      "project.lacielo_villa.short":
+        "Renovasi Villa: Pengecatan, Kolam Renang, Lantai Parket...",
+      "project.cafedasa.short":
+        "Pembangunan Restaurant: Struktur, Arsitektur, MEP...",
+      "project.dream4.short": "Proyek Renovasi dan Finishing Bangunan",
+      "project.larente.short": "Proyek Finishing Bangunan",
+      "project.soicowboy.short":
+        "Renovasi Clubhouse dengan Lighting dan Furniture",
 
       "layanan.heading": "LAYANAN",
       "layanan.intro":
@@ -281,7 +315,7 @@
       "project.gastro.category": "Bar & Lounge",
       "project.gastro.desc":
         "Bar & Lounge Construction: Architecture, MEP, and Furniture Works",
-      "project.gastro.location": "Sanur, Bali",
+      "project.gastro.location": "Canggu, Bali",
 
       "project.osteria.title": "OSTERIA, ULUWATU",
       "project.osteria.short": "New Restaurant Construction",
@@ -323,6 +357,40 @@
       "project.umalas.desc":
         "Front Office Renovation Painting and Window Replacement",
       "project.umalas.location": "Umalas, Bali",
+
+      "project.colombia.short": "Hospital Construction Project",
+      "project.shopdrive_matraman.short":
+        "Minor Workshop Renovation (Façade, Signage, Painting)...",
+      "project.shopdrive_grandwisata.short":
+        "Panel and Tower Sign Installation, Trimdek Painting...",
+      "project.shopdrive_summarecon.short":
+        "Façade Work, Signage Panel, Cashier Area, and MEP...",
+      "project.felixpadel.short":
+        "Interior Work, Vinyl Flooring, HPL, Sliding Door Frame...",
+      "project.bouncestreet.short": "Trampoline Arena Construction Project",
+      "project.adhi.short":
+        "Field Area, Toilet, and Gypsum Ceiling Renovation...",
+      "project.jlmcibinong.short":
+        "Paving of Parking Area and Surrounding Warehouse Area",
+      "project.sbi.short":
+        "Restaurant Renovation including Façade, Kitchen, MEP, Gas...",
+      "project.naughtyolive.short": "New Restaurant Construction Project",
+      "project.paksyam.short":
+        "1-Floor House Renovation: Civil, Architecture, MEP...",
+      "project.moreaucafe.short": "Cafe Renovation: Civil Work and MEP...",
+
+      "project.lacielo_fo.short":
+        "Front Office Renovation (Painting and Window Replacement)",
+      "project.lacielo_bungalow.short":
+        "Bungalow Renovation: Painting, Leak Repair, Tiling...",
+      "project.lacielo_villa.short":
+        "Villa Renovation: Painting, Pool Tiles, Parquet Flooring...",
+      "project.cafedasa.short":
+        "Restaurant Construction: Structural, Architecture, MEP...",
+      "project.dream4.short": "Building Renovation and Finishing Project",
+      "project.larente.short": "Building Finishing Project",
+      "project.soicowboy.short":
+        "Clubhouse Renovation with Lighting and Furniture",
 
       "layanan.heading": "SERVICES",
       "layanan.intro":
