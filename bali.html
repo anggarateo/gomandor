@@ -96,6 +96,9 @@
       .secondary-bg {
         background-color: #2e2e2e;
       }
+      .brand-gradient {
+        background-image: linear-gradient(135deg, #5b0d0d 0%, #380808 100%);
+      }
     </style>
   </head>
   <body class="bg-white text-brand-dark antialiased">
@@ -323,312 +326,229 @@
       </div>
     </aside>
 
-    <!-- TESTIMONI -->
-    <section class="bg-brand-red py-16">
+    <!-- PROYEK KAMI -->
+    <section class="brand-gradient py-16">
       <div class="max-w-6xl mx-auto px-4 md:px-8">
         <h2
-          class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-12 text-center"
+          class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-8"
         >
-          Testimoni Klien
+          Temukan Proyek-Proyek Kami yang Telah Selesai di Area Bali
         </h2>
 
-        <div class="relative">
-          <button
-            id="reviewPrev"
-            type="button"
-            aria-label="Sebelumnya"
-            class="hidden md:flex absolute -left-5 lg:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
+        <div class="flex flex-wrap items-center gap-4 mb-10">
+          <button type="button" class="px-3 py-1 bg-brand-dark text-white">
+            Semua
           </button>
-
-          <div class="overflow-hidden">
-            <div
-              id="reviewPagesWrapper"
-              class="flex transition-transform duration-500 ease-in-out"
-            >
-              <!-- PAGE 1 -->
-              <div
-                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 content-start"
-              >
-                <!-- Card 1 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Go-Mandor benar-benar membantu saya dari awal sampai akhir.
-                    Timnya profesional, komunikasinya lancar, dan hasil renovasi
-                    rumah saya melebihi ekspektasi. Saya pasti pakai jasa mereka
-                    lagi.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      AW
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      ANDI WIJAYA
-                    </p>
-                    <p class="text-gray-500 text-xs">Renovasi Rumah</p>
-                  </div>
-                </div>
-                <!-- Card 2 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Proyek ruko saya selesai tepat waktu dan sesuai anggaran.
-                    Go-Mandor punya tim yang bertanggung jawab dan materialnya
-                    berkualitas. Sangat puas!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      SR
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      SITI RAHMAWATI
-                    </p>
-                    <p class="text-gray-500 text-xs">Pembangunan Ruko</p>
-                  </div>
-                </div>
-                <!-- Card 3 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Saya sudah beberapa kali pakai jasa kontraktor, tapi
-                    Go-Mandor yang paling oke. Pengerjaan rapi, cepat, dan
-                    mereka selalu kasih solusi kalau ada kendala di lapangan.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      BS
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      BUDI SANTOSO
-                    </p>
-                    <p class="text-gray-500 text-xs">Renovasi Kantor</p>
-                  </div>
-                </div>
-                <!-- Card 4 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Proses pembangunan rumah impian saya jadi lebih tenang
-                    karena Go-Mandor mengurus semuanya. Dari perizinan sampai
-                    finishing, semua terkelola dengan baik. Terima kasih
-                    Go-Mandor!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      DP
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      DIAN PERMATA
-                    </p>
-                    <p class="text-gray-500 text-xs">Pembangunan Rumah</p>
-                  </div>
-                </div>
-                <!-- Card 5 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Restoran saya harus cepat selesai karena mau buka. Go-Mandor
-                    berhasil menyelesaikan renovasi tepat waktu tanpa mengurangi
-                    kualitas. Pelanggan saya juga puas dengan tampilan barunya.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      RH
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      RUDI HARTONO
-                    </p>
-                    <p class="text-gray-500 text-xs">Renovasi Restoran</p>
-                  </div>
-                </div>
-                <!-- Card 6 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Go-Mandor memberikan rekomendasi desain yang efisien untuk
-                    gudang saya. Pengerjaan kokoh, hemat biaya, dan koordinasi
-                    dengan tim sangat mudah. Rekomendasi banget!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      MA
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      MAYA ANGGRAINI
-                    </p>
-                    <p class="text-gray-500 text-xs">Pembangunan Gudang</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- PAGE 2 -->
-              <div
-                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 content-start"
-              >
-                <!-- Card 7 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Go-Mandor transformed our outdated villa into a modern
-                    tropical masterpiece. Their team was punctual,
-                    detail-oriented, and handled everything from design to
-                    construction. Highly recommended!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      JA
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      JAMES ANDERSON
-                    </p>
-                    <p class="text-gray-500 text-xs">Villa Renovation</p>
-                  </div>
-                </div>
-                <!-- Card 8 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    We entrusted Go-Mandor with our boutique hotel project in
-                    Ubud, and they exceeded our expectations. Excellent project
-                    management, quality materials, and they truly understand the
-                    local building culture. Absolutely satisfied.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      LC
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      LAURA CHEN
-                    </p>
-                    <p class="text-gray-500 text-xs">Hotel Construction</p>
-                  </div>
-                </div>
-                <!-- Card 9 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Go-Mandor delivered our beach club project on time and on
-                    budget. Their professionalism and problem-solving skills
-                    were outstanding. We're already planning our next project
-                    with them.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      DR
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      DAVID ROBERTS
-                    </p>
-                    <p class="text-gray-500 text-xs">Club Development</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <button
-            id="reviewNext"
             type="button"
-            aria-label="Berikutnya"
-            class="hidden md:flex absolute -right-5 lg:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+            class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
           >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            Gedung
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+          >
+            Villa
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+          >
+            Resort
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+          >
+            Rumah
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+          >
+            Restoran
+          </button>
+          <button type="button" class="px-3 py-1 hover:bg-white/20 text-white">
+            lainnya...
           </button>
         </div>
 
-        <div id="reviewDots" class="flex justify-center gap-2 mt-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-10 text-left mb-10"
+        >
+          <!-- Card 1 -->
+          <div class="overflow-hidden bg-brand-dark group">
+            <div class="overflow-hidden h-56">
+              <img
+                src="assets/projects/Umalas-Bali.jpg"
+                alt="Umalas, Bali"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">UMALAS, BALI</h3>
+              <p>
+                Front Office Renovation Painting and Window Replace...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Umalas, Bali"
+                  data-category="Perkantoran"
+                  data-description="Front Office Renovation Painting and Window Replacement"
+                  data-location="Umalas, Bali"
+                  data-image="assets/projects/Umalas-Bali.jpg"
+                >
+                  more
+                </button>
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="overflow-hidden bg-brand-dark group">
+            <div class="overflow-hidden h-56">
+              <img
+                src="assets/images/Image-1.jpg"
+                alt="Yuki, Ubud"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">YUKI, UBUD</h3>
+              <p>
+                Pembangunan Restaurant: Struktur, Arsitektur, MEP...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Yuki, Ubud"
+                  data-category="Restoran"
+                  data-description="Pembangunan Restaurant: Struktur, Arsitektur, MEP, dan Furniture"
+                  data-location="Ubud, Bali"
+                  data-image="assets/images/Image-1.jpg"
+                >
+                  more
+                </button>
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="overflow-hidden bg-brand-dark group">
+            <div class="overflow-hidden h-56">
+              <img
+                src="assets/images/Image-2.jpg"
+                alt="Resto, Sanur"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">RESTO, SANUR</h3>
+              <p>
+                Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan
+                Furniture...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Resto, Sanur"
+                  data-category="Restoran"
+                  data-description="Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan Furniture"
+                  data-location="Sanur, Bali"
+                  data-image="assets/images/Image-2.jpg"
+                >
+                  more
+                </button>
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="overflow-hidden bg-brand-dark group">
+            <div class="overflow-hidden h-56">
+              <img
+                src="assets/images/Image-3.jpg"
+                alt="Gastro, Canggu"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">
+                GASTRO, CANGGU
+              </h3>
+              <p>
+                Pembangunan Bar &amp; Lounge: Arsitektur, MEP...<button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Gastro, Canggu"
+                  data-category="Bar & Lounge"
+                  data-description="Pembangunan Bar & Lounge: Pekerjaan Arsitektur, MEP, dan Furniture"
+                  data-location="Sanur, Bali"
+                  data-image="assets/images/Image-3.jpg"
+                >
+                  more
+                </button>
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="overflow-hidden bg-brand-dark group">
+            <div class="overflow-hidden h-56">
+              <img
+                src="assets/images/Image-4.jpg"
+                alt="Osteria, Uluwatu"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">
+                OSTERIA, ULUWATU
+              </h3>
+              <p>
+                Pembangunan Restoran Baru
+                <button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Osteria, Uluwatu"
+                  data-category="Restoran"
+                  data-description="Pembangunan Restoran Baru"
+                  data-location="Uluwatu, Bali"
+                  data-image="assets/images/Image-4.jpg"
+                >
+                  more
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center md:justify-between items-center">
           <button
             type="button"
-            class="review-dot w-2.5 h-2.5 rounded-full bg-white transition"
-            data-index="0"
-            aria-label="Halaman 1"
-          ></button>
+            class="hidden md:block px-3 py-1 bg-brand-dark text-white"
+          >
+            Sebelumnya
+          </button>
+
+          <div class="flex justify-center items-center gap-3">
+            <button type="button" class="px-4 py-1 bg-brand-dark text-white">
+              1
+            </button>
+
+            <button
+              type="button"
+              class="px-4 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            >
+              2
+            </button>
+
+            <button
+              type="button"
+              class="px-4 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            >
+              3
+            </button>
+          </div>
+
           <button
             type="button"
-            class="review-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
-            data-index="1"
-            aria-label="Halaman 2"
-          ></button>
+            class="hidden md:block px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+          >
+            Selanjutnya
+          </button>
         </div>
       </div>
     </section>
@@ -1459,37 +1379,6 @@
         .addEventListener("click", closeProject);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeProject();
-      });
-
-      const reviewPagesWrapper = document.getElementById("reviewPagesWrapper");
-      const reviewPages = reviewPagesWrapper.children;
-      const reviewDots = document.querySelectorAll(".review-dot");
-      const reviewPrev = document.getElementById("reviewPrev");
-      const reviewNext = document.getElementById("reviewNext");
-      let reviewIndex = 0;
-
-      const renderReview = () => {
-        reviewPagesWrapper.style.transform = `translateX(-${reviewIndex * 100}%)`;
-        reviewDots.forEach((dot, i) => {
-          dot.classList.toggle("bg-white", i === reviewIndex);
-          dot.classList.toggle("bg-white/40", i !== reviewIndex);
-        });
-      };
-
-      reviewPrev.addEventListener("click", () => {
-        reviewIndex =
-          (reviewIndex - 1 + reviewPages.length) % reviewPages.length;
-        renderReview();
-      });
-      reviewNext.addEventListener("click", () => {
-        reviewIndex = (reviewIndex + 1) % reviewPages.length;
-        renderReview();
-      });
-      reviewDots.forEach((dot) => {
-        dot.addEventListener("click", () => {
-          reviewIndex = Number(dot.dataset.index);
-          renderReview();
-        });
       });
     </script>
   </body>

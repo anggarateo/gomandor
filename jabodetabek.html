@@ -96,6 +96,9 @@
       .secondary-bg {
         background-color: #2e2e2e;
       }
+      .brand-gradient {
+        background-image: linear-gradient(135deg, #5b0d0d 0%, #380808 100%);
+      }
     </style>
   </head>
   <body class="bg-white text-brand-dark antialiased">
@@ -140,13 +143,20 @@
               </svg>
             </button>
             <div
-              class="absolute left-0 top-full w-44 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+              class="absolute left-0 top-full w-48 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
             >
-              <div class="bg-white shadow-lg py-2">
+              <div class="bg-white shadow-lg">
                 <a
-                  href="jakarta.html"
+                  href="jabodetabek.html"
                   class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
-                  >Kontraktor Jakarta</a
+                  >Proyek JABODETABEK</a
+                >
+              </div>
+              <div class="bg-white shadow-lg">
+                <a
+                  href="bali.html"
+                  class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
+                  >Proyek Bali</a
                 >
               </div>
             </div>
@@ -271,10 +281,16 @@
           </button>
           <div id="mobileProyekSubmenu" class="hidden pl-4 pb-2 flex flex-col">
             <a
-              href="jakarta.html"
+              href="jabodetabek.html"
               class="py-1.5 font-normal text-white"
               data-mobile-link
-              >Kontraktor Jakarta</a
+              >Proyek JABODETABEK</a
+            >
+            <a
+              href="bali.html"
+              class="py-1.5 font-normal text-white"
+              data-mobile-link
+              >Proyek Bali</a
             >
           </div>
         </div>
@@ -311,7 +327,7 @@
     </aside>
 
     <!-- PROYEK KAMI -->
-    <section class="bg-brand-red py-16">
+    <section class="brand-gradient py-16">
       <div class="max-w-6xl mx-auto px-4 md:px-8">
         <h2
           class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-8"
@@ -421,22 +437,54 @@
           <div class="overflow-hidden bg-brand-dark group">
             <div class="overflow-hidden h-56">
               <img
-                src="assets/projects/Umalas-Bali.jpg"
-                alt="Umalas, Bali"
+                src="assets/projects/SBI-Grogol.jpeg"
+                alt="Junsei, Jakarta"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
             </div>
             <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">UMALAS, BALI</h3>
+              <h3 class="font-bold mb-1 tracking-wide text-lg">
+                JUNSEI, JAKARTA
+              </h3>
               <p>
-                Front Office Renovation Painting and Window Replace...<button
+                Pembangunan Restoran Baru
+                <button
                   type="button"
                   class="project-more text-gray-400 hover:text-white transition"
-                  data-title="Umalas, Bali"
-                  data-category="Perkantoran"
-                  data-description="Front Office Renovation Painting and Window Replacement"
-                  data-location="Umalas, Bali"
-                  data-image="assets/projects/Umalas-Bali.jpg"
+                  data-title="Junsei, Jakarta"
+                  data-category="Restoran"
+                  data-description="Pembangunan Restoran Baru"
+                  data-location="Senopati, Jakarta"
+                  data-image="assets/projects/SBI-Grogol.jpeg"
+                >
+                  more
+                </button>
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="overflow-hidden bg-brand-dark group">
+            <div class="overflow-hidden h-56">
+              <img
+                src="assets/projects/JLM-Bogor.jpeg"
+                alt="Extrupack, Bekasi"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-5 text-white text-center">
+              <h3 class="font-bold mb-1 tracking-wide text-lg">
+                EXTRUPACK, BEKASI
+              </h3>
+              <p>
+                Pembangunan Gudang dan Ruang Kantor
+                <button
+                  type="button"
+                  class="project-more text-gray-400 hover:text-white transition"
+                  data-title="Extrupack, Bekasi"
+                  data-category="Gudang & Ruang Kantor"
+                  data-description="Pembangunan Gudang dan Ruang Kantor"
+                  data-location="Kota Baru, Bekasi"
+                  data-image="assets/projects/JLM-Bogor.jpeg"
                 >
                   more
                 </button>
@@ -535,7 +583,15 @@
                 Kontak Kami
               </h4>
               <ul class="space-y-2 text-sm text-white">
-                <li>Alamat</li>
+                <li>
+                  <button
+                    id="alamatBtn"
+                    type="button"
+                    class="hover:text-brand-red transition"
+                  >
+                    Alamat
+                  </button>
+                </li>
                 <li>
                   <a
                     href="tel:+622129619596"
@@ -652,6 +708,118 @@
         </div>
       </div>
     </footer>
+    <!-- ALAMAT MODAL -->
+    <div
+      id="alamatModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="alamatBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-xl w-full h-fit my-auto">
+        <button
+          id="alamatClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div class="bg-white rounded-lg shadow-2xl p-6 md:p-8">
+          <h3
+            class="text-brand-dark text-xl md:text-2xl font-bold tracking-wide mb-1"
+          >
+            Pilih Lokasi
+          </h3>
+          <p class="text-sm text-gray-500 mb-6">
+            Pilih area untuk melihat lokasi kantor Go-Mandor di peta.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Jabodetabek%2C+Indonesia"
+              target="_blank"
+              class="group block rounded-lg overflow-hidden border border-gray-200 hover:border-brand-red transition"
+            >
+              <div class="h-32 md:h-40 w-full bg-gray-100 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=Jabodetabek,+Indonesia&output=embed"
+                  class="w-full h-full pointer-events-none"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Peta JABODETABEK"
+                ></iframe>
+              </div>
+              <div class="p-4 flex items-center justify-between">
+                <span
+                  class="font-bold text-brand-dark group-hover:text-brand-red transition"
+                  >JABODETABEK</span
+                >
+                <svg
+                  class="w-4 h-4 text-gray-400 group-hover:text-brand-red transition"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/n5fvzUa7tkE3UrqE9"
+              target="_blank"
+              class="group block rounded-lg overflow-hidden border border-gray-200 hover:border-brand-red transition"
+            >
+              <div class="h-32 md:h-40 w-full bg-gray-100 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=Bali,+Indonesia&output=embed"
+                  class="w-full h-full pointer-events-none"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Peta Bali"
+                ></iframe>
+              </div>
+              <div class="p-4 flex items-center justify-between">
+                <span
+                  class="font-bold text-brand-dark group-hover:text-brand-red transition"
+                  >BALI</span
+                >
+                <svg
+                  class="w-4 h-4 text-gray-400 group-hover:text-brand-red transition"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- CARA PESAN MODAL -->
     <div
@@ -681,7 +849,7 @@
           </svg>
         </button>
         <img
-          src="assets/images/Cara-Order.jpg"
+          src="assets/images/Cara-Order-ID.jpg"
           alt="Cara Pesan"
           class="w-full h-auto rounded-lg shadow-2xl"
         />
@@ -982,6 +1150,20 @@
       </div>
     </div>
 
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a
+      href="https://wa.me/6285214985827"
+      target="_blank"
+      aria-label="Hubungi kami via WhatsApp"
+      class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe57] shadow-lg flex items-center justify-center transition"
+    >
+      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 32 32">
+        <path
+          d="M16.004 3C9.377 3 4 8.373 4 15c0 2.386.7 4.61 1.91 6.484L4 29l7.68-1.87A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.75c-1.86 0-3.6-.5-5.1-1.36l-.365-.213-4.56 1.11 1.145-4.44-.238-.38A9.72 9.72 0 0 1 5.25 15c0-5.93 4.82-10.75 10.754-10.75S26.75 9.07 26.75 15 21.938 24.75 16.004 24.75Zm5.9-8.06c-.32-.16-1.9-.94-2.195-1.045-.294-.107-.51-.16-.723.16-.213.32-.83 1.045-1.018 1.26-.187.213-.375.24-.695.08-.32-.16-1.35-.498-2.573-1.588-.951-.848-1.594-1.895-1.78-2.215-.187-.32-.02-.492.14-.652.144-.144.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.026-.56-.08-.16-.723-1.744-.992-2.39-.26-.628-.526-.543-.723-.553-.187-.01-.4-.012-.615-.012-.213 0-.56.08-.853.4-.293.32-1.12 1.095-1.12 2.67 0 1.573 1.147 3.093 1.307 3.307.16.213 2.257 3.446 5.47 4.83.764.33 1.36.527 1.826.674.767.244 1.465.21 2.017.128.615-.092 1.9-.777 2.168-1.527.267-.75.267-1.393.187-1.527-.08-.133-.293-.213-.613-.373Z"
+        />
+      </svg>
+    </a>
+
     <script>
       const mobileMenuBtn = document.getElementById("mobileMenuBtn");
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
@@ -1019,6 +1201,31 @@
       mobileProyekToggle.addEventListener("click", () => {
         mobileProyekSubmenu.classList.toggle("hidden");
         mobileProyekChevron.classList.toggle("rotate-180");
+      });
+
+      const alamatModal = document.getElementById("alamatModal");
+      const openAlamat = () => {
+        alamatModal.classList.remove("hidden");
+        alamatModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeAlamat = () => {
+        alamatModal.classList.add("hidden");
+        alamatModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document
+        .getElementById("alamatBtn")
+        .addEventListener("click", openAlamat);
+      document
+        .getElementById("alamatClose")
+        .addEventListener("click", closeAlamat);
+      document
+        .getElementById("alamatBackdrop")
+        .addEventListener("click", closeAlamat);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeAlamat();
       });
 
       const caraPesanModal = document.getElementById("caraPesanModal");

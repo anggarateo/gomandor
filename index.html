@@ -83,18 +83,21 @@
       body {
         font-family: "Lato", sans-serif;
       }
-      .hero-bg {
-        background-image: url("assets/images/Image-1.jpg");
-        background-size: cover;
-        background-position: center;
-      }
       .quote-bg {
         background-image: url("assets/images/Image-2.jpg");
         background-size: cover;
         background-position: center;
       }
+      .statistik-bg {
+        background-image: url("assets/images/Image-6.jpg");
+        background-size: cover;
+        background-position: center;
+      }
       .secondary-bg {
         background-color: #2e2e2e;
+      }
+      .brand-gradient {
+        background-image: linear-gradient(180deg, #5b0d0d 0%, #380808 100%);
       }
     </style>
   </head>
@@ -140,13 +143,20 @@
               </svg>
             </button>
             <div
-              class="absolute left-0 top-full w-44 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+              class="absolute left-0 top-full w-48 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
             >
-              <div class="bg-white shadow-lg py-2">
+              <div class="bg-white shadow-lg">
                 <a
-                  href="jakarta.html"
+                  href="jabodetabek.html"
                   class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
-                  >Kontraktor Jakarta</a
+                  >Proyek JABODETABEK</a
+                >
+              </div>
+              <div class="bg-white shadow-lg">
+                <a
+                  href="bali.html"
+                  class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
+                  >Proyek Bali</a
                 >
               </div>
             </div>
@@ -271,10 +281,16 @@
           </button>
           <div id="mobileProyekSubmenu" class="hidden pl-4 pb-2 flex flex-col">
             <a
-              href="jakarta.html"
+              href="jabodetabek.html"
               class="py-1.5 font-normal text-white"
               data-mobile-link
-              >Kontraktor Jakarta</a
+              >Proyek JABODETABEK</a
+            >
+            <a
+              href="bali.html"
+              class="py-1.5 font-normal text-white"
+              data-mobile-link
+              >Proyek Bali</a
             >
           </div>
         </div>
@@ -313,9 +329,40 @@
     <!-- HERO SECTION -->
     <section
       id="beranda"
-      class="hero-bg relative min-h-[420px] md:min-h-[560px] flex items-end"
+      class="relative min-h-[420px] md:min-h-[560px] flex items-end overflow-hidden"
     >
-      <div class="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 w-full">
+      <div id="heroSlides" class="absolute inset-0 z-0">
+        <img
+          src="assets/images/Image-1.jpg"
+          alt=""
+          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+        />
+        <img
+          src="assets/images/Image-5.png"
+          alt=""
+          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        />
+        <img
+          src="assets/images/Image-7.jpg"
+          alt=""
+          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        />
+        <img
+          src="assets/images/Image-8.png"
+          alt=""
+          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        />
+        <img
+          src="assets/images/Image-9.png"
+          alt=""
+          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+        />
+      </div>
+      <div class="absolute inset-0 z-[1] bg-black/40"></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 w-full"
+      >
         <div class="max-w-xl text-white">
           <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
             Kontraktor Andalan Anda
@@ -337,7 +384,7 @@
     </section>
 
     <!-- PROYEK KAMI -->
-    <section class="bg-brand-red py-16">
+    <section class="brand-gradient py-16">
       <div class="max-w-6xl mx-auto px-4 md:px-8 text-center text-white">
         <h2 class="text-3xl md:text-5xl font-bold tracking-wide mb-6">
           PROYEK KAMI
@@ -348,88 +395,255 @@
           bentuk profesionalisme dan integritas kami.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-10 text-left">
-          <!-- Card 1 -->
-          <div class="overflow-hidden bg-brand-dark group">
-            <div class="overflow-hidden h-56">
-              <img
-                src="assets/projects/SBI-Grogol.jpeg"
-                alt="Grogol, Jakarta"
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+        <!-- HIGHLIGHT PROYEK BESAR (AUTO SLIDE) -->
+        <div class="relative mb-16">
+          <button
+            id="highlightPrev"
+            type="button"
+            aria-label="Sebelumnya"
+            class="hidden md:flex absolute -left-5 lg:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
               />
-            </div>
-            <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">
-                GROGOL, JAKARTA
-              </h3>
-              <p>
-                Restaurant Renovation including Façade, Kitchen...<button
-                  type="button"
-                  class="project-more text-gray-400 hover:text-white transition"
-                  data-title="Grogol, Jakarta"
-                  data-category="Restoran"
-                  data-description="Renovasi Restoran Meliputi Pekerjaan Fasad, Dapur, MEP, Instalasi Gas, dan Saluran Pembuangan (Exhaust Ducting)"
-                  data-location="Grogol Petamburan, Jakarta Barat"
-                  data-image="assets/projects/SBI-Grogol.jpeg"
-                >
-                  more
-                </button>
-              </p>
+            </svg>
+          </button>
+
+          <div class="overflow-hidden">
+            <div
+              id="highlightTrack"
+              class="flex transition-transform duration-700 ease-in-out"
+            >
+              <!-- PAGE 1 -->
+              <div
+                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-10 text-left content-start"
+              >
+                <!-- Yuki, Ubud -->
+                <div class="overflow-hidden bg-brand-dark group">
+                  <div class="overflow-hidden h-56">
+                    <img
+                      src="assets/images/Image-1.jpg"
+                      alt="Yuki, Ubud"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div class="p-5 text-white text-center">
+                    <h3 class="font-bold mb-1 tracking-wide text-lg">
+                      YUKI, UBUD
+                    </h3>
+                    <p>
+                      Pembangunan Restaurant: Struktur, Arsitektur,
+                      MEP...<button
+                        type="button"
+                        class="project-more text-gray-400 hover:text-white transition"
+                        data-title="Yuki, Ubud"
+                        data-category="Restoran"
+                        data-description="Pembangunan Restaurant: Struktur, Arsitektur, MEP, dan Furniture"
+                        data-location="Ubud, Bali"
+                        data-image="assets/images/Image-1.jpg"
+                      >
+                        more
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <!-- Resto, Sanur -->
+                <div class="overflow-hidden bg-brand-dark group">
+                  <div class="overflow-hidden h-56">
+                    <img
+                      src="assets/images/Image-2.jpg"
+                      alt="Resto, Sanur"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div class="p-5 text-white text-center">
+                    <h3 class="font-bold mb-1 tracking-wide text-lg">
+                      RESTO, SANUR
+                    </h3>
+                    <p>
+                      Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur,
+                      MEP, dan Furniture...<button
+                        type="button"
+                        class="project-more text-gray-400 hover:text-white transition"
+                        data-title="Resto, Sanur"
+                        data-category="Restoran"
+                        data-description="Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan Furniture"
+                        data-location="Sanur, Bali"
+                        data-image="assets/images/Image-2.jpg"
+                      >
+                        more
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <!-- Gastro, Canggu -->
+                <div class="overflow-hidden bg-brand-dark group">
+                  <div class="overflow-hidden h-56">
+                    <img
+                      src="assets/images/Image-3.jpg"
+                      alt="Gastro, Canggu"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div class="p-5 text-white text-center">
+                    <h3 class="font-bold mb-1 tracking-wide text-lg">
+                      GASTRO, CANGGU
+                    </h3>
+                    <p>
+                      Pembangunan Bar &amp; Lounge: Arsitektur, MEP...<button
+                        type="button"
+                        class="project-more text-gray-400 hover:text-white transition"
+                        data-title="Gastro, Canggu"
+                        data-category="Bar & Lounge"
+                        data-description="Pembangunan Bar & Lounge: Pekerjaan Arsitektur, MEP, dan Furniture"
+                        data-location="Sanur, Bali"
+                        data-image="assets/images/Image-3.jpg"
+                      >
+                        more
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PAGE 2 -->
+              <div
+                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-10 text-left content-start"
+              >
+                <!-- Osteria, Uluwatu -->
+                <div class="overflow-hidden bg-brand-dark group">
+                  <div class="overflow-hidden h-56">
+                    <img
+                      src="assets/images/Image-4.jpg"
+                      alt="Osteria, Uluwatu"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div class="p-5 text-white text-center">
+                    <h3 class="font-bold mb-1 tracking-wide text-lg">
+                      OSTERIA, ULUWATU
+                    </h3>
+                    <p>
+                      Pembangunan Restoran Baru
+                      <button
+                        type="button"
+                        class="project-more text-gray-400 hover:text-white transition"
+                        data-title="Osteria, Uluwatu"
+                        data-category="Restoran"
+                        data-description="Pembangunan Restoran Baru"
+                        data-location="Uluwatu, Bali"
+                        data-image="assets/images/Image-4.jpg"
+                      >
+                        more
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <!-- Junsei, Jakarta -->
+                <div class="overflow-hidden bg-brand-dark group">
+                  <div class="overflow-hidden h-56">
+                    <img
+                      src="assets/projects/SBI-Grogol.jpeg"
+                      alt="Junsei, Jakarta"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div class="p-5 text-white text-center">
+                    <h3 class="font-bold mb-1 tracking-wide text-lg">
+                      JUNSEI, JAKARTA
+                    </h3>
+                    <p>
+                      Pembangunan Restoran Baru
+                      <button
+                        type="button"
+                        class="project-more text-gray-400 hover:text-white transition"
+                        data-title="Junsei, Jakarta"
+                        data-category="Restoran"
+                        data-description="Pembangunan Restoran Baru"
+                        data-location="Senopati, Jakarta"
+                        data-image="assets/projects/SBI-Grogol.jpeg"
+                      >
+                        more
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <!-- Extrupack, Bekasi -->
+                <div class="overflow-hidden bg-brand-dark group">
+                  <div class="overflow-hidden h-56">
+                    <img
+                      src="assets/projects/JLM-Bogor.jpeg"
+                      alt="Extrupack, Bekasi"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <div class="p-5 text-white text-center">
+                    <h3 class="font-bold mb-1 tracking-wide text-lg">
+                      EXTRUPACK, BEKASI
+                    </h3>
+                    <p>
+                      Pembangunan Gudang dan Ruang Kantor
+                      <button
+                        type="button"
+                        class="project-more text-gray-400 hover:text-white transition"
+                        data-title="Extrupack, Bekasi"
+                        data-category="Gudang & Ruang Kantor"
+                        data-description="Pembangunan Gudang dan Ruang Kantor"
+                        data-location="Kota Baru, Bekasi"
+                        data-image="assets/projects/JLM-Bogor.jpeg"
+                      >
+                        more
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Card 2 -->
-          <div class="overflow-hidden bg-brand-dark group">
-            <div class="overflow-hidden h-56">
-              <img
-                src="assets/projects/JLM-Bogor.jpeg"
-                alt="Cibinong, Kab Bogor"
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+
+          <button
+            id="highlightNext"
+            type="button"
+            aria-label="Berikutnya"
+            class="hidden md:flex absolute -right-5 lg:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
               />
-            </div>
-            <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">
-                CIBINONG, KAB BOGOR
-              </h3>
-              <p>
-                Pengaspalan di Area Parkir dan Area...<button
-                  type="button"
-                  class="project-more text-gray-400 hover:text-white transition"
-                  data-title="Cibinong, Kab Bogor"
-                  data-category="Area Komersial"
-                  data-description="Pengaspalan di Area Parkir dan Area Sekitar Gudang"
-                  data-location="Cibinong, Kabupaten Bogor"
-                  data-image="assets/projects/JLM-Bogor.jpeg"
-                >
-                  more
-                </button>
-              </p>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="overflow-hidden bg-brand-dark group">
-            <div class="overflow-hidden h-56">
-              <img
-                src="assets/projects/Umalas-Bali.jpg"
-                alt="Umalas, Bali"
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-              />
-            </div>
-            <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">UMALAS, BALI</h3>
-              <p>
-                Front Office Renovation Painting and Window Replace...<button
-                  type="button"
-                  class="project-more text-gray-400 hover:text-white transition"
-                  data-title="Umalas, Bali"
-                  data-category="Perkantoran"
-                  data-description="Front Office Renovation Painting and Window Replacement"
-                  data-location="Umalas, Bali"
-                  data-image="assets/projects/Umalas-Bali.jpg"
-                >
-                  more
-                </button>
-              </p>
-            </div>
+            </svg>
+          </button>
+
+          <div class="flex justify-center gap-2 mt-8">
+            <button
+              type="button"
+              class="highlight-dot w-2.5 h-2.5 rounded-full bg-white transition"
+              data-index="0"
+              aria-label="Halaman 1"
+            ></button>
+            <button
+              type="button"
+              class="highlight-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
+              data-index="1"
+              aria-label="Halaman 2"
+            ></button>
           </div>
         </div>
       </div>
@@ -525,12 +739,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="h-72 md:h-auto">
           <img
-            src="assets/images/Image4.jpg"
+            src="assets/images/Image-4.jpg"
             alt="Go-Mandor Regular"
             class="w-full h-full object-cover"
           />
         </div>
-        <div class="relative bg-brand-red flex items-center">
+        <div class="relative brand-gradient flex items-center">
           <div
             class="relative z-10 px-6 md:px-16 py-16 md:py-0 max-w-lg text-white"
           >
@@ -555,7 +769,7 @@
     </section>
 
     <!-- Go-Mandor PRIORITAS -->
-    <section class="bg-brand-red">
+    <section class="brand-gradient">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="flex items-center order-2 md:order-1">
           <div class="px-6 md:px-16 py-16 max-w-lg text-white">
@@ -586,7 +800,7 @@
     </section>
 
     <!-- STATISTIK -->
-    <section class="bg-brand-dark py-16 md:py-20">
+    <section class="statistik-bg py-16 md:py-20">
       <div class="max-w-7xl mx-auto px-4 md:px-8 text-center text-white">
         <h2 class="text-3xl md:text-5xl font-bold tracking-wide mb-12">
           STATISTIK
@@ -634,7 +848,7 @@
     </section>
 
     <!-- SUBSCRIBE -->
-    <section class="bg-brand-red py-16 md:py-20">
+    <section class="brand-gradient py-16 md:py-20">
       <div class="max-w-2xl mx-auto px-4 md:px-8 text-center text-white">
         <h2 class="text-3xl md:text-5xl font-bold tracking-wide mb-6">
           SUBSCRIBE
@@ -712,7 +926,15 @@
                 Kontak Kami
               </h4>
               <ul class="space-y-2 text-sm text-white">
-                <li>Alamat</li>
+                <li>
+                  <button
+                    id="alamatBtn"
+                    type="button"
+                    class="hover:text-brand-red transition"
+                  >
+                    Alamat
+                  </button>
+                </li>
                 <li>
                   <a
                     href="tel:+622129619596"
@@ -830,6 +1052,119 @@
       </div>
     </footer>
 
+    <!-- ALAMAT MODAL -->
+    <div
+      id="alamatModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="alamatBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-xl w-full h-fit my-auto">
+        <button
+          id="alamatClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div class="bg-white rounded-lg shadow-2xl p-6 md:p-8">
+          <h3
+            class="text-brand-dark text-xl md:text-2xl font-bold tracking-wide mb-1"
+          >
+            Pilih Lokasi
+          </h3>
+          <p class="text-sm text-gray-500 mb-6">
+            Pilih area untuk melihat lokasi kantor Go-Mandor di peta.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Jabodetabek%2C+Indonesia"
+              target="_blank"
+              class="group block rounded-lg overflow-hidden border border-gray-200 hover:border-brand-red transition"
+            >
+              <div class="h-32 md:h-40 w-full bg-gray-100 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=Jabodetabek,+Indonesia&output=embed"
+                  class="w-full h-full pointer-events-none"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Peta JABODETABEK"
+                ></iframe>
+              </div>
+              <div class="p-4 flex items-center justify-between">
+                <span
+                  class="font-bold text-brand-dark group-hover:text-brand-red transition"
+                  >JABODETABEK</span
+                >
+                <svg
+                  class="w-4 h-4 text-gray-400 group-hover:text-brand-red transition"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/n5fvzUa7tkE3UrqE9"
+              target="_blank"
+              class="group block rounded-lg overflow-hidden border border-gray-200 hover:border-brand-red transition"
+            >
+              <div class="h-32 md:h-40 w-full bg-gray-100 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=Bali,+Indonesia&output=embed"
+                  class="w-full h-full pointer-events-none"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Peta Bali"
+                ></iframe>
+              </div>
+              <div class="p-4 flex items-center justify-between">
+                <span
+                  class="font-bold text-brand-dark group-hover:text-brand-red transition"
+                  >BALI</span
+                >
+                <svg
+                  class="w-4 h-4 text-gray-400 group-hover:text-brand-red transition"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- CARA PESAN MODAL -->
     <div
       id="caraPesanModal"
@@ -858,7 +1193,7 @@
           </svg>
         </button>
         <img
-          src="assets/images/Cara-Order.jpg"
+          src="assets/images/Cara-Order-ID.jpg"
           alt="Cara Pesan"
           class="w-full h-auto rounded-lg shadow-2xl"
         />
@@ -1159,6 +1494,20 @@
       </div>
     </div>
 
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a
+      href="https://wa.me/6285214985827"
+      target="_blank"
+      aria-label="Hubungi kami via WhatsApp"
+      class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe57] shadow-lg flex items-center justify-center transition"
+    >
+      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 32 32">
+        <path
+          d="M16.004 3C9.377 3 4 8.373 4 15c0 2.386.7 4.61 1.91 6.484L4 29l7.68-1.87A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.75c-1.86 0-3.6-.5-5.1-1.36l-.365-.213-4.56 1.11 1.145-4.44-.238-.38A9.72 9.72 0 0 1 5.25 15c0-5.93 4.82-10.75 10.754-10.75S26.75 9.07 26.75 15 21.938 24.75 16.004 24.75Zm5.9-8.06c-.32-.16-1.9-.94-2.195-1.045-.294-.107-.51-.16-.723.16-.213.32-.83 1.045-1.018 1.26-.187.213-.375.24-.695.08-.32-.16-1.35-.498-2.573-1.588-.951-.848-1.594-1.895-1.78-2.215-.187-.32-.02-.492.14-.652.144-.144.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.026-.56-.08-.16-.723-1.744-.992-2.39-.26-.628-.526-.543-.723-.553-.187-.01-.4-.012-.615-.012-.213 0-.56.08-.853.4-.293.32-1.12 1.095-1.12 2.67 0 1.573 1.147 3.093 1.307 3.307.16.213 2.257 3.446 5.47 4.83.764.33 1.36.527 1.826.674.767.244 1.465.21 2.017.128.615-.092 1.9-.777 2.168-1.527.267-.75.267-1.393.187-1.527-.08-.133-.293-.213-.613-.373Z"
+        />
+      </svg>
+    </a>
+
     <script>
       const mobileMenuBtn = document.getElementById("mobileMenuBtn");
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
@@ -1196,6 +1545,31 @@
       mobileProyekToggle.addEventListener("click", () => {
         mobileProyekSubmenu.classList.toggle("hidden");
         mobileProyekChevron.classList.toggle("rotate-180");
+      });
+
+      const alamatModal = document.getElementById("alamatModal");
+      const openAlamat = () => {
+        alamatModal.classList.remove("hidden");
+        alamatModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeAlamat = () => {
+        alamatModal.classList.add("hidden");
+        alamatModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document
+        .getElementById("alamatBtn")
+        .addEventListener("click", openAlamat);
+      document
+        .getElementById("alamatClose")
+        .addEventListener("click", closeAlamat);
+      document
+        .getElementById("alamatBackdrop")
+        .addEventListener("click", closeAlamat);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeAlamat();
       });
 
       const caraPesanModal = document.getElementById("caraPesanModal");
@@ -1328,6 +1702,63 @@
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeProject();
       });
+
+      const highlightTrack = document.getElementById("highlightTrack");
+      const highlightSlides = highlightTrack.children;
+      const highlightDots = document.querySelectorAll(".highlight-dot");
+      const highlightPrevBtn = document.getElementById("highlightPrev");
+      const highlightNextBtn = document.getElementById("highlightNext");
+      let highlightIndex = 0;
+      let highlightTimer = null;
+
+      const renderHighlight = () => {
+        highlightTrack.style.transform = `translateX(-${highlightIndex * 100}%)`;
+        highlightDots.forEach((dot, i) => {
+          dot.classList.toggle("bg-white", i === highlightIndex);
+          dot.classList.toggle("bg-white/40", i !== highlightIndex);
+        });
+      };
+
+      const goToHighlight = (index) => {
+        highlightIndex =
+          (index + highlightSlides.length) % highlightSlides.length;
+        renderHighlight();
+      };
+
+      const startHighlightAutoSlide = () => {
+        clearInterval(highlightTimer);
+        highlightTimer = setInterval(() => {
+          goToHighlight(highlightIndex + 1);
+        }, 5000);
+      };
+
+      highlightPrevBtn.addEventListener("click", () => {
+        goToHighlight(highlightIndex - 1);
+        startHighlightAutoSlide();
+      });
+      highlightNextBtn.addEventListener("click", () => {
+        goToHighlight(highlightIndex + 1);
+        startHighlightAutoSlide();
+      });
+      highlightDots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          goToHighlight(Number(dot.dataset.index));
+          startHighlightAutoSlide();
+        });
+      });
+
+      renderHighlight();
+      startHighlightAutoSlide();
+
+      const heroSlides = document.querySelectorAll(".hero-slide");
+      let heroIndex = 0;
+      setInterval(() => {
+        heroSlides[heroIndex].classList.remove("opacity-100");
+        heroSlides[heroIndex].classList.add("opacity-0");
+        heroIndex = (heroIndex + 1) % heroSlides.length;
+        heroSlides[heroIndex].classList.remove("opacity-0");
+        heroSlides[heroIndex].classList.add("opacity-100");
+      }, 5000);
     </script>
   </body>
 </html>
