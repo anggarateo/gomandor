@@ -135,6 +135,71 @@
         "Manajemen tepat waktu, pengendalian biaya, hasil sesuai target.",
       "layanan.cta": "Pelajari lebih lanjut",
 
+      "p1.sub":
+        "Solusi Pemeliharaan dan Perbaikan untuk Semua Kebutuhan Properti Anda",
+      "p1.intro":
+        "Go-Mandor memahami bahwa setiap properti—baik rumah tinggal, kantor, maupun fasilitas komersial—membutuhkan perawatan rutin dan perbaikan tepat waktu untuk menjaga fungsionalitas serta nilai investasinya. Kami hadir sebagai mitra terpercaya Anda dalam menangani berbagai pekerjaan perawatan dan perbaikan dengan standar kualitas tinggi.",
+      "p1.list_heading": "Layanan Perawatan & Perbaikan Kami Meliputi:",
+      "p1.li1_label": "Perbaikan Bangunan",
+      "p1.li1_desc":
+        "Atap bocor, plafon, lantai, dinding, dan struktur bangunan lainnya.",
+      "p1.li2_label": "Perbaikan Kelistrikan",
+      "p1.li2_desc":
+        "Instalasi listrik, perbaikan saklar, stop kontak, dan panel listrik.",
+      "p1.li3_label": "Perbaikan Perpipaan",
+      "p1.li3_desc":
+        "Instalasi dan perbaikan pipa air, saluran pembuangan, serta sanitair.",
+      "p1.li4_label": "Perawatan Interior",
+      "p1.li4_desc":
+        "Pengecatan ulang, perbaikan furnitur, lantai kayu/parket, dan keramik.",
+      "p1.li5_label": "Perbaikan Eksterior",
+      "p1.li5_desc": "Pagar, kanopi, taman, dan fasilitas luar ruangan lainnya.",
+      "p1.li6_label": "Perawatan Berkala",
+      "p1.li6_desc":
+        "Servis rutin untuk mencegah kerusakan lebih lanjut dan memperpanjang usia bangunan.",
+      "p1.closing":
+        "Percayakan perawatan dan perbaikan properti Anda kepada Go-Mandor. Kami hadir untuk menjaga properti Anda tetap prima setiap saat.",
+
+      "p2.intro":
+        "Go-Mandor menyediakan layanan desain dan pembangunan terpadu untuk berbagai jenis properti, baik residensial maupun komersial. Kami menawarkan:",
+      "p2.li1_label": "Konsultasi Desain Gratis",
+      "p2.li1_desc":
+        "Diskusi konsep dan kebutuhan ruang Anda tanpa biaya awal.",
+      "p2.li2_label": "Perencanaan Matang",
+      "p2.li2_desc": "Penyusunan RAB, timeline, dan gambar kerja yang detail.",
+      "p2.li3_label": "Eksekusi Konstruksi",
+      "p2.li3_desc": "Pengerjaan oleh tenaga ahli dengan material berkualitas.",
+      "p2.li4_label": "Pengawasan Ketat",
+      "p2.li4_desc":
+        "Manajemen proyek yang memastikan kualitas, waktu, dan anggaran terkendali.",
+      "p2.li5_label": "Finishing Berkualitas",
+      "p2.li5_desc": "Hasil akhir yang rapi, estetis, dan tahan lama.",
+      "p2.closing":
+        "Percayakan desain dan pembangunan properti Anda kepada Go-Mandor, mitra terpercaya untuk mewujudkan ruang yang nyaman, aman, dan bernilai tinggi.",
+
+      "p3.p1":
+        "Go-Mandor hadir sebagai mitra terpercaya dalam mengelola setiap proyek konstruksi dan renovasi Anda. Dengan pendekatan manajemen proyek yang terstruktur dan profesional, kami memastikan setiap tahapan pekerjaan berjalan sesuai rencana, tepat waktu, dan sesuai anggaran.",
+      "p3.p2":
+        "Tim manajemen proyek Go-Mandor bertanggung jawab penuh atas koordinasi lapangan, pengawasan mutu, pengendalian biaya, serta komunikasi yang transparan antara klien dan tim teknis. Kami percaya bahwa keberhasilan sebuah proyek tidak hanya diukur dari hasil akhir, tetapi juga dari proses yang terkelola dengan baik—mulai dari perencanaan awal, eksekusi, hingga serah terima akhir.",
+      "p3.p3":
+        "Dengan pengalaman menangani berbagai skala proyek—dari renovasi rumah tinggal hingga pembangunan fasilitas komersial—Go-Mandor menjamin setiap detail diperhatikan, setiap risiko diantisipasi, dan setiap keputusan diambil dengan pertimbangan matang untuk kepuasan Anda.",
+      "p3.list_heading": "Layanan Manajemen Proyek Go-Mandor meliputi:",
+      "p3.li1_label": "Perencanaan & Persiapan",
+      "p3.li1_desc": "Survei lokasi, penyusunan RAB, dan perencanaan timeline.",
+      "p3.li2_label": "Koordinasi Tim",
+      "p3.li2_desc": "Pengelolaan tenaga kerja, subkontraktor, dan jadwal kerja.",
+      "p3.li3_label": "Pengawasan Mutu",
+      "p3.li3_desc":
+        "Pemeriksaan material dan kualitas pengerjaan secara berkala.",
+      "p3.li4_label": "Pengendalian Biaya",
+      "p3.li4_desc": "Monitoring anggaran untuk mencegah pembengkakan biaya.",
+      "p3.li5_label": "Komunikasi Klien",
+      "p3.li5_desc": "Laporan progres rutin dan sesi konsultasi.",
+      "p3.li6_label": "Serah Terima & Pemeliharaan",
+      "p3.li6_desc": "Finalisasi proyek dan pendampingan pasca-pekerjaan.",
+      "p3.closing":
+        "Percayakan proyek Anda kepada Go-Mandor, dan nikmati proses pembangunan yang terencana, terukur, dan terpercaya.",
+
       "regular.title": "Go-Mandor Regular",
       "regular.desc":
         "Perbaikan dan renovasi rumah jadi mudah. Mulai dari AC bocor, lampu mati, wastafel mampet, ganti keramik, hingga cat tembok dan lain sebagainya.",
@@ -405,6 +470,70 @@
       "layanan.card3.desc":
         "On-time management, cost control, and results that meet your targets.",
       "layanan.cta": "Learn More",
+
+      "p1.sub": "Maintenance and Repair Solutions for All Your Property Needs",
+      "p1.intro":
+        "Go-Mandor understands that every property—whether a home, office, or commercial facility—needs routine maintenance and timely repairs to preserve its functionality and investment value. We're your trusted partner for handling maintenance and repair work to a high standard of quality.",
+      "p1.list_heading": "Our Maintenance & Repair Services Include:",
+      "p1.li1_label": "Building Repairs",
+      "p1.li1_desc":
+        "Roof leaks, ceilings, flooring, walls, and other structural elements.",
+      "p1.li2_label": "Electrical Repairs",
+      "p1.li2_desc":
+        "Wiring installation, switch and outlet repair, and electrical panels.",
+      "p1.li3_label": "Plumbing Repairs",
+      "p1.li3_desc":
+        "Installation and repair of water pipes, drainage, and sanitary fixtures.",
+      "p1.li4_label": "Interior Maintenance",
+      "p1.li4_desc":
+        "Repainting, furniture repair, wood/parquet flooring, and tiling.",
+      "p1.li5_label": "Exterior Repairs",
+      "p1.li5_desc": "Fences, canopies, gardens, and other outdoor facilities.",
+      "p1.li6_label": "Routine Maintenance",
+      "p1.li6_desc":
+        "Regular servicing to prevent further damage and extend the building's lifespan.",
+      "p1.closing":
+        "Trust Go-Mandor with your property's maintenance and repairs. We're here to keep your property in top condition, every time.",
+
+      "p2.intro":
+        "Go-Mandor provides integrated design and construction services for all types of properties, both residential and commercial. We offer:",
+      "p2.li1_label": "Free Design Consultation",
+      "p2.li1_desc":
+        "Discuss your concept and space needs at no upfront cost.",
+      "p2.li2_label": "Thorough Planning",
+      "p2.li2_desc": "Detailed budgeting (RAB), timeline, and working drawings.",
+      "p2.li3_label": "Construction Execution",
+      "p2.li3_desc":
+        "Work carried out by skilled professionals using quality materials.",
+      "p2.li4_label": "Strict Supervision",
+      "p2.li4_desc":
+        "Project management that keeps quality, time, and budget under control.",
+      "p2.li5_label": "Quality Finishing",
+      "p2.li5_desc": "A tidy, aesthetic, and long-lasting final result.",
+      "p2.closing":
+        "Trust Go-Mandor with your property's design and construction—a reliable partner for creating spaces that are comfortable, safe, and high in value.",
+
+      "p3.p1":
+        "Go-Mandor is your trusted partner in managing every construction and renovation project. With a structured, professional project management approach, we ensure every stage of work runs on plan, on time, and within budget.",
+      "p3.p2":
+        "Go-Mandor's project management team takes full responsibility for on-site coordination, quality supervision, cost control, and transparent communication between clients and the technical team. We believe a project's success is measured not only by its final result, but also by a well-managed process—from initial planning and execution through to final handover.",
+      "p3.p3":
+        "With experience handling projects of every scale—from home renovations to commercial facility construction—Go-Mandor ensures every detail is attended to, every risk is anticipated, and every decision is carefully considered for your satisfaction.",
+      "p3.list_heading": "Go-Mandor's Project Management Services Include:",
+      "p3.li1_label": "Planning & Preparation",
+      "p3.li1_desc": "Site survey, budgeting (RAB), and timeline planning.",
+      "p3.li2_label": "Team Coordination",
+      "p3.li2_desc": "Management of labor, subcontractors, and work schedules.",
+      "p3.li3_label": "Quality Supervision",
+      "p3.li3_desc": "Regular inspection of materials and workmanship.",
+      "p3.li4_label": "Cost Control",
+      "p3.li4_desc": "Budget monitoring to prevent cost overruns.",
+      "p3.li5_label": "Client Communication",
+      "p3.li5_desc": "Regular progress reports and consultation sessions.",
+      "p3.li6_label": "Handover & Maintenance",
+      "p3.li6_desc": "Project finalization and post-work support.",
+      "p3.closing":
+        "Trust your project to Go-Mandor, and enjoy a construction process that's well-planned, measurable, and reliable.",
 
       "regular.title": "Go-Mandor Regular",
       "regular.desc":

@@ -774,13 +774,14 @@
               Solusi perawatan dan perbaikan terpadu untuk memastikan
               operasional Anda tetap optimal.
             </p>
-            <a
-              href="#"
+            <button
+              type="button"
+              id="layananBtn1"
               class="mt-auto w-full bg-brand-dark hover:bg-black transition text-sm font-semibold px-5 py-2.5"
               data-i18n="layanan.cta"
             >
               Pelajari lebih lanjut
-            </a>
+            </button>
           </div>
           <!-- Layanan 2 -->
           <div
@@ -804,13 +805,14 @@
               Dari konsep hingga konstruksi, kami hadirkan solusi yang terukur
               dan tahan lama.
             </p>
-            <a
-              href="#"
+            <button
+              type="button"
+              id="layananBtn2"
               class="mt-auto w-full bg-brand-dark hover:bg-black transition text-sm font-semibold px-5 py-2.5"
               data-i18n="layanan.cta"
             >
               Pelajari lebih lanjut
-            </a>
+            </button>
           </div>
           <!-- Layanan 3 -->
           <div
@@ -833,13 +835,14 @@
             >
               Manajemen tepat waktu, pengendalian biaya, hasil sesuai target.
             </p>
-            <a
-              href="#"
+            <button
+              type="button"
+              id="layananBtn3"
               class="mt-auto w-full bg-brand-dark hover:bg-black transition text-sm font-semibold px-5 py-2.5"
               data-i18n="layanan.cta"
             >
               Pelajari lebih lanjut
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -1589,6 +1592,376 @@
       </div>
     </div>
 
+    <!-- LAYANAN 1: PERAWATAN & PERBAIKAN MODAL -->
+    <div
+      id="layananModal1"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="layananBackdrop1" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-3xl w-full h-fit my-auto">
+        <button
+          id="layananClose1"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+            data-i18n="layanan.card1.title"
+          >
+            PERAWATAN &amp; PERBAIKAN
+          </h3>
+          <p class="font-bold text-brand-dark mb-4" data-i18n="p1.sub">
+            Solusi Pemeliharaan dan Perbaikan untuk Semua Kebutuhan Properti
+            Anda
+          </p>
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mb-6"
+            data-i18n="p1.intro"
+          >
+            Go-Mandor memahami bahwa setiap properti—baik rumah tinggal,
+            kantor, maupun fasilitas komersial—membutuhkan perawatan rutin dan
+            perbaikan tepat waktu untuk menjaga fungsionalitas serta nilai
+            investasinya. Kami hadir sebagai mitra terpercaya Anda dalam
+            menangani berbagai pekerjaan perawatan dan perbaikan dengan
+            standar kualitas tinggi.
+          </p>
+
+          <h4
+            class="font-bold text-brand-dark mb-3"
+            data-i18n="p1.list_heading"
+          >
+            Layanan Perawatan &amp; Perbaikan Kami Meliputi:
+          </h4>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
+          >
+            <li>
+              <strong class="text-brand-dark" data-i18n="p1.li1_label"
+                >Perbaikan Bangunan</strong
+              >: <span data-i18n="p1.li1_desc"
+                >Atap bocor, plafon, lantai, dinding, dan struktur bangunan
+                lainnya.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p1.li2_label"
+                >Perbaikan Kelistrikan</strong
+              >: <span data-i18n="p1.li2_desc"
+                >Instalasi listrik, perbaikan saklar, stop kontak, dan panel
+                listrik.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p1.li3_label"
+                >Perbaikan Perpipaan</strong
+              >: <span data-i18n="p1.li3_desc"
+                >Instalasi dan perbaikan pipa air, saluran pembuangan, serta
+                sanitair.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p1.li4_label"
+                >Perawatan Interior</strong
+              >: <span data-i18n="p1.li4_desc"
+                >Pengecatan ulang, perbaikan furnitur, lantai kayu/parket, dan
+                keramik.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p1.li5_label"
+                >Perbaikan Eksterior</strong
+              >: <span data-i18n="p1.li5_desc"
+                >Pagar, kanopi, taman, dan fasilitas luar ruangan
+                lainnya.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p1.li6_label"
+                >Perawatan Berkala</strong
+              >: <span data-i18n="p1.li6_desc"
+                >Servis rutin untuk mencegah kerusakan lebih lanjut dan
+                memperpanjang usia bangunan.</span
+              >
+            </li>
+          </ul>
+
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed"
+            data-i18n="p1.closing"
+          >
+            Percayakan perawatan dan perbaikan properti Anda kepada Go-Mandor.
+            Kami hadir untuk menjaga properti Anda tetap prima setiap saat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYANAN 2: DESAIN & PEMBANGUNAN MODAL -->
+    <div
+      id="layananModal2"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="layananBackdrop2" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-3xl w-full h-fit my-auto">
+        <button
+          id="layananClose2"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-4"
+            data-i18n="layanan.card2.title"
+          >
+            DESAIN &amp; PEMBANGUNAN
+          </h3>
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mb-6"
+            data-i18n="p2.intro"
+          >
+            Go-Mandor menyediakan layanan desain dan pembangunan terpadu untuk
+            berbagai jenis properti, baik residensial maupun komersial. Kami
+            menawarkan:
+          </p>
+
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed space-y-1"
+          >
+            <li>
+              <strong class="text-brand-dark" data-i18n="p2.li1_label"
+                >Konsultasi Desain Gratis</strong
+              >
+              – <span data-i18n="p2.li1_desc"
+                >Diskusi konsep dan kebutuhan ruang Anda tanpa biaya
+                awal.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p2.li2_label"
+                >Perencanaan Matang</strong
+              >
+              – <span data-i18n="p2.li2_desc"
+                >Penyusunan RAB, timeline, dan gambar kerja yang detail.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p2.li3_label"
+                >Eksekusi Konstruksi</strong
+              >
+              – <span data-i18n="p2.li3_desc"
+                >Pengerjaan oleh tenaga ahli dengan material berkualitas.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p2.li4_label"
+                >Pengawasan Ketat</strong
+              >
+              – <span data-i18n="p2.li4_desc"
+                >Manajemen proyek yang memastikan kualitas, waktu, dan
+                anggaran terkendali.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p2.li5_label"
+                >Finishing Berkualitas</strong
+              >
+              – <span data-i18n="p2.li5_desc"
+                >Hasil akhir yang rapi, estetis, dan tahan lama.</span
+              >
+            </li>
+          </ul>
+
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mt-6"
+            data-i18n="p2.closing"
+          >
+            Percayakan desain dan pembangunan properti Anda kepada Go-Mandor,
+            mitra terpercaya untuk mewujudkan ruang yang nyaman, aman, dan
+            bernilai tinggi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYANAN 3: PROJECT MANAGEMENT MODAL -->
+    <div
+      id="layananModal3"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="layananBackdrop3" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-3xl w-full h-fit my-auto">
+        <button
+          id="layananClose3"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-4"
+            data-i18n="layanan.card3.title"
+          >
+            PROJECT MANAGEMENT
+          </h3>
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mb-4"
+            data-i18n="p3.p1"
+          >
+            Go-Mandor hadir sebagai mitra terpercaya dalam mengelola setiap
+            proyek konstruksi dan renovasi Anda. Dengan pendekatan manajemen
+            proyek yang terstruktur dan profesional, kami memastikan setiap
+            tahapan pekerjaan berjalan sesuai rencana, tepat waktu, dan sesuai
+            anggaran.
+          </p>
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mb-4"
+            data-i18n="p3.p2"
+          >
+            Tim manajemen proyek Go-Mandor bertanggung jawab penuh atas
+            koordinasi lapangan, pengawasan mutu, pengendalian biaya, serta
+            komunikasi yang transparan antara klien dan tim teknis. Kami
+            percaya bahwa keberhasilan sebuah proyek tidak hanya diukur dari
+            hasil akhir, tetapi juga dari proses yang terkelola dengan
+            baik—mulai dari perencanaan awal, eksekusi, hingga serah terima
+            akhir.
+          </p>
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mb-6"
+            data-i18n="p3.p3"
+          >
+            Dengan pengalaman menangani berbagai skala proyek—dari renovasi
+            rumah tinggal hingga pembangunan fasilitas komersial—Go-Mandor
+            menjamin setiap detail diperhatikan, setiap risiko diantisipasi,
+            dan setiap keputusan diambil dengan pertimbangan matang untuk
+            kepuasan Anda.
+          </p>
+
+          <h4
+            class="font-bold text-brand-dark mb-3"
+            data-i18n="p3.list_heading"
+          >
+            Layanan Manajemen Proyek Go-Mandor meliputi:
+          </h4>
+          <ul
+            class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed space-y-1"
+          >
+            <li>
+              <strong class="text-brand-dark" data-i18n="p3.li1_label"
+                >Perencanaan &amp; Persiapan</strong
+              >
+              – <span data-i18n="p3.li1_desc"
+                >Survei lokasi, penyusunan RAB, dan perencanaan timeline.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p3.li2_label"
+                >Koordinasi Tim</strong
+              >
+              – <span data-i18n="p3.li2_desc"
+                >Pengelolaan tenaga kerja, subkontraktor, dan jadwal
+                kerja.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p3.li3_label"
+                >Pengawasan Mutu</strong
+              >
+              – <span data-i18n="p3.li3_desc"
+                >Pemeriksaan material dan kualitas pengerjaan secara
+                berkala.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p3.li4_label"
+                >Pengendalian Biaya</strong
+              >
+              – <span data-i18n="p3.li4_desc"
+                >Monitoring anggaran untuk mencegah pembengkakan biaya.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p3.li5_label"
+                >Komunikasi Klien</strong
+              >
+              – <span data-i18n="p3.li5_desc"
+                >Laporan progres rutin dan sesi konsultasi.</span
+              >
+            </li>
+            <li>
+              <strong class="text-brand-dark" data-i18n="p3.li6_label"
+                >Serah Terima &amp; Pemeliharaan</strong
+              >
+              – <span data-i18n="p3.li6_desc"
+                >Finalisasi proyek dan pendampingan pasca-pekerjaan.</span
+              >
+            </li>
+          </ul>
+
+          <p
+            class="text-sm md:text-base text-gray-600 leading-relaxed mt-6"
+            data-i18n="p3.closing"
+          >
+            Percayakan proyek Anda kepada Go-Mandor, dan nikmati proses
+            pembangunan yang terencana, terukur, dan terpercaya.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- PROJECT DETAIL MODAL -->
     <div
       id="projectModal"
@@ -1874,6 +2247,32 @@
         .addEventListener("click", closeTentang);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeTentang();
+      });
+
+      [1, 2, 3].forEach((n) => {
+        const modal = document.getElementById(`layananModal${n}`);
+        const open = () => {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+          document.body.classList.add("overflow-hidden");
+        };
+        const close = () => {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+          document.body.classList.remove("overflow-hidden");
+        };
+        document
+          .getElementById(`layananBtn${n}`)
+          .addEventListener("click", open);
+        document
+          .getElementById(`layananClose${n}`)
+          .addEventListener("click", close);
+        document
+          .getElementById(`layananBackdrop${n}`)
+          .addEventListener("click", close);
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") close();
+        });
       });
 
       const projectModal = document.getElementById("projectModal");
