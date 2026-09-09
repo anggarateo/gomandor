@@ -52,13 +52,13 @@
       "project.osteria.desc": "Pembangunan Restoran Baru",
       "project.osteria.location": "Uluwatu, Bali",
 
-      "project.junsei.title": "JUNSEI, JAKARTA",
+      "project.junsei.title": "Restoran, JAKARTA",
       "project.junsei.short": "Pembangunan Restoran Baru",
       "project.junsei.category": "Restoran",
       "project.junsei.desc": "Pembangunan Restoran Baru",
       "project.junsei.location": "Senopati, Jakarta",
 
-      "project.extrupack.title": "EXTRUPACK, BEKASI",
+      "project.extrupack.title": "Gudang & Ruang Kantor, BEKASI",
       "project.extrupack.short": "Pembangunan Gudang dan Ruang Kantor",
       "project.extrupack.category": "Gudang & Ruang Kantor",
       "project.extrupack.desc": "Pembangunan Gudang dan Ruang Kantor",
@@ -153,7 +153,8 @@
       "p1.li4_desc":
         "Pengecatan ulang, perbaikan furnitur, lantai kayu/parket, dan keramik.",
       "p1.li5_label": "Perbaikan Eksterior",
-      "p1.li5_desc": "Pagar, kanopi, taman, dan fasilitas luar ruangan lainnya.",
+      "p1.li5_desc":
+        "Pagar, kanopi, taman, dan fasilitas luar ruangan lainnya.",
       "p1.li6_label": "Perawatan Berkala",
       "p1.li6_desc":
         "Servis rutin untuk mencegah kerusakan lebih lanjut dan memperpanjang usia bangunan.",
@@ -187,7 +188,8 @@
       "p3.li1_label": "Perencanaan & Persiapan",
       "p3.li1_desc": "Survei lokasi, penyusunan RAB, dan perencanaan timeline.",
       "p3.li2_label": "Koordinasi Tim",
-      "p3.li2_desc": "Pengelolaan tenaga kerja, subkontraktor, dan jadwal kerja.",
+      "p3.li2_desc":
+        "Pengelolaan tenaga kerja, subkontraktor, dan jadwal kerja.",
       "p3.li3_label": "Pengawasan Mutu",
       "p3.li3_desc":
         "Pemeriksaan material dan kualitas pengerjaan secara berkala.",
@@ -388,13 +390,13 @@
       "project.osteria.desc": "New Restaurant Construction",
       "project.osteria.location": "Uluwatu, Bali",
 
-      "project.junsei.title": "JUNSEI, JAKARTA",
+      "project.junsei.title": "Restoran, JAKARTA",
       "project.junsei.short": "New Restaurant Construction",
       "project.junsei.category": "Restaurant",
       "project.junsei.desc": "New Restaurant Construction",
       "project.junsei.location": "Senopati, Jakarta",
 
-      "project.extrupack.title": "EXTRUPACK, BEKASI",
+      "project.extrupack.title": "Gudang & Ruang Kantor, BEKASI",
       "project.extrupack.short": "Warehouse and Office Space Construction",
       "project.extrupack.category": "Warehouse & Office Space",
       "project.extrupack.desc": "Warehouse and Office Space Construction",
@@ -498,10 +500,10 @@
       "p2.intro":
         "Go-Mandor provides integrated design and construction services for all types of properties, both residential and commercial. We offer:",
       "p2.li1_label": "Free Design Consultation",
-      "p2.li1_desc":
-        "Discuss your concept and space needs at no upfront cost.",
+      "p2.li1_desc": "Discuss your concept and space needs at no upfront cost.",
       "p2.li2_label": "Thorough Planning",
-      "p2.li2_desc": "Detailed budgeting (RAB), timeline, and working drawings.",
+      "p2.li2_desc":
+        "Detailed budgeting (RAB), timeline, and working drawings.",
       "p2.li3_label": "Construction Execution",
       "p2.li3_desc":
         "Work carried out by skilled professionals using quality materials.",
