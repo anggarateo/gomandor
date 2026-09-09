@@ -21,9 +21,9 @@
       "proyek.heading": "PROYEK KAMI",
       "proyek.intro":
         "Kami mendokumentasikan setiap proyek dari awal hingga akhir. Mencakup proses pengerjaan dan hasil akhir di berbagai lokasi, ini sebagai bentuk profesionalisme dan integritas kami.",
-      "proyek.more": "more",
+      "proyek.more": "lebih banyak",
 
-      "project.yuki.title": "RESTORAN, UBUD",
+      "project.yuki.title": "YUKI, UBUD",
       "project.yuki.short":
         "Pembangunan Restaurant: Struktur, Arsitektur, MEP...",
       "project.yuki.category": "Restoran",
@@ -39,28 +39,28 @@
         "Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan Furniture",
       "project.resto.location": "Sanur, Bali",
 
-      "project.gastro.title": "BAR & LOUNGE, CANGGU",
+      "project.gastro.title": "GASTRO, CANGGU",
       "project.gastro.short": "Pembangunan Bar & Lounge: Arsitektur, MEP...",
       "project.gastro.category": "Bar & Lounge",
       "project.gastro.desc":
         "Pembangunan Bar & Lounge: Pekerjaan Arsitektur, MEP, dan Furniture",
       "project.gastro.location": "Canggu, Bali",
 
-      "project.osteria.title": "RESTORAN, ULUWATU",
+      "project.osteria.title": "OSTERIA, ULUWATU",
       "project.osteria.short": "Pembangunan Restoran Baru",
       "project.osteria.category": "Restoran",
       "project.osteria.desc": "Pembangunan Restoran Baru",
       "project.osteria.location": "Uluwatu, Bali",
 
-      "project.junsei.title": "RESTORAN, JAKARTA",
+      "project.junsei.title": "JUNSEI, JAKARTA",
       "project.junsei.short": "Pembangunan Restoran Baru",
       "project.junsei.category": "Restoran",
       "project.junsei.desc": "Pembangunan Restoran Baru",
       "project.junsei.location": "Senopati, Jakarta",
 
-      "project.extrupack.title": "GUDANG & RUANG KANTOR, BEKASI",
+      "project.extrupack.title": "EXTRUPACK, BEKASI",
       "project.extrupack.short": "Pembangunan Gudang dan Ruang Kantor",
-      "project.extrupack.category": "GUDANG & RUANG KANTOR",
+      "project.extrupack.category": "Gudang & Ruang Kantor",
       "project.extrupack.desc": "Pembangunan Gudang dan Ruang Kantor",
       "project.extrupack.location": "Kota Baru, Bekasi",
 
@@ -361,7 +361,7 @@
         "We document every project from start to finish. Covering the work process and final results across various locations, as a form of our professionalism and integrity.",
       "proyek.more": "more",
 
-      "project.yuki.title": "RESTORAN, UBUD",
+      "project.yuki.title": "YUKI, UBUD",
       "project.yuki.short":
         "Restaurant Construction: Structure, Architecture, MEP...",
       "project.yuki.category": "Restaurant",
@@ -377,26 +377,26 @@
         "Restaurant Construction: Structural, Architecture, MEP, and Furniture Works",
       "project.resto.location": "Sanur, Bali",
 
-      "project.gastro.title": "BAR & LOUNGE, CANGGU",
+      "project.gastro.title": "GASTRO, CANGGU",
       "project.gastro.short": "Bar & Lounge Construction: Architecture, MEP...",
       "project.gastro.category": "Bar & Lounge",
       "project.gastro.desc":
         "Bar & Lounge Construction: Architecture, MEP, and Furniture Works",
       "project.gastro.location": "Canggu, Bali",
 
-      "project.osteria.title": "RESTORAN, ULUWATU",
+      "project.osteria.title": "OSTERIA, ULUWATU",
       "project.osteria.short": "New Restaurant Construction",
       "project.osteria.category": "Restaurant",
       "project.osteria.desc": "New Restaurant Construction",
       "project.osteria.location": "Uluwatu, Bali",
 
-      "project.junsei.title": "RESTORAN, JAKARTA",
+      "project.junsei.title": "JUNSEI, JAKARTA",
       "project.junsei.short": "New Restaurant Construction",
       "project.junsei.category": "Restaurant",
       "project.junsei.desc": "New Restaurant Construction",
       "project.junsei.location": "Senopati, Jakarta",
 
-      "project.extrupack.title": "GUDANG & RUANG KANTOR, BEKASI",
+      "project.extrupack.title": "EXTRUPACK, BEKASI",
       "project.extrupack.short": "Warehouse and Office Space Construction",
       "project.extrupack.category": "Warehouse & Office Space",
       "project.extrupack.desc": "Warehouse and Office Space Construction",
@@ -769,6 +769,16 @@
       var span = btn.previousElementSibling;
       if (span && span.classList.contains("project-short-text")) {
         span.textContent = btn.getAttribute("data-description") || "";
+      }
+
+      var card = btn.closest(".project-card");
+      var heading = card ? card.querySelector("h3") : null;
+      if (heading) {
+        heading.textContent = btn.getAttribute("data-title") || "";
+      }
+      var img = card ? card.querySelector("img") : null;
+      if (img) {
+        img.setAttribute("alt", btn.getAttribute("data-title") || "");
       }
     });
 
