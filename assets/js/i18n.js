@@ -40,8 +40,7 @@
       "project.resto.location": "Sanur, Bali",
 
       "project.gastro.title": "GASTRO, CANGGU",
-      "project.gastro.short":
-        "Pembangunan Bar & Lounge: Arsitektur, MEP...",
+      "project.gastro.short": "Pembangunan Bar & Lounge: Arsitektur, MEP...",
       "project.gastro.category": "Bar & Lounge",
       "project.gastro.desc":
         "Pembangunan Bar & Lounge: Pekerjaan Arsitektur, MEP, dan Furniture",
@@ -150,7 +149,8 @@
       "footer.ikuti_kami": "Ikuti Kami",
 
       "alamat.title": "Pilih Lokasi",
-      "alamat.desc": "Pilih area untuk melihat lokasi kantor Go-Mandor di peta.",
+      "alamat.desc":
+        "Pilih area untuk melihat lokasi kantor Go-Mandor di peta.",
       "alamat.jabodetabek": "JABODETABEK",
       "alamat.bali": "BALI",
 
@@ -250,7 +250,7 @@
       "nav.cara_pesan": "HOW TO ORDER",
       "nav.testimoni": "TESTIMONIALS",
 
-      "hero.title": "Your Trusted Contractor",
+      "hero.title": "Your Realiable Contractor",
       "hero.desc":
         "A complete solution for construction, renovation, and property maintenance; carried out professionally, systematically, and on time.",
       "hero.cta": "Learn More",
@@ -277,8 +277,7 @@
       "project.resto.location": "Sanur, Bali",
 
       "project.gastro.title": "GASTRO, CANGGU",
-      "project.gastro.short":
-        "Bar & Lounge Construction: Architecture, MEP...",
+      "project.gastro.short": "Bar & Lounge Construction: Architecture, MEP...",
       "project.gastro.category": "Bar & Lounge",
       "project.gastro.desc":
         "Bar & Lounge Construction: Architecture, MEP, and Furniture Works",
@@ -383,11 +382,13 @@
       "footer.care": "Go-Mandor Care",
       "footer.syarat": "Terms and Conditions",
       "footer.kebijakan": "Privacy Policy",
-      "footer.download_text": "Open the app by scanning the QR code or tapping a button:",
+      "footer.download_text":
+        "Open the app by scanning the QR code or tapping a button:",
       "footer.ikuti_kami": "Follow Us",
 
       "alamat.title": "Choose a Location",
-      "alamat.desc": "Choose an area to see the Go-Mandor office location on the map.",
+      "alamat.desc":
+        "Choose an area to see the Go-Mandor office location on the map.",
       "alamat.jabodetabek": "JABODETABEK",
       "alamat.bali": "BALI",
 
@@ -510,9 +511,11 @@
 
     var caraOrderSrc = translations[lang]["cara_order.image"];
     if (caraOrderSrc) {
-      document.querySelectorAll("[data-i18n-src='cara_order']").forEach(function (el) {
-        el.setAttribute("src", caraOrderSrc);
-      });
+      document
+        .querySelectorAll("[data-i18n-src='cara_order']")
+        .forEach(function (el) {
+          el.setAttribute("src", caraOrderSrc);
+        });
     }
 
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
