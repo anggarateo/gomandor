@@ -765,6 +765,26 @@
           btn.getAttribute("data-location-id") || "",
         );
       }
+
+      var span = btn.previousElementSibling;
+      if (span && span.classList.contains("project-short-text")) {
+        span.textContent = btn.getAttribute("data-description") || "";
+      }
+    });
+
+    updateMoreButtonsVisibility();
+  }
+
+  function updateMoreButtonsVisibility() {
+    document.querySelectorAll(".project-short-text").forEach(function (span) {
+      var btn = span.nextElementSibling;
+      if (!btn || !btn.classList.contains("project-more")) return;
+      if (!span.classList.contains("line-clamp-2")) {
+        btn.classList.add("hidden");
+        return;
+      }
+      var isOverflowing = span.scrollHeight - span.clientHeight > 1;
+      btn.classList.toggle("hidden", !isOverflowing);
     });
   }
 
@@ -782,6 +802,12 @@
       btn.addEventListener("click", function () {
         setLang(btn.getAttribute("data-lang"));
       });
+    });
+
+    var resizeTimer;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(updateMoreButtonsVisibility, 150);
     });
   });
 
