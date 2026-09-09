@@ -945,17 +945,28 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
           <div class="text-white">
-            <p class="text-4xl md:text-5xl font-bold mb-2">350+</p>
+            <p class="text-4xl md:text-5xl font-bold mb-2">
+              <span class="counter" data-count-to="350">0</span>+
+            </p>
             <p class="md:text-2xl" data-i18n="statistik.label1">Tenaga Ahli</p>
           </div>
           <div class="text-white">
-            <p class="text-4xl md:text-5xl font-bold mb-2">1.300+</p>
+            <p class="text-4xl md:text-5xl font-bold mb-2">
+              <span
+                class="counter"
+                data-count-to="1300"
+                data-count-format="id"
+                >0</span
+              >+
+            </p>
             <p class="md:text-2xl" data-i18n="statistik.label2">
               Proyek Selesai
             </p>
           </div>
           <div class="text-white">
-            <p class="text-4xl md:text-5xl font-bold mb-2">500+</p>
+            <p class="text-4xl md:text-5xl font-bold mb-2">
+              <span class="counter" data-count-to="500">0</span>+
+            </p>
             <p class="md:text-2xl" data-i18n="statistik.label3">
               Dipercaya Klien
             </p>
@@ -1994,6 +2005,41 @@
         heroSlides[heroIndex].classList.remove("opacity-0");
         heroSlides[heroIndex].classList.add("opacity-100");
       }, 5000);
+
+      const counters = document.querySelectorAll(".counter");
+      const formatCount = (value, format) =>
+        format === "id" ? value.toLocaleString("id-ID") : String(value);
+
+      const runCounter = (el) => {
+        const target = parseInt(el.dataset.countTo, 10) || 0;
+        const format = el.dataset.countFormat || "plain";
+        const duration = 1500;
+        const startTime = performance.now();
+
+        const tick = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const value = Math.round(target * eased);
+          el.textContent = formatCount(value, format);
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+
+      if (counters.length) {
+        const counterObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                runCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        counters.forEach((el) => counterObserver.observe(el));
+      }
     </script>
   </body>
 </html>
