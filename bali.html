@@ -6,6 +6,7 @@
     <title>Go-Mandor | Kontraktor Andalan Anda</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo/Logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/i18n.js" defer></script>
     <script>
       tailwind.config = {
         theme: {
@@ -121,13 +122,13 @@
           class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white"
         >
           <a href="index.html#beranda" class="hover:text-brand-red transition"
-            >BERANDA</a
+            ><span data-i18n="nav.beranda">BERANDA</span></a
           >
           <div class="relative group">
             <button
               class="flex items-center gap-1 hover:text-brand-red transition"
             >
-              PROYEK KAMI
+              <span data-i18n="nav.proyek_kami">PROYEK KAMI</span>
               <svg
                 class="w-3 h-3 mt-0.5"
                 fill="none"
@@ -149,37 +150,38 @@
                 <a
                   href="jabodetabek.html"
                   class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
-                  >Proyek JABODETABEK</a
+                  ><span data-i18n="nav.proyek_jabodetabek">Proyek JABODETABEK</span></a
                 >
               </div>
               <div class="bg-white shadow-lg">
                 <a
                   href="bali.html"
                   class="block px-4 py-2 text-sm text-brand-dark hover:bg-gray-50 hover:text-brand-red"
-                  >Proyek Bali</a
+                  ><span data-i18n="nav.proyek_bali">Proyek Bali</span></a
                 >
               </div>
             </div>
           </div>
           <a href="index.html#layanan" class="hover:text-brand-red transition"
-            >LAYANAN</a
+            ><span data-i18n="nav.layanan">LAYANAN</span></a
           >
           <button
             id="caraPesanBtn"
             type="button"
             class="hover:text-brand-red transition"
           >
-            CARA PESAN
+            <span data-i18n="nav.cara_pesan">CARA PESAN</span>
           </button>
           <a href="review.html" class="hover:text-brand-red transition"
-            >TESTIMONI</a
+            ><span data-i18n="nav.testimoni">TESTIMONI</span></a
           >
         </nav>
 
         <div class="hidden lg:flex items-center gap-3">
           <button
             title="Bahasa Indonesia"
-            class="flex items-center gap-2 w-full text-sm text-brand-dark"
+            data-lang="id"
+            class="lang-btn flex items-center gap-2 w-full text-sm text-brand-dark rounded-full transition"
           >
             <img
               src="assets/icons/ID-Flag.webp"
@@ -190,7 +192,8 @@
 
           <button
             title="English"
-            class="flex items-center gap-2 w-full text-sm text-brand-dark"
+            data-lang="en"
+            class="lang-btn flex items-center gap-2 w-full text-sm text-brand-dark rounded-full transition"
           >
             <img
               src="assets/icons/EN-Flag.webp"
@@ -255,7 +258,7 @@
       <nav
         class="flex-1 overflow-y-auto px-4 py-4 flex flex-col text-sm font-semibold text-white"
       >
-        <a href="index.html#beranda" class="py-2" data-mobile-link>BERANDA</a>
+        <a href="index.html#beranda" class="py-2" data-mobile-link><span data-i18n="nav.beranda">BERANDA</span></a>
 
         <div>
           <button
@@ -263,7 +266,7 @@
             type="button"
             class="w-full flex items-center justify-between py-2"
           >
-            PROYEK KAMI
+            <span data-i18n="nav.proyek_kami">PROYEK KAMI</span>
             <svg
               id="mobileProyekChevron"
               class="w-4 h-4 transition-transform"
@@ -284,28 +287,29 @@
               href="jabodetabek.html"
               class="py-1.5 font-normal text-white"
               data-mobile-link
-              >Proyek JABODETABEK</a
+              ><span data-i18n="nav.proyek_jabodetabek">Proyek JABODETABEK</span></a
             >
             <a
               href="bali.html"
               class="py-1.5 font-normal text-white"
               data-mobile-link
-              >Proyek Bali</a
+              ><span data-i18n="nav.proyek_bali">Proyek Bali</span></a
             >
           </div>
         </div>
 
-        <a href="index.html#layanan" class="py-2" data-mobile-link>LAYANAN</a>
+        <a href="index.html#layanan" class="py-2" data-mobile-link><span data-i18n="nav.layanan">LAYANAN</span></a>
         <button id="caraPesanBtnMobile" type="button" class="text-left py-2">
-          CARA PESAN
+          <span data-i18n="nav.cara_pesan">CARA PESAN</span>
         </button>
-        <a href="review.html" class="py-2" data-mobile-link>TESTIMONI</a>
+        <a href="review.html" class="py-2" data-mobile-link><span data-i18n="nav.testimoni">TESTIMONI</span></a>
       </nav>
 
       <div class="flex items-center gap-3 px-4 py-4 border-t border-white/20">
         <button
           title="Bahasa Indonesia"
-          class="flex items-center gap-2 text-sm text-white"
+          data-lang="id"
+          class="lang-btn flex items-center gap-2 text-sm text-white rounded-full transition"
         >
           <img
             src="assets/icons/ID-Flag.webp"
@@ -315,7 +319,8 @@
         </button>
         <button
           title="English"
-          class="flex items-center gap-2 text-sm text-white"
+          data-lang="en"
+          class="lang-btn flex items-center gap-2 text-sm text-white rounded-full transition"
         >
           <img
             src="assets/icons/EN-Flag.webp"
@@ -331,45 +336,51 @@
       <div class="max-w-6xl mx-auto px-4 md:px-8">
         <h2
           class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-8"
+          data-i18n="bali.heading"
         >
           Temukan Proyek-Proyek Kami yang Telah Selesai di Area Bali
         </h2>
 
         <div class="flex flex-wrap items-center gap-4 mb-10">
-          <button type="button" class="px-3 py-1 bg-brand-dark text-white">
+          <button type="button" class="px-3 py-1 bg-brand-dark text-white" data-i18n="filter.semua">
             Semua
           </button>
           <button
             type="button"
             class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            data-i18n="filter.gedung"
           >
             Gedung
           </button>
           <button
             type="button"
             class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            data-i18n="filter.villa"
           >
             Villa
           </button>
           <button
             type="button"
             class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            data-i18n="filter.resort"
           >
             Resort
           </button>
           <button
             type="button"
             class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            data-i18n="filter.rumah"
           >
             Rumah
           </button>
           <button
             type="button"
             class="px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            data-i18n="filter.restoran"
           >
             Restoran
           </button>
-          <button type="button" class="px-3 py-1 hover:bg-white/20 text-white">
+          <button type="button" class="px-3 py-1 hover:bg-white/20 text-white" data-i18n="filter.lainnya">
             lainnya...
           </button>
         </div>
@@ -387,16 +398,21 @@
               />
             </div>
             <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">UMALAS, BALI</h3>
+              <h3 class="font-bold mb-1 tracking-wide text-lg" data-i18n="project.umalas.title">UMALAS, BALI</h3>
               <p>
-                Front Office Renovation Painting and Window Replace...<button
+                <span data-i18n="project.umalas.short">Front Office Renovation Painting and Window Replace...</span><button
                   type="button"
                   class="project-more text-gray-400 hover:text-white transition"
                   data-title="Umalas, Bali"
+                  data-title-en="Umalas, Bali"
                   data-category="Perkantoran"
+                  data-category-en="Office"
                   data-description="Front Office Renovation Painting and Window Replacement"
+                  data-description-en="Front Office Renovation Painting and Window Replacement"
                   data-location="Umalas, Bali"
+                  data-location-en="Umalas, Bali"
                   data-image="assets/projects/Umalas-Bali.jpg"
+                  data-i18n="proyek.more"
                 >
                   more
                 </button>
@@ -413,16 +429,21 @@
               />
             </div>
             <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">YUKI, UBUD</h3>
+              <h3 class="font-bold mb-1 tracking-wide text-lg" data-i18n="project.yuki.title">YUKI, UBUD</h3>
               <p>
-                Pembangunan Restaurant: Struktur, Arsitektur, MEP...<button
+                <span data-i18n="project.yuki.short">Pembangunan Restaurant: Struktur, Arsitektur, MEP...</span><button
                   type="button"
                   class="project-more text-gray-400 hover:text-white transition"
                   data-title="Yuki, Ubud"
+                  data-title-en="Yuki, Ubud"
                   data-category="Restoran"
+                  data-category-en="Restaurant"
                   data-description="Pembangunan Restaurant: Struktur, Arsitektur, MEP, dan Furniture"
+                  data-description-en="Restaurant Construction: Structure, Architecture, MEP, and Furniture"
                   data-location="Ubud, Bali"
+                  data-location-en="Ubud, Bali"
                   data-image="assets/images/Image-1.jpg"
+                  data-i18n="proyek.more"
                 >
                   more
                 </button>
@@ -439,17 +460,22 @@
               />
             </div>
             <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">RESTO, SANUR</h3>
+              <h3 class="font-bold mb-1 tracking-wide text-lg" data-i18n="project.resto.title">RESTO, SANUR</h3>
               <p>
-                Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan
-                Furniture...<button
+                <span data-i18n="project.resto.short">Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan
+                Furniture...</span><button
                   type="button"
                   class="project-more text-gray-400 hover:text-white transition"
                   data-title="Resto, Sanur"
+                  data-title-en="Resto, Sanur"
                   data-category="Restoran"
+                  data-category-en="Restaurant"
                   data-description="Pembangunan Restaurant: Pekerjaan Struktur, Arsitektur, MEP, dan Furniture"
+                  data-description-en="Restaurant Construction: Structural, Architecture, MEP, and Furniture Works"
                   data-location="Sanur, Bali"
+                  data-location-en="Sanur, Bali"
                   data-image="assets/images/Image-2.jpg"
+                  data-i18n="proyek.more"
                 >
                   more
                 </button>
@@ -466,18 +492,23 @@
               />
             </div>
             <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">
+              <h3 class="font-bold mb-1 tracking-wide text-lg" data-i18n="project.gastro.title">
                 GASTRO, CANGGU
               </h3>
               <p>
-                Pembangunan Bar &amp; Lounge: Arsitektur, MEP...<button
+                <span data-i18n="project.gastro.short">Pembangunan Bar &amp; Lounge: Arsitektur, MEP...</span><button
                   type="button"
                   class="project-more text-gray-400 hover:text-white transition"
                   data-title="Gastro, Canggu"
+                  data-title-en="Gastro, Canggu"
                   data-category="Bar & Lounge"
+                  data-category-en="Bar & Lounge"
                   data-description="Pembangunan Bar & Lounge: Pekerjaan Arsitektur, MEP, dan Furniture"
+                  data-description-en="Bar & Lounge Construction: Architecture, MEP, and Furniture Works"
                   data-location="Sanur, Bali"
+                  data-location-en="Sanur, Bali"
                   data-image="assets/images/Image-3.jpg"
+                  data-i18n="proyek.more"
                 >
                   more
                 </button>
@@ -494,19 +525,24 @@
               />
             </div>
             <div class="p-5 text-white text-center">
-              <h3 class="font-bold mb-1 tracking-wide text-lg">
+              <h3 class="font-bold mb-1 tracking-wide text-lg" data-i18n="project.osteria.title">
                 OSTERIA, ULUWATU
               </h3>
               <p>
-                Pembangunan Restoran Baru
+                <span data-i18n="project.osteria.short">Pembangunan Restoran Baru</span>
                 <button
                   type="button"
                   class="project-more text-gray-400 hover:text-white transition"
                   data-title="Osteria, Uluwatu"
+                  data-title-en="Osteria, Uluwatu"
                   data-category="Restoran"
+                  data-category-en="Restaurant"
                   data-description="Pembangunan Restoran Baru"
+                  data-description-en="New Restaurant Construction"
                   data-location="Uluwatu, Bali"
+                  data-location-en="Uluwatu, Bali"
                   data-image="assets/images/Image-4.jpg"
+                  data-i18n="proyek.more"
                 >
                   more
                 </button>
@@ -519,6 +555,7 @@
           <button
             type="button"
             class="hidden md:block px-3 py-1 bg-brand-dark text-white"
+            data-i18n="pagination.sebelumnya"
           >
             Sebelumnya
           </button>
@@ -546,6 +583,7 @@
           <button
             type="button"
             class="hidden md:block px-3 py-1 bg-white/20 text-white hover:bg-brand-darkred"
+            data-i18n="pagination.selanjutnya"
           >
             Selanjutnya
           </button>
@@ -564,24 +602,26 @@
               class="h-auto w-auto -mt-12"
             />
 
-            <p class="text-white -mt-10">© 2026 PT Niaga Makmur Berjaya.</p>
+            <p class="text-white -mt-10" data-i18n="footer.copyright">© 2026 PT Niaga Makmur Berjaya.</p>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <h4 class="text-white font-bold mb-4 tracking-wide">Go-Mandor</h4>
+              <h4 class="text-white font-bold mb-4 tracking-wide" data-i18n="footer.col1.heading">Go-Mandor</h4>
               <ul class="space-y-2 text-sm text-white">
                 <li>
                   <button
                     id="tentangBtn"
                     type="button"
                     class="hover:text-brand-red transition"
+                    data-i18n="footer.tentang"
                   >
                     Tentang Go-Mandor
                   </button>
                 </li>
                 <li>
                   <a href="#" class="hover:text-brand-red transition"
+                    data-i18n="footer.hki"
                     >Hak Kekayaan Intelektual</a
                   >
                 </li>
@@ -590,18 +630,20 @@
                     href="https://wa.me/6285214985827"
                     target="_blank"
                     class="hover:text-brand-red transition"
+                    data-i18n="footer.gabung"
                     >Gabung Ahli</a
                   >
                 </li>
                 <li>
                   <a href="#" class="hover:text-brand-red transition"
+                    data-i18n="footer.unduh_profil"
                     >Unduh Profil Perusahaan</a
                   >
                 </li>
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-4 tracking-wide">
+              <h4 class="text-white font-bold mb-4 tracking-wide" data-i18n="footer.col2.heading">
                 Kontak Kami
               </h4>
               <ul class="space-y-2 text-sm text-white">
@@ -610,6 +652,7 @@
                     id="alamatBtn"
                     type="button"
                     class="hover:text-brand-red transition"
+                    data-i18n="footer.alamat"
                   >
                     Alamat
                   </button>
@@ -619,6 +662,7 @@
                     href="tel:+622129619596"
                     target="_blank"
                     class="hover:text-brand-red transition"
+                    data-i18n="footer.pusat_panggilan"
                   >
                     Pusat Panggilan
                   </a>
@@ -628,6 +672,7 @@
                     href="https://wa.me/6285214985827"
                     target="_blank"
                     class="hover:text-brand-red transition"
+                    data-i18n="footer.whatsapp"
                   >
                     WhatsApp
                   </a>
@@ -635,15 +680,15 @@
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-4 tracking-wide">Legalitas</h4>
+              <h4 class="text-white font-bold mb-4 tracking-wide" data-i18n="footer.col3.heading">Legalitas</h4>
               <ul class="space-y-2 text-sm text-white">
-                <li>Akta Pendirian</li>
-                <li>NIB</li>
-                <li>NPWP</li>
+                <li data-i18n="footer.akta">Akta Pendirian</li>
+                <li data-i18n="footer.nib">NIB</li>
+                <li data-i18n="footer.npwp">NPWP</li>
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-4 tracking-wide">
+              <h4 class="text-white font-bold mb-4 tracking-wide" data-i18n="footer.col4.heading">
                 Bantuan dan Panduan
               </h4>
               <ul class="space-y-2 text-sm text-white">
@@ -652,19 +697,20 @@
                     href="https://wa.me/6285214985827"
                     target="_blank"
                     class="hover:text-brand-red transition"
+                    data-i18n="footer.care"
                   >
                     Go-Mandor Care
                   </a>
                 </li>
-                <li>Syarat dan Ketentuan</li>
-                <li>Kebijakan Privasi</li>
+                <li data-i18n="footer.syarat">Syarat dan Ketentuan</li>
+                <li data-i18n="footer.kebijakan">Kebijakan Privasi</li>
               </ul>
             </div>
           </div>
 
           <div class="grid grid-cols-1 gap-10">
             <div>
-              <p class="text-white text-sm mb-4">
+              <p class="text-white text-sm mb-4" data-i18n="footer.download_text">
                 Buka aplikasi dengan scan QR atau klik tombol:
               </p>
               <div class="flex items-center gap-4">
@@ -701,7 +747,7 @@
             </div>
 
             <div>
-              <h4 class="text-white font-bold mb-4 tracking-wide">
+              <h4 class="text-white font-bold mb-4 tracking-wide" data-i18n="footer.ikuti_kami">
                 Ikuti Kami
               </h4>
 
@@ -761,10 +807,11 @@
         <div class="bg-white rounded-lg shadow-2xl p-6 md:p-8">
           <h3
             class="text-brand-dark text-xl md:text-2xl font-bold tracking-wide mb-1"
+            data-i18n="alamat.title"
           >
             Pilih Lokasi
           </h3>
-          <p class="text-sm text-gray-500 mb-6">
+          <p class="text-sm text-gray-500 mb-6" data-i18n="alamat.desc">
             Pilih area untuk melihat lokasi kantor Go-Mandor di peta.
           </p>
 
@@ -786,6 +833,7 @@
               <div class="p-4 flex items-center justify-between">
                 <span
                   class="font-bold text-brand-dark group-hover:text-brand-red transition"
+                  data-i18n="alamat.jabodetabek"
                   >JABODETABEK</span
                 >
                 <svg
@@ -821,6 +869,7 @@
               <div class="p-4 flex items-center justify-between">
                 <span
                   class="font-bold text-brand-dark group-hover:text-brand-red transition"
+                  data-i18n="alamat.bali"
                   >BALI</span
                 >
                 <svg
@@ -872,6 +921,7 @@
         </button>
         <img
           src="assets/images/Cara-Order-ID.jpg"
+          data-i18n-src="cara_order"
           alt="Cara Pesan"
           class="w-full h-auto rounded-lg shadow-2xl"
         />
@@ -911,20 +961,21 @@
         >
           <h3
             class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+            data-i18n="tentang.h1"
           >
             PERJALANAN KAMI
           </h3>
-          <p class="font-bold text-brand-dark mb-4">
+          <p class="font-bold text-brand-dark mb-4" data-i18n="tentang.sub1">
             Bisnis yang skalabel dengan dampak sosial yang nyata!
           </p>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4" data-i18n="tentang.p1">
             Dengan pengalaman bertahun-tahun di industri konstruksi, pendiri
             kami menyadari beberapa masalah mendasar yang sudah lama membutuhkan
             perubahan. Kesulitan besar dalam menemukan tukang yang berkualitas
             dan dapat diandalkan, serta pendapatan yang sangat rendah bagi para
             pekerja keras, menjadi dua hal utama dalam daftar tersebut.
           </p>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4" data-i18n="tentang.p2">
             PT Niaga Makmur Berjaya, melalui aplikasi seluler sederhana bernama
             Go-Mandor, menghubungkan konsumen dengan tukang. Platform daring
             kami hadir untuk meningkatkan taraf hidup para tenaga kerja (tukang)
@@ -934,14 +985,14 @@
             yang pesat dan membuktikan dirinya sebagai solusi yang sangat
             dinantikan.
           </p>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4" data-i18n="tentang.p3">
             Dengan beragam layanan yang tersedia dalam satu platform, pengguna
             dapat memilih layanan yang tepat untuk setiap pekerjaan yang mereka
             butuhkan, baik itu pekerjaan konstruksi, perbaikan, maupun
             perawatan. Survei lokasi untuk semua pekerjaan diberikan secara
             gratis dan tidak mengikat.
           </p>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-8" data-i18n="tentang.p4">
             Unduh aplikasi kami yang ramah pengguna dari Google Play Store dan
             App Store, dan serahkan kebutuhan tukang Anda kepada Go-Mandor.
           </p>
@@ -950,23 +1001,24 @@
 
           <h3
             class="text-brand-red text-2xl md:text-3xl font-bold tracking-wide mb-2"
+            data-i18n="tentang.h2"
           >
             SKALA PROYEK
           </h3>
-          <p class="font-bold text-brand-dark mb-4">
+          <p class="font-bold text-brand-dark mb-4" data-i18n="tentang.sub2">
             Go-Mandor Melayani Semua Skala Proyek
           </p>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-6" data-i18n="tentang.p5">
             Go-Mandor adalah mitra konstruksi dan properti yang komprehensif dan
             inklusif. Kami memahami bahwa setiap kebutuhan konstruksi atau
             perbaikan—baik besar maupun kecil—memiliki tingkat kepentingan dan
             urgensi yang sama.
           </p>
 
-          <h4 class="font-bold text-brand-dark mb-2">
+          <h4 class="font-bold text-brand-dark mb-2" data-i18n="tentang.b2b_heading">
             Untuk Segmen Bisnis (B2B)
           </h4>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3" data-i18n="tentang.b2b_intro">
             Kami memiliki pengalaman dalam menangani proyek skala besar dengan
             tingkat kompleksitas tinggi untuk korporasi, institusi, dan
             pengembang, seperti:
@@ -974,35 +1026,35 @@
           <ul
             class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
           >
-            <li>Pembangunan Gedung Perkantoran &amp; Ruko</li>
-            <li>
+            <li data-i18n="tentang.b2b_li1">Pembangunan Gedung Perkantoran &amp; Ruko</li>
+            <li data-i18n="tentang.b2b_li2">
               Pengembangan Fasilitas Komersial (hotel, restoran, bar, pusat
               olahraga, dll.)
             </li>
-            <li>Proyek Institusional (sekolah, klinik, tempat ibadah, dll.)</li>
-            <li>Renovasi Skala Besar &amp; Desain Interior</li>
+            <li data-i18n="tentang.b2b_li3">Proyek Institusional (sekolah, klinik, tempat ibadah, dll.)</li>
+            <li data-i18n="tentang.b2b_li4">Renovasi Skala Besar &amp; Desain Interior</li>
           </ul>
 
-          <h4 class="font-bold text-brand-dark mb-2">
+          <h4 class="font-bold text-brand-dark mb-2" data-i18n="tentang.b2c_heading">
             Untuk Segmen Konsumen Langsung (B2C)
           </h4>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3" data-i18n="tentang.b2c_intro">
             Kami juga siap membantu individu dan keluarga dalam mewujudkan atau
             meningkatkan ruang hunian mereka:
           </p>
           <ul
             class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed mb-6 space-y-1"
           >
-            <li>Pembangunan &amp; Renovasi Rumah Tinggal</li>
-            <li>Perbaikan Terfokus: atap bocor, plafon, lantai, pagar, dll.</li>
-            <li>Instalasi &amp; Perbaikan Kelistrikan dan Perpipaan</li>
-            <li>Desain Interior &amp; Renovasi Kecil</li>
+            <li data-i18n="tentang.b2c_li1">Pembangunan &amp; Renovasi Rumah Tinggal</li>
+            <li data-i18n="tentang.b2c_li2">Perbaikan Terfokus: atap bocor, plafon, lantai, pagar, dll.</li>
+            <li data-i18n="tentang.b2c_li3">Instalasi &amp; Perbaikan Kelistrikan dan Perpipaan</li>
+            <li data-i18n="tentang.b2c_li4">Desain Interior &amp; Renovasi Kecil</li>
           </ul>
 
-          <h4 class="font-bold text-brand-dark mb-2">
+          <h4 class="font-bold text-brand-dark mb-2" data-i18n="tentang.kecil_heading">
             Untuk Proyek Kecil &amp; Perbaikan Ringan
           </h4>
-          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-3" data-i18n="tentang.kecil_intro">
             Kami tidak mengabaikan apa yang terlihat &ldquo;kecil,&rdquo; karena
             kami percaya bahwa pelayanan terbaik dibuktikan melalui perhatian
             terhadap detail dan komitmen pada proyek dengan skala apa pun.
@@ -1011,10 +1063,10 @@
           <ul
             class="list-disc list-inside text-sm md:text-base text-gray-600 leading-relaxed space-y-1"
           >
-            <li>Pengecatan Ulang Ruangan</li>
-            <li>Perbaikan Keramik atau Sanitair</li>
-            <li>Pemasangan Kanopi atau Teralis</li>
-            <li>Servis dan Perawatan Berkala</li>
+            <li data-i18n="tentang.kecil_li1">Pengecatan Ulang Ruangan</li>
+            <li data-i18n="tentang.kecil_li2">Perbaikan Keramik atau Sanitair</li>
+            <li data-i18n="tentang.kecil_li3">Pemasangan Kanopi atau Teralis</li>
+            <li data-i18n="tentang.kecil_li4">Servis dan Perawatan Berkala</li>
           </ul>
         </div>
       </div>
@@ -1177,6 +1229,7 @@
       href="https://wa.me/6285214985827"
       target="_blank"
       aria-label="Hubungi kami via WhatsApp"
+      data-i18n-aria-label="whatsapp.aria"
       class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe57] shadow-lg flex items-center justify-center transition"
     >
       <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 32 32">
