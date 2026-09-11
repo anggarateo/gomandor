@@ -84,13 +84,8 @@
       body {
         font-family: "Lato", sans-serif;
       }
-      .quote-bg {
-        background-image: url("assets/images/Image-2.jpg");
-        background-size: cover;
-        background-position: center;
-      }
+      .quote-bg,
       .statistik-bg {
-        background-image: url("assets/images/Image-6.jpg");
         background-size: cover;
         background-position: center;
       }
@@ -350,26 +345,32 @@
         <img
           src="assets/images/Image-1.jpg"
           alt=""
+          fetchpriority="high"
+          decoding="async"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
         />
         <img
-          src="assets/images/Image-5.png"
+          data-src="assets/images/Image-5.png"
           alt=""
+          decoding="async"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
         />
         <img
-          src="assets/images/Image-7.jpg"
+          data-src="assets/images/Image-7.jpg"
           alt=""
+          decoding="async"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
         />
         <img
-          src="assets/images/Image-8.png"
+          data-src="assets/images/Image-8.png"
           alt=""
+          decoding="async"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
         />
         <img
-          src="assets/images/Image-9.png"
+          data-src="assets/images/Image-9.png"
           alt=""
+          decoding="async"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
         />
       </div>
@@ -406,6 +407,8 @@
     <section class="brand-gradient py-16 relative overflow-hidden">
       <img
         src="assets/images/Dot - Proyek Kami.webp"
+        loading="lazy"
+        decoding="async"
         alt="Pattern Proyek Kami"
         class="absolute top-0"
       />
@@ -465,6 +468,7 @@
                     <img
                       src="assets/projects/Yuki-Ubud.jpeg"
                       alt="RESTORAN, UBUD"
+                      decoding="async"
                       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -505,6 +509,7 @@
                     <img
                       src="assets/projects/Resto-Sanur.jpeg"
                       alt="RESTORAN, SANUR"
+                      decoding="async"
                       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -545,6 +550,7 @@
                     <img
                       src="assets/projects/Gastro-Canggu.jpeg"
                       alt="BAR & LOUNGE, CANGGU"
+                      decoding="async"
                       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -591,6 +597,8 @@
                     <img
                       src="assets/projects/Osteria-Uluwatu.jpeg"
                       alt="RESTORAN, ULUWATU"
+                      loading="lazy"
+                      decoding="async"
                       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -631,6 +639,8 @@
                     <img
                       src="assets/projects/Junsei-Jakarta.jpeg"
                       alt="RESTORAN, SENOPATI"
+                      loading="lazy"
+                      decoding="async"
                       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -671,6 +681,8 @@
                     <img
                       src="assets/projects/Extrupack-Bekasi.jpeg"
                       alt="GUDANG & RUANG KANTOR, KOTA BARU"
+                      loading="lazy"
+                      decoding="async"
                       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                   </div>
@@ -753,6 +765,8 @@
     >
       <img
         src="assets/images/Dot - Layanan.webp"
+        loading="lazy"
+        decoding="async"
         alt="Pattern Layanan"
         class="absolute top-0"
       />
@@ -784,6 +798,8 @@
           >
             <img
               src="assets/icons/Perawatan-Perbaikan.webp"
+              loading="lazy"
+              decoding="async"
               alt="Perawatan & Perbaikan"
               class="w-24 h-24 mb-6"
             />
@@ -815,6 +831,8 @@
           >
             <img
               src="assets/icons/Design-Pembangunan.webp"
+              loading="lazy"
+              decoding="async"
               alt="Desain & Pembangunan"
               class="w-24 h-24 mb-6"
             />
@@ -846,6 +864,8 @@
           >
             <img
               src="assets/icons/Project-Management.webp"
+              loading="lazy"
+              decoding="async"
               alt="Project Management"
               class="w-24 h-24 mb-6"
             />
@@ -880,6 +900,8 @@
         <div class="h-72 md:h-auto">
           <img
             src="assets/images/Image-4.jpg"
+            loading="lazy"
+            decoding="async"
             alt="Go-Mandor Regular"
             class="w-full h-full object-cover"
           />
@@ -887,6 +909,8 @@
         <div class="relative brand-gradient flex items-center overflow-hidden">
           <img
             src="assets/images/Dot - Go-Mandor Regular.webp"
+            loading="lazy"
+            decoding="async"
             alt="Pattern Go-Mandor Regular"
             class="absolute bottom-0"
           />
@@ -929,6 +953,8 @@
         >
           <img
             src="assets/images/Dot - Go-Mandor Prioritas.webp"
+            loading="lazy"
+            decoding="async"
             alt="Pattern Go-Mandor Prioritas"
             class="absolute bottom-0"
           />
@@ -960,6 +986,8 @@
         <div class="h-72 md:h-auto order-1 md:order-2">
           <img
             src="assets/images/Image-3.jpg"
+            loading="lazy"
+            decoding="async"
             alt="Go-Mandor Prioritas"
             class="w-full h-full object-cover"
           />
@@ -971,9 +999,10 @@
     <section class="brand-gradient py-16 relative overflow-hidden">
       <img
         src="assets/images/Dot - Klien Kami.webp"
-        alt=""
-        aria-hidden="true"
-        class="absolute top-0 left-0 w-full h-auto pointer-events-none select-none opacity-60"
+        loading="lazy"
+        decoding="async"
+        alt="Pattern Klien Kami"
+        class="absolute top-0"
       />
 
       <div
@@ -993,6 +1022,8 @@
 
         <img
           src="assets/images/Logo-logo Brand (Klien Kami).webp"
+          loading="lazy"
+          decoding="async"
           alt="Logo-logo Klien Kami"
           class="mb-12 max-w-full h-auto mx-auto"
         />
@@ -1007,7 +1038,10 @@
     </section>
 
     <!-- STATISTIK -->
-    <section class="statistik-bg py-16 md:py-40">
+    <section
+      class="statistik-bg lazy-bg py-16 md:py-40"
+      data-bg="assets/images/Image-6.jpg"
+    >
       <div class="max-w-7xl mx-auto px-4 md:px-8 text-center text-white">
         <h2
           class="text-3xl md:text-5xl font-bold tracking-wide mb-12"
@@ -1056,7 +1090,8 @@
 
     <!-- QUOTE / HASHTAG BANNER -->
     <section
-      class="quote-bg min-h-screen flex items-center justify-center py-16"
+      class="quote-bg lazy-bg min-h-screen flex items-center justify-center py-16"
+      data-bg="assets/images/Image-2.jpg"
     >
       <div class="max-w-3xl mx-auto px-4 md:px-8 text-center">
         <p
@@ -1112,6 +1147,8 @@
           <div class="flex flex-col items-center">
             <img
               src="assets/logo/Logo.svg"
+              loading="lazy"
+              decoding="async"
               alt="Go-Mandor"
               class="h-auto w-auto -mt-12"
             />
@@ -1257,6 +1294,8 @@
               <div class="flex items-center gap-4">
                 <img
                   src="assets/logo/QR-Download-Apps.webp"
+                  loading="lazy"
+                  decoding="async"
                   alt="QR Code Download"
                   class="w-40 h-40"
                 />
@@ -1264,6 +1303,8 @@
                 <div class="relative h-20 w-full">
                   <img
                     src="assets/logo/app-store-google-play.svg"
+                    loading="lazy"
+                    decoding="async"
                     alt="App Store & Google Play"
                     class="absolute h-full w-auto z-0"
                   />
@@ -1303,6 +1344,8 @@
                   aria-label="Instagram"
                   ><img
                     src="assets/icons/Instagram.webp"
+                    loading="lazy"
+                    decoding="async"
                     alt="Instagram"
                     class="w-8 h-8"
                 /></a>
@@ -1313,6 +1356,8 @@
                   aria-label="Facebook"
                   ><img
                     src="assets/icons/Facebook.webp"
+                    loading="lazy"
+                    decoding="async"
                     alt="Facebook"
                     class="w-8 h-8"
                 /></a>
@@ -1323,6 +1368,8 @@
                   aria-label="LinkedIn"
                   ><img
                     src="assets/icons/Linkedin.webp"
+                    loading="lazy"
+                    decoding="async"
                     alt="LinkedIn"
                     class="w-8 h-8"
                 /></a>
@@ -1478,6 +1525,8 @@
         </button>
         <img
           src="assets/images/Cara-Order-ID.jpg"
+          loading="lazy"
+          decoding="async"
           data-i18n-src="cara_order"
           alt="Cara Pesan"
           class="w-full h-auto rounded-lg shadow-2xl"
@@ -2523,14 +2572,47 @@
       renderHighlight();
       startHighlightAutoSlide();
 
+      const lazyBgObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            if (el.dataset.bg) {
+              el.style.backgroundImage = `url("${el.dataset.bg}")`;
+              delete el.dataset.bg;
+            }
+            observer.unobserve(el);
+          });
+        },
+        { rootMargin: "300px 0px" },
+      );
+      document
+        .querySelectorAll(".lazy-bg")
+        .forEach((el) => lazyBgObserver.observe(el));
+
       const heroSlides = document.querySelectorAll(".hero-slide");
       let heroIndex = 0;
+
+      const ensureHeroSlideLoaded = (slide) => {
+        if (slide && slide.dataset.src) {
+          slide.src = slide.dataset.src;
+          delete slide.dataset.src;
+        }
+      };
+
+      // preload the 2nd hero slide a bit after first paint so it's ready
+      // for the first transition, without competing with critical assets.
+      window.setTimeout(() => ensureHeroSlideLoaded(heroSlides[1]), 1500);
+
       setInterval(() => {
         heroSlides[heroIndex].classList.remove("opacity-100");
         heroSlides[heroIndex].classList.add("opacity-0");
         heroIndex = (heroIndex + 1) % heroSlides.length;
+        ensureHeroSlideLoaded(heroSlides[heroIndex]);
         heroSlides[heroIndex].classList.remove("opacity-0");
         heroSlides[heroIndex].classList.add("opacity-100");
+        // stay one slide ahead so the next transition never waits on the network
+        ensureHeroSlideLoaded(heroSlides[(heroIndex + 1) % heroSlides.length]);
       }, 5000);
 
       const counters = document.querySelectorAll(".counter");
