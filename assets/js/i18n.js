@@ -23,6 +23,11 @@
         "Kami mendokumentasikan setiap proyek dari awal hingga akhir. Mencakup proses pengerjaan dan hasil akhir di berbagai lokasi, ini sebagai bentuk profesionalisme dan integritas kami.",
       "proyek.more": "lebih banyak",
 
+      "klien.heading": "KLIEN KAMI",
+      "klien.intro":
+        "Kami merasa terhormat telah dipercaya oleh keluarga, bisnis, dan pemilik properti di berbagai wilayah. Setiap klien adalah cerita, dan setiap proyek adalah kehormatan bagi kami.",
+      "klien.more": "Dan masih banyak lagi",
+
       "project.yuki.title": "YUKI, UBUD",
       "project.yuki.short":
         "Pembangunan Restaurant: Struktur, Arsitektur, MEP...",
@@ -360,6 +365,11 @@
       "proyek.intro":
         "We document every project from start to finish. Covering the work process and final results across various locations, as a form of our professionalism and integrity.",
       "proyek.more": "more",
+
+      "klien.heading": "OUR CLIENTS",
+      "klien.intro":
+        "We are honored to be trusted by families, businesses, and property owners across many regions. Every client is a story, and every project is an honor for us.",
+      "klien.more": "And many more",
 
       "project.yuki.title": "YUKI, UBUD",
       "project.yuki.short":
