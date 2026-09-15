@@ -1179,7 +1179,7 @@
               <ul class="space-y-2 text-sm text-white">
                 <li>
                   <button
-                    id="tentangBtn"
+                    id="tentangBtnFooter"
                     type="button"
                     class="hover:text-brand-red transition"
                     data-i18n="footer.tentang"
@@ -2398,6 +2398,9 @@
 
       document
         .getElementById("tentangBtn")
+        .addEventListener("click", openTentang);
+      document
+        .getElementById("tentangBtnFooter")
         .addEventListener("click", openTentang);
       document
         .getElementById("tentangClose")
