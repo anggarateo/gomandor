@@ -2552,17 +2552,31 @@
           dot.classList.toggle("bg-white", i === highlightIndex);
           dot.classList.toggle("bg-white/40", i !== highlightIndex);
         });
+        const atStart = highlightIndex === 0;
+        const atEnd = highlightIndex === highlightSlides.length - 1;
+        highlightPrevBtn.disabled = atStart;
+        highlightPrevBtn.classList.toggle("opacity-40", atStart);
+        highlightNextBtn.disabled = atEnd;
+        highlightNextBtn.classList.toggle("opacity-40", atEnd);
+        if (atEnd) clearInterval(highlightTimer);
       };
 
       const goToHighlight = (index) => {
-        highlightIndex =
-          (index + highlightSlides.length) % highlightSlides.length;
+        highlightIndex = Math.min(
+          Math.max(index, 0),
+          highlightSlides.length - 1,
+        );
         renderHighlight();
       };
 
       const startHighlightAutoSlide = () => {
         clearInterval(highlightTimer);
+        if (highlightIndex >= highlightSlides.length - 1) return;
         highlightTimer = setInterval(() => {
+          if (highlightIndex >= highlightSlides.length - 1) {
+            clearInterval(highlightTimer);
+            return;
+          }
           goToHighlight(highlightIndex + 1);
         }, 5000);
       };
