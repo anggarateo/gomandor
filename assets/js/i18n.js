@@ -350,7 +350,7 @@
     en: {
       "nav.beranda": "HOME",
       "nav.proyek_kami": "OUR PROJECTS",
-      "nav.proyek_jabodetabek": "Jabodetabek Projects",
+      "nav.proyek_jabodetabek": "JABODETABEK Projects",
       "nav.proyek_bali": "Bali Projects",
       "nav.layanan": "SERVICES",
       "nav.cara_pesan": "HOW TO ORDER",
@@ -643,7 +643,7 @@
       "tentang.kecil_li4": "Routine Service and Maintenance",
 
       "jabodetabek.heading":
-        "Discover Our Completed Projects in the Jabodetabek Area",
+        "Discover Our Completed Projects in the JABODETABEK Area",
       "bali.heading": "Discover Our Completed Projects in the Bali Area",
       "filter.semua": "All",
       "filter.gedung": "Building",
