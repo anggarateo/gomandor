@@ -2539,64 +2539,105 @@
       });
 
       const highlightTrack = document.getElementById("highlightTrack");
-      const highlightSlides = highlightTrack.children;
       const highlightDots = document.querySelectorAll(".highlight-dot");
       const highlightPrevBtn = document.getElementById("highlightPrev");
       const highlightNextBtn = document.getElementById("highlightNext");
-      let highlightIndex = 0;
+
+      const realHighlightSlides = Array.from(highlightTrack.children);
+      const realHighlightCount = realHighlightSlides.length;
+      const highlightFirstClone = realHighlightSlides[0].cloneNode(true);
+      const highlightLastClone =
+        realHighlightSlides[realHighlightCount - 1].cloneNode(true);
+      [highlightFirstClone, highlightLastClone].forEach((clone) => {
+        clone.setAttribute("aria-hidden", "true");
+        clone
+          .querySelectorAll("button, a")
+          .forEach((el) => el.setAttribute("tabindex", "-1"));
+      });
+      highlightTrack.insertBefore(
+        highlightLastClone,
+        highlightTrack.firstChild,
+      );
+      highlightTrack.appendChild(highlightFirstClone);
+
+      const highlightTotal = realHighlightCount + 2;
+      let highlightIndex = 1;
       let highlightTimer = null;
+      let highlightIsAnimating = false;
 
-      const renderHighlight = () => {
+      highlightTrack.classList.remove(
+        "transition-transform",
+        "duration-700",
+        "ease-in-out",
+      );
+
+      const setHighlightTrackPosition = (withTransition) => {
+        highlightTrack.style.transition = withTransition
+          ? "transform 700ms ease-in-out"
+          : "none";
         highlightTrack.style.transform = `translateX(-${highlightIndex * 100}%)`;
-        highlightDots.forEach((dot, i) => {
-          dot.classList.toggle("bg-white", i === highlightIndex);
-          dot.classList.toggle("bg-white/40", i !== highlightIndex);
-        });
-        const atStart = highlightIndex === 0;
-        const atEnd = highlightIndex === highlightSlides.length - 1;
-        highlightPrevBtn.disabled = atStart;
-        highlightPrevBtn.classList.toggle("opacity-40", atStart);
-        highlightNextBtn.disabled = atEnd;
-        highlightNextBtn.classList.toggle("opacity-40", atEnd);
-        if (atEnd) clearInterval(highlightTimer);
       };
 
-      const goToHighlight = (index) => {
-        highlightIndex = Math.min(
-          Math.max(index, 0),
-          highlightSlides.length - 1,
-        );
-        renderHighlight();
+      const updateHighlightDots = () => {
+        const realIndex =
+          (((highlightIndex - 1) % realHighlightCount) + realHighlightCount) %
+          realHighlightCount;
+        highlightDots.forEach((dot, i) => {
+          dot.classList.toggle("bg-white", i === realIndex);
+          dot.classList.toggle("bg-white/40", i !== realIndex);
+        });
       };
+
+      setHighlightTrackPosition(false);
+      updateHighlightDots();
+
+      const goToHighlightSlide = (index) => {
+        if (highlightIsAnimating) return;
+        highlightIsAnimating = true;
+        highlightIndex = index;
+        setHighlightTrackPosition(true);
+        updateHighlightDots();
+      };
+
+      highlightTrack.addEventListener("transitionend", (e) => {
+        if (e.target !== highlightTrack || e.propertyName !== "transform") {
+          return;
+        }
+        highlightIsAnimating = false;
+        if (highlightIndex === highlightTotal - 1) {
+          highlightIndex = 1;
+          setHighlightTrackPosition(false);
+          void highlightTrack.offsetWidth;
+        } else if (highlightIndex === 0) {
+          highlightIndex = realHighlightCount;
+          setHighlightTrackPosition(false);
+          void highlightTrack.offsetWidth;
+        }
+      });
+
+      const nextHighlightSlide = () => goToHighlightSlide(highlightIndex + 1);
+      const prevHighlightSlide = () => goToHighlightSlide(highlightIndex - 1);
 
       const startHighlightAutoSlide = () => {
         clearInterval(highlightTimer);
-        if (highlightIndex >= highlightSlides.length - 1) return;
-        highlightTimer = setInterval(() => {
-          if (highlightIndex >= highlightSlides.length - 1) {
-            clearInterval(highlightTimer);
-            return;
-          }
-          goToHighlight(highlightIndex + 1);
-        }, 5000);
+        highlightTimer = setInterval(nextHighlightSlide, 5000);
       };
 
       highlightPrevBtn.addEventListener("click", () => {
-        goToHighlight(highlightIndex - 1);
+        prevHighlightSlide();
         startHighlightAutoSlide();
       });
       highlightNextBtn.addEventListener("click", () => {
-        goToHighlight(highlightIndex + 1);
+        nextHighlightSlide();
         startHighlightAutoSlide();
       });
       highlightDots.forEach((dot) => {
         dot.addEventListener("click", () => {
-          goToHighlight(Number(dot.dataset.index));
+          goToHighlightSlide(Number(dot.dataset.index) + 1);
           startHighlightAutoSlide();
         });
       });
 
-      renderHighlight();
       startHighlightAutoSlide();
 
       const lazyBgObserver = new IntersectionObserver(
@@ -2627,8 +2668,6 @@
         }
       };
 
-      // preload the 2nd hero slide a bit after first paint so it's ready
-      // for the first transition, without competing with critical assets.
       window.setTimeout(() => ensureHeroSlideLoaded(heroSlides[1]), 1500);
 
       setInterval(() => {
@@ -2638,7 +2677,6 @@
         ensureHeroSlideLoaded(heroSlides[heroIndex]);
         heroSlides[heroIndex].classList.remove("opacity-0");
         heroSlides[heroIndex].classList.add("opacity-100");
-        // stay one slide ahead so the next transition never waits on the network
         ensureHeroSlideLoaded(heroSlides[(heroIndex + 1) % heroSlides.length]);
       }, 5000);
 
