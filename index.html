@@ -96,6 +96,42 @@
         background-image: linear-gradient(180deg, #5b0d0d 0%, #380808 100%);
       }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "439302177911243");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=439302177911243&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body class="bg-white text-brand-dark antialiased">
     <!-- HEADER / NAV -->
@@ -1188,12 +1224,14 @@
                   </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <button
+                    id="hkiBtn"
+                    type="button"
                     class="hover:text-brand-red transition"
                     data-i18n="footer.hki"
-                    >Hak Kekayaan Intelektual</a
                   >
+                    Hak Kekayaan Intelektual
+                  </button>
                 </li>
                 <li>
                   <a
@@ -1287,8 +1325,24 @@
                     Go-Mandor Care
                   </a>
                 </li>
-                <li data-i18n="footer.syarat">Syarat dan Ketentuan</li>
-                <li data-i18n="footer.kebijakan">Kebijakan Privasi</li>
+                <li>
+                  <button
+                    id="termsBtn"
+                    type="button"
+                    class="hover:text-brand-red transition"
+                    data-i18n="footer.syarat"
+                  >
+                    Syarat dan Ketentuan
+                  </button>
+                </li>
+                <li>
+                  <a
+                    href="privacy-policy.html"
+                    class="hover:text-brand-red transition"
+                    data-i18n="footer.kebijakan"
+                    >Kebijakan Privasi</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -2274,6 +2328,477 @@
       </div>
     </div>
 
+    <!-- HKI MODAL -->
+    <div
+      id="hkiModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="hkiBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-4xl w-full h-fit my-auto">
+        <button
+          id="hkiClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-xl md:text-2xl font-bold tracking-wide mb-1"
+            data-i18n="hki.title"
+          >
+            HAK KEKAYAAN INTELEKTUAL
+          </h3>
+          <p class="text-sm text-gray-500 mb-8" data-i18n="hki.subtitle">
+            GO-MANDOR – PT NIAGA MAKMUR BERJAYA
+          </p>
+
+          <div class="space-y-8 text-gray-700 leading-relaxed text-sm md:text-base">
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="hki.s1.h"
+            >
+              1. Kepemilikan Hak Kekayaan Intelektual
+            </h2>
+            <p class="mt-3" data-i18n="hki.s1.p1">
+              Seluruh Hak Kekayaan Intelektual yang terdapat, digunakan, ditampilkan, dikembangkan, atau tersedia melalui aplikasi GO-MANDOR, situs web, sistem, platform, dan seluruh layanan yang disediakan oleh PT NIAGA MAKMUR BERJAYA (“NMB”), baik yang telah maupun yang akan didaftarkan, merupakan milik NMB dan/atau pihak yang memberikan lisensi kepada NMB, kecuali dinyatakan lain secara tegas.
+            </p>
+            <p class="mt-3" data-i18n="hki.s1.p2">
+              Hak Kekayaan Intelektual tersebut meliputi namun tidak terbatas pada:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="hki.s1.ul1_li1">nama “GO-MANDOR” dan variasinya;</li>
+              <li data-i18n="hki.s1.ul1_li2">logo, simbol, desain, ikon, slogan, tagline dan identitas visual GO-MANDOR;</li>
+              <li data-i18n="hki.s1.ul1_li3">merek dagang dan/atau merek jasa;</li>
+              <li data-i18n="hki.s1.ul1_li4">hak cipta atas aplikasi, situs web, desain antarmuka, tata letak, konten, tulisan, foto, ilustrasi, video, audio, grafis dan materi lainnya;</li>
+              <li data-i18n="hki.s1.ul1_li5">perangkat lunak, source code, object code, algoritma, database, struktur sistem, API dan teknologi pendukung;</li>
+              <li data-i18n="hki.s1.ul1_li6">desain dan tampilan aplikasi (user interface/user experience);</li>
+              <li data-i18n="hki.s1.ul1_li7">nama domain, subdomain dan akun resmi GO-MANDOR;</li>
+              <li data-i18n="hki.s1.ul1_li8">database pengguna, informasi bisnis dan struktur database sepanjang dilindungi berdasarkan peraturan perundang-undangan;</li>
+              <li data-i18n="hki.s1.ul1_li9">rahasia dagang, metode bisnis, formula, proses, sistem operasional dan informasi teknis; dan</li>
+              <li data-i18n="hki.s1.ul1_li10">Hak Kekayaan Intelektual lainnya yang berkaitan dengan GO-MANDOR.</li>
+            </ul>
+            <p class="mt-3" data-i18n="hki.s1.p3">
+              Pelindungan terhadap hak cipta dan merek tersebut antara lain tunduk pada UU No. 28 Tahun 2014 tentang Hak Cipta dan UU No. 20 Tahun 2016 tentang Merek dan Indikasi Geografis sebagaimana berlaku.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="hki.s2.h"
+            >
+              2. Penggunaan Merek GO-MANDOR
+            </h2>
+            <p class="mt-3" data-i18n="hki.s2.p1">
+              Pengguna dilarang menggunakan nama, merek, logo, simbol, slogan, atau identitas GO-MANDOR tanpa persetujuan tertulis terlebih dahulu dari NMB.
+            </p>
+            <p class="mt-3" data-i18n="hki.s2.p2">
+              Tanpa membatasi ketentuan tersebut, pengguna dilarang:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="hki.s2.ul1_li1">menyalin atau menggunakan logo GO-MANDOR;</li>
+              <li data-i18n="hki.s2.ul1_li2">mendaftarkan nama atau merek yang identik atau memiliki kemiripan dengan GO-MANDOR;</li>
+              <li data-i18n="hki.s2.ul1_li3">menggunakan GO-MANDOR sebagai bagian dari nama perusahaan, usaha, produk, aplikasi, akun media sosial atau domain;</li>
+              <li data-i18n="hki.s2.ul1_li4">menggunakan merek GO-MANDOR untuk memberikan kesan seolah-olah pengguna memiliki hubungan, afiliasi, kemitraan, sponsor atau endorsement dari NMB; atau</li>
+              <li data-i18n="hki.s2.ul1_li5">melakukan tindakan lain yang dapat menimbulkan kebingungan mengenai hubungan antara pengguna dengan NMB.</li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="hki.s3.h"
+            >
+              3. Hak Cipta atas Aplikasi
+            </h2>
+            <p class="mt-3" data-i18n="hki.s3.p1">
+              Aplikasi GO-MANDOR beserta seluruh elemen yang terdapat di dalamnya merupakan karya yang dilindungi berdasarkan ketentuan Hak Cipta.
+            </p>
+            <p class="mt-3" data-i18n="hki.s3.p2">
+              Kecuali diperbolehkan berdasarkan hukum atau secara tertulis oleh NMB, pengguna dilarang:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="hki.s3.ul1_li1">menyalin aplikasi;</li>
+              <li data-i18n="hki.s3.ul1_li2">menggandakan, memodifikasi atau membuat karya turunan;</li>
+              <li data-i18n="hki.s3.ul1_li3">melakukan reverse engineering, decompile, disassemble atau mencoba memperoleh source code;</li>
+              <li data-i18n="hki.s3.ul1_li4">menjual, menyewakan, melisensikan, mendistribusikan atau mengeksploitasi aplikasi;</li>
+              <li data-i18n="hki.s3.ul1_li5">menggunakan aplikasi untuk membangun aplikasi atau layanan yang bersaing secara langsung; atau</li>
+              <li data-i18n="hki.s3.ul1_li6">menghilangkan pemberitahuan mengenai hak cipta dan/atau kepemilikan.</li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="hki.s4.h"
+            >
+              4. Konten Pengguna
+            </h2>
+            <p class="mt-3" data-i18n="hki.s4.p1">
+              Dalam hal pengguna mengunggah foto, video, tulisan, ulasan, komentar atau materi lainnya melalui GO-MANDOR (“Konten Pengguna”), pengguna tetap memiliki hak atas Konten Pengguna tersebut sepanjang hak tersebut memang dimiliki oleh pengguna.
+            </p>
+            <p class="mt-3" data-i18n="hki.s4.p2">
+              Namun, pengguna memberikan kepada NMB lisensi non-eksklusif, bebas royalti, berlaku di seluruh dunia, dapat dialihkan dan dapat disublisensikan, sepanjang diperlukan untuk:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="hki.s4.ul1_li1">menyediakan layanan GO-MANDOR;</li>
+              <li data-i18n="hki.s4.ul1_li2">menampilkan Konten Pengguna kepada pihak yang berkepentingan dengan transaksi;</li>
+              <li data-i18n="hki.s4.ul1_li3">melakukan promosi dan pemasaran GO-MANDOR;</li>
+              <li data-i18n="hki.s4.ul1_li4">meningkatkan kualitas layanan;</li>
+              <li data-i18n="hki.s4.ul1_li5">melakukan analisis dan pengembangan produk; dan</li>
+              <li data-i18n="hki.s4.ul1_li6">memenuhi kewajiban hukum.</li>
+            </ul>
+            <p class="mt-3" data-i18n="hki.s4.p3">
+              Pengguna menjamin bahwa Konten Pengguna tidak melanggar hak pihak ketiga.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="hki.s5.h"
+            >
+              5. Pelanggaran HKI
+            </h2>
+            <p class="mt-3" data-i18n="hki.s5.p1">
+              NMB berhak mengambil tindakan terhadap setiap pihak yang diduga melakukan pelanggaran Hak Kekayaan Intelektual, termasuk:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="hki.s5.ul1_li1">menghapus konten;</li>
+              <li data-i18n="hki.s5.ul1_li2">menonaktifkan akun;</li>
+              <li data-i18n="hki.s5.ul1_li3">membatasi akses terhadap layanan;</li>
+              <li data-i18n="hki.s5.ul1_li4">mengirimkan teguran;</li>
+              <li data-i18n="hki.s5.ul1_li5">menuntut ganti rugi; dan/atau</li>
+              <li data-i18n="hki.s5.ul1_li6">mengambil tindakan hukum perdata maupun pidana sesuai ketentuan hukum yang berlaku.</li>
+            </ul>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMS MODAL -->
+    <div
+      id="termsModal"
+      class="hidden fixed inset-0 z-50 justify-center overflow-y-auto p-4 py-10"
+    >
+      <div id="termsBackdrop" class="fixed inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-4xl w-full h-fit my-auto">
+        <button
+          id="termsClose"
+          type="button"
+          aria-label="Tutup"
+          class="absolute -top-4 -right-4 text-white hover:text-brand-red transition rounded-full bg-black/70 p-1"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="bg-white rounded-lg shadow-2xl p-6 md:p-10 max-h-[85vh] overflow-y-auto"
+        >
+          <h3
+            class="text-brand-red text-xl md:text-2xl font-bold tracking-wide mb-8"
+            data-i18n="terms.title"
+          >
+            SYARAT DAN KETENTUAN GO-MANDOR - PT NIAGA MAKMUR BERJAYA
+          </h3>
+
+          <div class="space-y-8 text-gray-700 leading-relaxed text-sm md:text-base">
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s1.h"
+            >
+              1. Ketentuan Umum
+            </h2>
+            <p class="mt-3" data-i18n="terms.s1.p1">
+              Syarat dan Ketentuan ini (“Syarat dan Ketentuan”) mengatur penggunaan aplikasi, situs web, dan/atau platform GO-MANDOR (“Platform”) yang dikelola oleh PT Niaga Makmur Berjaya (“NMB”).
+            </p>
+            <p class="mt-3" data-i18n="terms.s1.p2">
+              Dengan mengakses, mendaftar, atau menggunakan Platform, Pengguna menyatakan telah membaca, memahami, dan menyetujui seluruh Syarat dan Ketentuan ini serta Kebijakan Privasi GO-MANDOR.
+            </p>
+            <p class="mt-3" data-i18n="terms.s1.p3">
+              Apabila Pengguna tidak menyetujui Syarat dan Ketentuan ini, Pengguna wajib menghentikan penggunaan Platform.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s2.h"
+            >
+              2. Layanan GO-MANDOR
+            </h2>
+            <p class="mt-3" data-i18n="terms.s2.p1">
+              GO-MANDOR merupakan platform yang mempertemukan Pengguna dengan tukang, teknisi, tenaga ahli, kontraktor, dan/atau penyedia jasa lainnya (“Mitra”) untuk memperoleh berbagai layanan sesuai kategori yang tersedia pada Platform.
+            </p>
+            <p class="mt-3" data-i18n="terms.s2.p2">
+              NMB dapat membantu proses pemesanan, komunikasi, penjadwalan, pembayaran, dan/atau penyampaian informasi terkait layanan sesuai fitur yang tersedia.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s3.h"
+            >
+              3. Pemesanan dan Pelaksanaan Layanan
+            </h2>
+            <p class="mt-3" data-i18n="terms.s3.p1">
+              Pengguna wajib memberikan informasi yang benar, lengkap, dan akurat mengenai kebutuhan pekerjaan, lokasi, waktu pelaksanaan, serta informasi lain yang diperlukan.
+            </p>
+            <p class="mt-3" data-i18n="terms.s3.p2">
+              Untuk pekerjaan tertentu, Mitra dapat melakukan survei terlebih dahulu sebelum memberikan penawaran harga dan/atau ruang lingkup pekerjaan.
+            </p>
+            <p class="mt-3" data-i18n="terms.s3.p3">
+              Pekerjaan hanya dapat dilaksanakan setelah Pengguna dan Mitra menyepakati sekurang-kurangnya mengenai jenis pekerjaan, ruang lingkup, harga, material, waktu pelaksanaan, dan ketentuan garansi, apabila berlaku.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s4.h"
+            >
+              4. Harga dan Pembayaran
+            </h2>
+            <p class="mt-3" data-i18n="terms.s4.p1">
+              Harga layanan ditentukan berdasarkan jenis, volume, tingkat kesulitan, lokasi, material, dan faktor lain yang relevan.
+            </p>
+            <p class="mt-3" data-i18n="terms.s4.p2">
+              Setiap biaya tambahan di luar kesepakatan awal wajib diinformasikan kepada Pengguna dan memperoleh persetujuan Pengguna terlebih dahulu.
+            </p>
+            <p class="mt-3" data-i18n="terms.s4.p3">
+              Pengguna wajib melakukan pembayaran sesuai harga dan metode pembayaran yang tercantum pada Platform dan/atau yang telah disepakati dengan Mitra.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s5.h"
+            >
+              5. Pembatalan dan Perubahan Jadwal
+            </h2>
+            <p class="mt-3" data-i18n="terms.s5.p1">
+              Pengguna dapat melakukan pembatalan dan/atau perubahan jadwal sesuai ketentuan yang berlaku pada Platform.
+            </p>
+            <p class="mt-3" data-i18n="terms.s5.p2">
+              Dalam hal pembatalan dilakukan setelah Mitra melakukan perjalanan, survei, pembelian material, atau pekerjaan telah dimulai, Pengguna dapat dikenakan biaya sesuai kondisi dan kebijakan yang berlaku.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s6.h"
+            >
+              6. Tanggung Jawab Mitra
+            </h2>
+            <p class="mt-3" data-i18n="terms.s6.p1">
+              Mitra bertanggung jawab atas pelaksanaan pekerjaan sesuai ruang lingkup dan kesepakatan dengan Pengguna.
+            </p>
+            <p class="mt-3" data-i18n="terms.s6.p2">
+              Mitra wajib memberikan informasi yang benar mengenai identitas, kompetensi, harga, serta layanan yang ditawarkan dan melaksanakan pekerjaan secara profesional.
+            </p>
+            <p class="mt-3" data-i18n="terms.s6.p3">
+              NMB dapat melakukan verifikasi, evaluasi, pembatasan, penangguhan, atau penghentian akses Mitra apabila ditemukan pelanggaran terhadap ketentuan Platform.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s7.h"
+            >
+              7. Tanggung Jawab Pengguna
+            </h2>
+            <p class="mt-3" data-i18n="terms.s7.p1">
+              Pengguna wajib:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="terms.s7.ul1_li1">memberikan informasi yang benar dan dapat dipertanggungjawabkan;</li>
+              <li data-i18n="terms.s7.ul1_li2">memastikan lokasi pekerjaan dapat diakses dan berada dalam kondisi yang aman;</li>
+              <li data-i18n="terms.s7.ul1_li3">memberikan informasi mengenai kondisi khusus lokasi yang dapat memengaruhi pekerjaan;</li>
+              <li data-i18n="terms.s7.ul1_li4">memenuhi kewajiban pembayaran; dan</li>
+              <li data-i18n="terms.s7.ul1_li5">menggunakan Platform secara wajar dan sesuai hukum.</li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s8.h"
+            >
+              8. Garansi dan Komplain
+            </h2>
+            <p class="mt-3" data-i18n="terms.s8.p1">
+              Garansi pekerjaan, apabila tersedia, mengikuti ketentuan yang disepakati antara Pengguna dan Mitra untuk masing-masing pekerjaan.
+            </p>
+            <p class="mt-3" data-i18n="terms.s8.p2">
+              Pengguna dapat menyampaikan keluhan melalui kanal pengaduan GO-MANDOR sesuai prosedur yang ditetapkan NMB.
+            </p>
+            <p class="mt-3" data-i18n="terms.s8.p3">
+              NMB dapat membantu memfasilitasi penyelesaian keluhan antara Pengguna dan Mitra sesuai kewenangan dan kebijakan yang berlaku.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s9.h"
+            >
+              9. Akun dan Keamanan
+            </h2>
+            <p class="mt-3" data-i18n="terms.s9.p1">
+              Pengguna bertanggung jawab menjaga kerahasiaan akun, kata sandi, OTP, dan informasi keamanan lainnya.
+            </p>
+            <p class="mt-3" data-i18n="terms.s9.p2">
+              Segala aktivitas yang dilakukan melalui akun Pengguna menjadi tanggung jawab Pengguna sepanjang tidak terbukti dilakukan tanpa kewenangan.
+            </p>
+            <p class="mt-3" data-i18n="terms.s9.p3">
+              NMB berhak menangguhkan atau menutup akun yang digunakan untuk penipuan, penyalahgunaan, pelanggaran hukum, atau pelanggaran Syarat dan Ketentuan.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s10.h"
+            >
+              10. Hak Kekayaan Intelektual
+            </h2>
+            <p class="mt-3" data-i18n="terms.s10.p1">
+              Seluruh nama, merek, logo, desain, sistem, perangkat lunak, konten, database, tampilan, dan elemen lain yang terdapat pada Platform merupakan milik NMB dan/atau pihak yang memberikan hak kepada NMB dan dilindungi berdasarkan peraturan perundang-undangan.
+            </p>
+            <p class="mt-3" data-i18n="terms.s10.p2">
+              Pengguna dilarang menyalin, mengubah, mendistribusikan, mengeksploitasi, melakukan reverse engineering, atau menggunakan Hak Kekayaan Intelektual tersebut tanpa persetujuan tertulis dari NMB.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s11.h"
+            >
+              11. Larangan
+            </h2>
+            <p class="mt-3" data-i18n="terms.s11.p1">
+              Pengguna dilarang:
+            </p>
+            <ul class="list-disc list-inside mt-3 space-y-1.5">
+              <li data-i18n="terms.s11.ul1_li1">menggunakan Platform untuk tujuan melawan hukum;</li>
+              <li data-i18n="terms.s11.ul1_li2">memberikan informasi palsu atau menyesatkan;</li>
+              <li data-i18n="terms.s11.ul1_li3">melakukan penipuan atau manipulasi transaksi;</li>
+              <li data-i18n="terms.s11.ul1_li4">mengganggu keamanan atau operasional Platform;</li>
+              <li data-i18n="terms.s11.ul1_li5">mengunggah konten yang melanggar hukum atau hak pihak lain;</li>
+              <li data-i18n="terms.s11.ul1_li6">menyalahgunakan data Pengguna atau Mitra; dan/atau</li>
+              <li data-i18n="terms.s11.ul1_li7">melakukan tindakan lain yang dapat merugikan NMB, Mitra, atau Pengguna lainnya.</li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s12.h"
+            >
+              12. Pembatasan Tanggung Jawab
+            </h2>
+            <p class="mt-3" data-i18n="terms.s12.p1">
+              NMB berupaya menyediakan Platform secara aman dan berkesinambungan, namun NMB tidak menjamin bahwa Platform akan selalu tersedia, bebas dari gangguan, kesalahan, atau kegagalan teknis.
+            </p>
+            <p class="mt-3" data-i18n="terms.s12.p2">
+              Sejauh diperbolehkan berdasarkan hukum, NMB tidak bertanggung jawab atas kerugian yang timbul akibat tindakan, kelalaian, kualitas, hasil, atau pelaksanaan pekerjaan oleh Mitra, kecuali apabila kerugian tersebut secara langsung disebabkan oleh kesalahan atau kelalaian NMB.
+            </p>
+            <p class="mt-3" data-i18n="terms.s12.p3">
+              Ketentuan ini tidak dimaksudkan untuk mengesampingkan tanggung jawab NMB yang menurut hukum tidak dapat dikecualikan atau dibatasi.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s13.h"
+            >
+              13. Data Pribadi
+            </h2>
+            <p class="mt-3" data-i18n="terms.s13.p1">
+              NMB dapat mengumpulkan dan memproses Data Pribadi Pengguna untuk menyediakan, mengembangkan, mengamankan, dan meningkatkan layanan GO-MANDOR sesuai dengan Kebijakan Privasi GO-MANDOR dan peraturan perundang-undangan yang berlaku.
+            </p>
+            <p class="mt-3" data-i18n="terms.s13.p2">
+              Dengan menggunakan Platform, Pengguna menyatakan telah membaca dan memahami Kebijakan Privasi tersebut.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s14.h"
+            >
+              14. Perubahan Syarat dan Ketentuan
+            </h2>
+            <p class="mt-3" data-i18n="terms.s14.p1">
+              NMB berhak mengubah, menambah, atau memperbarui Syarat dan Ketentuan ini dari waktu ke waktu.
+            </p>
+            <p class="mt-3" data-i18n="terms.s14.p2">
+              Perubahan akan berlaku sejak tanggal yang ditentukan oleh NMB dan, apabila diperlukan, akan diberitahukan melalui Platform atau sarana komunikasi lainnya.
+            </p>
+            <p class="mt-3" data-i18n="terms.s14.p3">
+              Penggunaan Platform setelah perubahan berlaku merupakan persetujuan Pengguna terhadap perubahan tersebut.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s15.h"
+            >
+              15. Hukum dan Penyelesaian Sengketa
+            </h2>
+            <p class="mt-3" data-i18n="terms.s15.p1">
+              Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan hukum Republik Indonesia.
+            </p>
+            <p class="mt-3" data-i18n="terms.s15.p2">
+              Setiap perselisihan yang timbul akan terlebih dahulu diselesaikan secara musyawarah untuk mufakat.
+            </p>
+            <p class="mt-3" data-i18n="terms.s15.p3">
+              Apabila penyelesaian secara musyawarah tidak tercapai, perselisihan akan diselesaikan melalui mekanisme hukum yang berlaku di Republik Indonesia.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+              data-i18n="terms.s16.h"
+            >
+              16. Kontak
+            </h2>
+            <p class="mt-3" data-i18n-html="terms.s16.p1">
+              Pertanyaan, keluhan, atau permintaan terkait Syarat dan Ketentuan dapat disampaikan melalui:<br />PT NIAGA MAKMUR BERJAYA<br />Pengelola GO-MANDOR<br />Email: info@gomandor.id
+            </p>
+            <p class="mt-3" data-i18n="terms.s16.p2">
+              Dengan menekan tombol “Saya Setuju”, melakukan pendaftaran, atau menggunakan Platform GO-MANDOR, Pengguna menyatakan telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini.
+            </p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- WHATSAPP FLOATING BUTTON -->
     <a
       href="https://wa.me/6285214985827"
@@ -2410,6 +2935,48 @@
         .addEventListener("click", closeTentang);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeTentang();
+      });
+
+      const hkiModal = document.getElementById("hkiModal");
+      const openHki = () => {
+        hkiModal.classList.remove("hidden");
+        hkiModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeHki = () => {
+        hkiModal.classList.add("hidden");
+        hkiModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document.getElementById("hkiBtn").addEventListener("click", openHki);
+      document.getElementById("hkiClose").addEventListener("click", closeHki);
+      document
+        .getElementById("hkiBackdrop")
+        .addEventListener("click", closeHki);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeHki();
+      });
+
+      const termsModal = document.getElementById("termsModal");
+      const openTerms = () => {
+        termsModal.classList.remove("hidden");
+        termsModal.classList.add("flex");
+        document.body.classList.add("overflow-hidden");
+      };
+      const closeTerms = () => {
+        termsModal.classList.add("hidden");
+        termsModal.classList.remove("flex");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      document.getElementById("termsBtn").addEventListener("click", openTerms);
+      document.getElementById("termsClose").addEventListener("click", closeTerms);
+      document
+        .getElementById("termsBackdrop")
+        .addEventListener("click", closeTerms);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeTerms();
       });
 
       [1, 2, 3].forEach((n) => {
