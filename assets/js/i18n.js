@@ -347,70 +347,105 @@
       "hki.title": "HAK KEKAYAAN INTELEKTUAL",
       "hki.subtitle": "GO-MANDOR – PT NIAGA MAKMUR BERJAYA",
       "hki.s1.h": "1. Kepemilikan Hak Kekayaan Intelektual",
-      "hki.s1.p1": "Seluruh Hak Kekayaan Intelektual yang terdapat, digunakan, ditampilkan, dikembangkan, atau tersedia melalui aplikasi GO-MANDOR, situs web, sistem, platform, dan seluruh layanan yang disediakan oleh PT NIAGA MAKMUR BERJAYA (“NMB”), baik yang telah maupun yang akan didaftarkan, merupakan milik NMB dan/atau pihak yang memberikan lisensi kepada NMB, kecuali dinyatakan lain secara tegas.",
-      "hki.s1.p2": "Hak Kekayaan Intelektual tersebut meliputi namun tidak terbatas pada:",
+      "hki.s1.p1":
+        "Seluruh Hak Kekayaan Intelektual yang terdapat, digunakan, ditampilkan, dikembangkan, atau tersedia melalui aplikasi GO-MANDOR, situs web, sistem, platform, dan seluruh layanan yang disediakan oleh PT NIAGA MAKMUR BERJAYA (“NMB”), baik yang telah maupun yang akan didaftarkan, merupakan milik NMB dan/atau pihak yang memberikan lisensi kepada NMB, kecuali dinyatakan lain secara tegas.",
+      "hki.s1.p2":
+        "Hak Kekayaan Intelektual tersebut meliputi namun tidak terbatas pada:",
       "hki.s1.ul1_li1": "nama “GO-MANDOR” dan variasinya;",
-      "hki.s1.ul1_li2": "logo, simbol, desain, ikon, slogan, tagline dan identitas visual GO-MANDOR;",
+      "hki.s1.ul1_li2":
+        "logo, simbol, desain, ikon, slogan, tagline dan identitas visual GO-MANDOR;",
       "hki.s1.ul1_li3": "merek dagang dan/atau merek jasa;",
-      "hki.s1.ul1_li4": "hak cipta atas aplikasi, situs web, desain antarmuka, tata letak, konten, tulisan, foto, ilustrasi, video, audio, grafis dan materi lainnya;",
-      "hki.s1.ul1_li5": "perangkat lunak, source code, object code, algoritma, database, struktur sistem, API dan teknologi pendukung;",
-      "hki.s1.ul1_li6": "desain dan tampilan aplikasi (user interface/user experience);",
+      "hki.s1.ul1_li4":
+        "hak cipta atas aplikasi, situs web, desain antarmuka, tata letak, konten, tulisan, foto, ilustrasi, video, audio, grafis dan materi lainnya;",
+      "hki.s1.ul1_li5":
+        "perangkat lunak, source code, object code, algoritma, database, struktur sistem, API dan teknologi pendukung;",
+      "hki.s1.ul1_li6":
+        "desain dan tampilan aplikasi (user interface/user experience);",
       "hki.s1.ul1_li7": "nama domain, subdomain dan akun resmi GO-MANDOR;",
-      "hki.s1.ul1_li8": "database pengguna, informasi bisnis dan struktur database sepanjang dilindungi berdasarkan peraturan perundang-undangan;",
-      "hki.s1.ul1_li9": "rahasia dagang, metode bisnis, formula, proses, sistem operasional dan informasi teknis; dan",
-      "hki.s1.ul1_li10": "Hak Kekayaan Intelektual lainnya yang berkaitan dengan GO-MANDOR.",
-      "hki.s1.p3": "Pelindungan terhadap hak cipta dan merek tersebut antara lain tunduk pada UU No. 28 Tahun 2014 tentang Hak Cipta dan UU No. 20 Tahun 2016 tentang Merek dan Indikasi Geografis sebagaimana berlaku.",
+      "hki.s1.ul1_li8":
+        "database pengguna, informasi bisnis dan struktur database sepanjang dilindungi berdasarkan peraturan perundang-undangan;",
+      "hki.s1.ul1_li9":
+        "rahasia dagang, metode bisnis, formula, proses, sistem operasional dan informasi teknis; dan",
+      "hki.s1.ul1_li10":
+        "Hak Kekayaan Intelektual lainnya yang berkaitan dengan GO-MANDOR.",
+      "hki.s1.p3":
+        "Pelindungan terhadap hak cipta dan merek tersebut antara lain tunduk pada UU No. 28 Tahun 2014 tentang Hak Cipta dan UU No. 20 Tahun 2016 tentang Merek dan Indikasi Geografis sebagaimana berlaku.",
       "hki.s2.h": "2. Penggunaan Merek GO-MANDOR",
-      "hki.s2.p1": "Pengguna dilarang menggunakan nama, merek, logo, simbol, slogan, atau identitas GO-MANDOR tanpa persetujuan tertulis terlebih dahulu dari NMB.",
+      "hki.s2.p1":
+        "Pengguna dilarang menggunakan nama, merek, logo, simbol, slogan, atau identitas GO-MANDOR tanpa persetujuan tertulis terlebih dahulu dari NMB.",
       "hki.s2.p2": "Tanpa membatasi ketentuan tersebut, pengguna dilarang:",
       "hki.s2.ul1_li1": "menyalin atau menggunakan logo GO-MANDOR;",
-      "hki.s2.ul1_li2": "mendaftarkan nama atau merek yang identik atau memiliki kemiripan dengan GO-MANDOR;",
-      "hki.s2.ul1_li3": "menggunakan GO-MANDOR sebagai bagian dari nama perusahaan, usaha, produk, aplikasi, akun media sosial atau domain;",
-      "hki.s2.ul1_li4": "menggunakan merek GO-MANDOR untuk memberikan kesan seolah-olah pengguna memiliki hubungan, afiliasi, kemitraan, sponsor atau endorsement dari NMB; atau",
-      "hki.s2.ul1_li5": "melakukan tindakan lain yang dapat menimbulkan kebingungan mengenai hubungan antara pengguna dengan NMB.",
+      "hki.s2.ul1_li2":
+        "mendaftarkan nama atau merek yang identik atau memiliki kemiripan dengan GO-MANDOR;",
+      "hki.s2.ul1_li3":
+        "menggunakan GO-MANDOR sebagai bagian dari nama perusahaan, usaha, produk, aplikasi, akun media sosial atau domain;",
+      "hki.s2.ul1_li4":
+        "menggunakan merek GO-MANDOR untuk memberikan kesan seolah-olah pengguna memiliki hubungan, afiliasi, kemitraan, sponsor atau endorsement dari NMB; atau",
+      "hki.s2.ul1_li5":
+        "melakukan tindakan lain yang dapat menimbulkan kebingungan mengenai hubungan antara pengguna dengan NMB.",
       "hki.s3.h": "3. Hak Cipta atas Aplikasi",
-      "hki.s3.p1": "Aplikasi GO-MANDOR beserta seluruh elemen yang terdapat di dalamnya merupakan karya yang dilindungi berdasarkan ketentuan Hak Cipta.",
-      "hki.s3.p2": "Kecuali diperbolehkan berdasarkan hukum atau secara tertulis oleh NMB, pengguna dilarang:",
+      "hki.s3.p1":
+        "Aplikasi GO-MANDOR beserta seluruh elemen yang terdapat di dalamnya merupakan karya yang dilindungi berdasarkan ketentuan Hak Cipta.",
+      "hki.s3.p2":
+        "Kecuali diperbolehkan berdasarkan hukum atau secara tertulis oleh NMB, pengguna dilarang:",
       "hki.s3.ul1_li1": "menyalin aplikasi;",
-      "hki.s3.ul1_li2": "menggandakan, memodifikasi atau membuat karya turunan;",
-      "hki.s3.ul1_li3": "melakukan reverse engineering, decompile, disassemble atau mencoba memperoleh source code;",
-      "hki.s3.ul1_li4": "menjual, menyewakan, melisensikan, mendistribusikan atau mengeksploitasi aplikasi;",
-      "hki.s3.ul1_li5": "menggunakan aplikasi untuk membangun aplikasi atau layanan yang bersaing secara langsung; atau",
-      "hki.s3.ul1_li6": "menghilangkan pemberitahuan mengenai hak cipta dan/atau kepemilikan.",
+      "hki.s3.ul1_li2":
+        "menggandakan, memodifikasi atau membuat karya turunan;",
+      "hki.s3.ul1_li3":
+        "melakukan reverse engineering, decompile, disassemble atau mencoba memperoleh source code;",
+      "hki.s3.ul1_li4":
+        "menjual, menyewakan, melisensikan, mendistribusikan atau mengeksploitasi aplikasi;",
+      "hki.s3.ul1_li5":
+        "menggunakan aplikasi untuk membangun aplikasi atau layanan yang bersaing secara langsung; atau",
+      "hki.s3.ul1_li6":
+        "menghilangkan pemberitahuan mengenai hak cipta dan/atau kepemilikan.",
       "hki.s4.h": "4. Konten Pengguna",
-      "hki.s4.p1": "Dalam hal pengguna mengunggah foto, video, tulisan, ulasan, komentar atau materi lainnya melalui GO-MANDOR (“Konten Pengguna”), pengguna tetap memiliki hak atas Konten Pengguna tersebut sepanjang hak tersebut memang dimiliki oleh pengguna.",
-      "hki.s4.p2": "Namun, pengguna memberikan kepada NMB lisensi non-eksklusif, bebas royalti, berlaku di seluruh dunia, dapat dialihkan dan dapat disublisensikan, sepanjang diperlukan untuk:",
+      "hki.s4.p1":
+        "Dalam hal pengguna mengunggah foto, video, tulisan, ulasan, komentar atau materi lainnya melalui GO-MANDOR (“Konten Pengguna”), pengguna tetap memiliki hak atas Konten Pengguna tersebut sepanjang hak tersebut memang dimiliki oleh pengguna.",
+      "hki.s4.p2":
+        "Namun, pengguna memberikan kepada NMB lisensi non-eksklusif, bebas royalti, berlaku di seluruh dunia, dapat dialihkan dan dapat disublisensikan, sepanjang diperlukan untuk:",
       "hki.s4.ul1_li1": "menyediakan layanan GO-MANDOR;",
-      "hki.s4.ul1_li2": "menampilkan Konten Pengguna kepada pihak yang berkepentingan dengan transaksi;",
+      "hki.s4.ul1_li2":
+        "menampilkan Konten Pengguna kepada pihak yang berkepentingan dengan transaksi;",
       "hki.s4.ul1_li3": "melakukan promosi dan pemasaran GO-MANDOR;",
       "hki.s4.ul1_li4": "meningkatkan kualitas layanan;",
       "hki.s4.ul1_li5": "melakukan analisis dan pengembangan produk; dan",
       "hki.s4.ul1_li6": "memenuhi kewajiban hukum.",
-      "hki.s4.p3": "Pengguna menjamin bahwa Konten Pengguna tidak melanggar hak pihak ketiga.",
+      "hki.s4.p3":
+        "Pengguna menjamin bahwa Konten Pengguna tidak melanggar hak pihak ketiga.",
       "hki.s5.h": "5. Pelanggaran HKI",
-      "hki.s5.p1": "NMB berhak mengambil tindakan terhadap setiap pihak yang diduga melakukan pelanggaran Hak Kekayaan Intelektual, termasuk:",
+      "hki.s5.p1":
+        "NMB berhak mengambil tindakan terhadap setiap pihak yang diduga melakukan pelanggaran Hak Kekayaan Intelektual, termasuk:",
       "hki.s5.ul1_li1": "menghapus konten;",
       "hki.s5.ul1_li2": "menonaktifkan akun;",
       "hki.s5.ul1_li3": "membatasi akses terhadap layanan;",
       "hki.s5.ul1_li4": "mengirimkan teguran;",
       "hki.s5.ul1_li5": "menuntut ganti rugi; dan/atau",
-      "hki.s5.ul1_li6": "mengambil tindakan hukum perdata maupun pidana sesuai ketentuan hukum yang berlaku.",
+      "hki.s5.ul1_li6":
+        "mengambil tindakan hukum perdata maupun pidana sesuai ketentuan hukum yang berlaku.",
       "privacy.title": "KEBIJAKAN PRIVASI GO-MANDOR – PT NIAGA MAKMUR BERJAYA",
       "privacy.s1.h": "1. UMUM",
-      "privacy.s1.p1": "PT Niaga Makmur Berjaya (“NMB”, “Kami”) berkomitmen untuk melindungi Data Pribadi Pengguna GO-MANDOR (“Platform”). Kebijakan Privasi ini menjelaskan pengumpulan, penggunaan, penyimpanan, pengungkapan, perlindungan, dan penghapusan Data Pribadi sesuai dengan UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi dan peraturan perundang-undangan yang berlaku.",
-      "privacy.s1.p2": "Dengan menggunakan Platform, Pengguna dianggap telah membaca, memahami, dan menyetujui Kebijakan Privasi ini.",
+      "privacy.s1.p1":
+        "PT Niaga Makmur Berjaya (“NMB”, “Kami”) berkomitmen untuk melindungi Data Pribadi Pengguna GO-MANDOR (“Platform”). Kebijakan Privasi ini menjelaskan pengumpulan, penggunaan, penyimpanan, pengungkapan, perlindungan, dan penghapusan Data Pribadi sesuai dengan UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi dan peraturan perundang-undangan yang berlaku.",
+      "privacy.s1.p2":
+        "Dengan menggunakan Platform, Pengguna dianggap telah membaca, memahami, dan menyetujui Kebijakan Privasi ini.",
       "privacy.s2.h": "2. PENGENDALI DATA",
-      "privacy.s2.p1": "PT. NIAGA MAKMUR BERJAYA<br />Alamat: Mitra Gading Villa, Jl. Kelapa Hibrida I No. G1/3m, RT 7/RW 11, Kelapa Gading Barat, Kec. Kelapa Gading, Jakarta Utara, 14250<br />Email: info@gomandor.id",
-      "privacy.s2.p2": "NMB bertindak sebagai Pengendali Data Pribadi dalam pemrosesan Data Pribadi melalui Platform sesuai dengan fungsi dan layanan yang diberikan.",
+      "privacy.s2.p1":
+        "PT. NIAGA MAKMUR BERJAYA<br />Alamat: Mitra Gading Villa, Jl. Kelapa Hibrida I No. G1/3m, RT 7/RW 11, Kelapa Gading Barat, Kec. Kelapa Gading, Jakarta Utara, 14250<br />Email: info@gomandor.id",
+      "privacy.s2.p2":
+        "NMB bertindak sebagai Pengendali Data Pribadi dalam pemrosesan Data Pribadi melalui Platform sesuai dengan fungsi dan layanan yang diberikan.",
       "privacy.s3.h": "3. DATA YANG DIKUMPULKAN",
-      "privacy.s3.p1": "NMB dapat mengumpulkan Data Pribadi yang diperlukan untuk penyediaan layanan, antara lain:",
+      "privacy.s3.p1":
+        "NMB dapat mengumpulkan Data Pribadi yang diperlukan untuk penyediaan layanan, antara lain:",
       "privacy.s3.ul1_li1": "nama, nomor telepon, dan alamat email;",
       "privacy.s3.ul1_li2": "alamat dan/atau lokasi pekerjaan;",
       "privacy.s3.ul1_li3": "rincian Pesanan dan jenis layanan;",
       "privacy.s3.ul1_li4": "foto atau informasi mengenai lokasi/pekerjaan;",
       "privacy.s3.ul1_li5": "riwayat transaksi dan komunikasi; dan",
-      "privacy.s3.ul1_li6": "data teknis, perangkat, log, serta lokasi apabila diperlukan untuk fungsi Platform.",
-      "privacy.s3.p2": "NMB hanya mengumpulkan Data Pribadi yang relevan dan diperlukan sesuai tujuan pemrosesan.",
+      "privacy.s3.ul1_li6":
+        "data teknis, perangkat, log, serta lokasi apabila diperlukan untuk fungsi Platform.",
+      "privacy.s3.p2":
+        "NMB hanya mengumpulkan Data Pribadi yang relevan dan diperlukan sesuai tujuan pemrosesan.",
       "privacy.s4.h": "4. TUJUAN PEMROSESAN",
       "privacy.s4.p1": "Data Pribadi digunakan untuk:",
       "privacy.s4.ul1_li1": "membuat dan mengelola akun;",
@@ -423,99 +458,156 @@
       "privacy.s4.ul1_li8": "mencegah penipuan dan penyalahgunaan; dan",
       "privacy.s4.ul1_li9": "memenuhi kewajiban hukum.",
       "privacy.s5.h": "5. DASAR PEMROSESAN",
-      "privacy.s5.p1": "Pemrosesan Data Pribadi dilakukan berdasarkan dasar yang diperbolehkan oleh peraturan perundang-undangan, termasuk persetujuan Pengguna, pelaksanaan perjanjian, pemenuhan kewajiban hukum, kepentingan vital, dan/atau dasar hukum lainnya yang berlaku.",
+      "privacy.s5.p1":
+        "Pemrosesan Data Pribadi dilakukan berdasarkan dasar yang diperbolehkan oleh peraturan perundang-undangan, termasuk persetujuan Pengguna, pelaksanaan perjanjian, pemenuhan kewajiban hukum, kepentingan vital, dan/atau dasar hukum lainnya yang berlaku.",
       "privacy.s6.h": "6. PENGUNGKAPAN DATA",
       "privacy.s6.p1": "NMB tidak menjual Data Pribadi Pengguna.",
-      "privacy.s6.p2": "Data dapat diungkapkan secara terbatas kepada Mitra/Ahli, penyedia teknologi dan pembayaran, penyedia layanan pendukung, penasihat profesional, auditor, serta instansi pemerintah atau aparat penegak hukum apabila diwajibkan atau diperbolehkan berdasarkan hukum.",
-      "privacy.s6.p3": "Pengungkapan dilakukan hanya sejauh diperlukan untuk tujuan yang sah dan sesuai ketentuan peraturan perundang-undangan.",
+      "privacy.s6.p2":
+        "Data dapat diungkapkan secara terbatas kepada Mitra/Ahli, penyedia teknologi dan pembayaran, penyedia layanan pendukung, penasihat profesional, auditor, serta instansi pemerintah atau aparat penegak hukum apabila diwajibkan atau diperbolehkan berdasarkan hukum.",
+      "privacy.s6.p3":
+        "Pengungkapan dilakukan hanya sejauh diperlukan untuk tujuan yang sah dan sesuai ketentuan peraturan perundang-undangan.",
       "privacy.s7.h": "7. PENYIMPANAN DAN KEAMANAN DATA",
-      "privacy.s7.p1": "NMB menyimpan Data Pribadi selama diperlukan untuk penyediaan layanan, pemenuhan kewajiban hukum, penyelesaian sengketa, dan kepentingan keamanan.",
-      "privacy.s7.p2": "NMB menerapkan langkah teknis dan organisatoris yang wajar untuk melindungi Data Pribadi dari akses, penggunaan, perubahan, kehilangan, atau pengungkapan yang tidak sah.",
-      "privacy.s7.p3": "Setelah tidak diperlukan, Data Pribadi akan dihapus, dimusnahkan, atau dianonimkan sesuai ketentuan hukum.",
+      "privacy.s7.p1":
+        "NMB menyimpan Data Pribadi selama diperlukan untuk penyediaan layanan, pemenuhan kewajiban hukum, penyelesaian sengketa, dan kepentingan keamanan.",
+      "privacy.s7.p2":
+        "NMB menerapkan langkah teknis dan organisatoris yang wajar untuk melindungi Data Pribadi dari akses, penggunaan, perubahan, kehilangan, atau pengungkapan yang tidak sah.",
+      "privacy.s7.p3":
+        "Setelah tidak diperlukan, Data Pribadi akan dihapus, dimusnahkan, atau dianonimkan sesuai ketentuan hukum.",
       "privacy.s8.h": "8. HAK PENGGUNA",
-      "privacy.s8.p1": "Sesuai dengan peraturan perundang-undangan, Pengguna berhak memperoleh informasi mengenai pemrosesan Data Pribadi, mengakses dan memperbaiki Data Pribadi, meminta penghapusan atau pembatasan pemrosesan dalam kondisi tertentu, menarik persetujuan, serta menggunakan hak lainnya yang diberikan oleh hukum.",
-      "privacy.s8.p2": "Permintaan terkait Data Pribadi dapat disampaikan kepada:<br />Email: info@gomandor.id",
+      "privacy.s8.p1":
+        "Sesuai dengan peraturan perundang-undangan, Pengguna berhak memperoleh informasi mengenai pemrosesan Data Pribadi, mengakses dan memperbaiki Data Pribadi, meminta penghapusan atau pembatasan pemrosesan dalam kondisi tertentu, menarik persetujuan, serta menggunakan hak lainnya yang diberikan oleh hukum.",
+      "privacy.s8.p2":
+        "Permintaan terkait Data Pribadi dapat disampaikan kepada:<br />Email: info@gomandor.id",
       "privacy.s9.h": "9. COOKIES DAN TEKNOLOGI SERUPA",
-      "privacy.s9.p1": "GO-MANDOR dapat menggunakan cookies, SDK, device identifiers, log files, dan teknologi serupa untuk menjalankan fungsi Platform, menjaga keamanan, melakukan analisis, dan meningkatkan layanan.",
+      "privacy.s9.p1":
+        "GO-MANDOR dapat menggunakan cookies, SDK, device identifiers, log files, dan teknologi serupa untuk menjalankan fungsi Platform, menjaga keamanan, melakukan analisis, dan meningkatkan layanan.",
       "privacy.s10.h": "10. DATA ANAK",
-      "privacy.s10.p1": "GO-MANDOR tidak ditujukan untuk memperoleh Data Pribadi anak tanpa dasar dan persetujuan yang dipersyaratkan oleh hukum. Apabila NMB mengetahui bahwa Data Pribadi anak telah dikumpulkan secara tidak semestinya, NMB dapat mengambil langkah yang diperlukan sesuai ketentuan hukum.",
+      "privacy.s10.p1":
+        "GO-MANDOR tidak ditujukan untuk memperoleh Data Pribadi anak tanpa dasar dan persetujuan yang dipersyaratkan oleh hukum. Apabila NMB mengetahui bahwa Data Pribadi anak telah dikumpulkan secara tidak semestinya, NMB dapat mengambil langkah yang diperlukan sesuai ketentuan hukum.",
       "privacy.s11.h": "11. TRANSFER DAN PEMROSESAN DATA",
-      "privacy.s11.p1": "Data Pribadi dapat diproses atau disimpan di Indonesia dan/atau di luar Indonesia melalui penyedia layanan yang digunakan NMB, dengan tetap memperhatikan persyaratan pelindungan Data Pribadi berdasarkan hukum yang berlaku.",
+      "privacy.s11.p1":
+        "Data Pribadi dapat diproses atau disimpan di Indonesia dan/atau di luar Indonesia melalui penyedia layanan yang digunakan NMB, dengan tetap memperhatikan persyaratan pelindungan Data Pribadi berdasarkan hukum yang berlaku.",
       "privacy.s12.h": "12. KEGAGALAN PELINDUNGAN DATA",
-      "privacy.s12.p1": "Dalam hal terjadi kegagalan pelindungan Data Pribadi, NMB akan melakukan penanganan dan pemberitahuan kepada pihak yang relevan sesuai dengan kewajiban berdasarkan peraturan perundang-undangan.",
+      "privacy.s12.p1":
+        "Dalam hal terjadi kegagalan pelindungan Data Pribadi, NMB akan melakukan penanganan dan pemberitahuan kepada pihak yang relevan sesuai dengan kewajiban berdasarkan peraturan perundang-undangan.",
       "privacy.s13.h": "13. PERUBAHAN KEBIJAKAN PRIVASI",
-      "privacy.s13.p1": "NMB dapat mengubah Kebijakan Privasi ini dari waktu ke waktu. Perubahan material akan diberitahukan melalui Platform dan/atau sarana komunikasi lainnya.",
+      "privacy.s13.p1":
+        "NMB dapat mengubah Kebijakan Privasi ini dari waktu ke waktu. Perubahan material akan diberitahukan melalui Platform dan/atau sarana komunikasi lainnya.",
       "privacy.s14.h": "14. HUBUNGAN DENGAN SYARAT DAN KETENTUAN",
-      "privacy.s14.p1": "Kebijakan Privasi ini merupakan bagian yang tidak terpisahkan dari Syarat dan Ketentuan GO-MANDOR.",
-      "privacy.s14.p2": "Dengan mengakses atau menggunakan GO-MANDOR, Pengguna menyatakan telah membaca, memahami, dan menyetujui Kebijakan Privasi ini.",
+      "privacy.s14.p1":
+        "Kebijakan Privasi ini merupakan bagian yang tidak terpisahkan dari Syarat dan Ketentuan GO-MANDOR.",
+      "privacy.s14.p2":
+        "Dengan mengakses atau menggunakan GO-MANDOR, Pengguna menyatakan telah membaca, memahami, dan menyetujui Kebijakan Privasi ini.",
       "terms.title": "SYARAT DAN KETENTUAN GO-MANDOR - PT NIAGA MAKMUR BERJAYA",
       "terms.s1.h": "1. Ketentuan Umum",
-      "terms.s1.p1": "Syarat dan Ketentuan ini (“Syarat dan Ketentuan”) mengatur penggunaan aplikasi, situs web, dan/atau platform GO-MANDOR (“Platform”) yang dikelola oleh PT Niaga Makmur Berjaya (“NMB”).",
-      "terms.s1.p2": "Dengan mengakses, mendaftar, atau menggunakan Platform, Pengguna menyatakan telah membaca, memahami, dan menyetujui seluruh Syarat dan Ketentuan ini serta Kebijakan Privasi GO-MANDOR.",
-      "terms.s1.p3": "Apabila Pengguna tidak menyetujui Syarat dan Ketentuan ini, Pengguna wajib menghentikan penggunaan Platform.",
+      "terms.s1.p1":
+        "Syarat dan Ketentuan ini (“Syarat dan Ketentuan”) mengatur penggunaan aplikasi, situs web, dan/atau platform GO-MANDOR (“Platform”) yang dikelola oleh PT Niaga Makmur Berjaya (“NMB”).",
+      "terms.s1.p2":
+        "Dengan mengakses, mendaftar, atau menggunakan Platform, Pengguna menyatakan telah membaca, memahami, dan menyetujui seluruh Syarat dan Ketentuan ini serta Kebijakan Privasi GO-MANDOR.",
+      "terms.s1.p3":
+        "Apabila Pengguna tidak menyetujui Syarat dan Ketentuan ini, Pengguna wajib menghentikan penggunaan Platform.",
       "terms.s2.h": "2. Layanan GO-MANDOR",
-      "terms.s2.p1": "GO-MANDOR merupakan platform yang mempertemukan Pengguna dengan tukang, teknisi, tenaga ahli, kontraktor, dan/atau penyedia jasa lainnya (“Mitra”) untuk memperoleh berbagai layanan sesuai kategori yang tersedia pada Platform.",
-      "terms.s2.p2": "NMB dapat membantu proses pemesanan, komunikasi, penjadwalan, pembayaran, dan/atau penyampaian informasi terkait layanan sesuai fitur yang tersedia.",
+      "terms.s2.p1":
+        "GO-MANDOR merupakan platform yang mempertemukan Pengguna dengan tukang, teknisi, tenaga ahli, kontraktor, dan/atau penyedia jasa lainnya (“Mitra”) untuk memperoleh berbagai layanan sesuai kategori yang tersedia pada Platform.",
+      "terms.s2.p2":
+        "NMB dapat membantu proses pemesanan, komunikasi, penjadwalan, pembayaran, dan/atau penyampaian informasi terkait layanan sesuai fitur yang tersedia.",
       "terms.s3.h": "3. Pemesanan dan Pelaksanaan Layanan",
-      "terms.s3.p1": "Pengguna wajib memberikan informasi yang benar, lengkap, dan akurat mengenai kebutuhan pekerjaan, lokasi, waktu pelaksanaan, serta informasi lain yang diperlukan.",
-      "terms.s3.p2": "Untuk pekerjaan tertentu, Mitra dapat melakukan survei terlebih dahulu sebelum memberikan penawaran harga dan/atau ruang lingkup pekerjaan.",
-      "terms.s3.p3": "Pekerjaan hanya dapat dilaksanakan setelah Pengguna dan Mitra menyepakati sekurang-kurangnya mengenai jenis pekerjaan, ruang lingkup, harga, material, waktu pelaksanaan, dan ketentuan garansi, apabila berlaku.",
+      "terms.s3.p1":
+        "Pengguna wajib memberikan informasi yang benar, lengkap, dan akurat mengenai kebutuhan pekerjaan, lokasi, waktu pelaksanaan, serta informasi lain yang diperlukan.",
+      "terms.s3.p2":
+        "Untuk pekerjaan tertentu, Mitra dapat melakukan survei terlebih dahulu sebelum memberikan penawaran harga dan/atau ruang lingkup pekerjaan.",
+      "terms.s3.p3":
+        "Pekerjaan hanya dapat dilaksanakan setelah Pengguna dan Mitra menyepakati sekurang-kurangnya mengenai jenis pekerjaan, ruang lingkup, harga, material, waktu pelaksanaan, dan ketentuan garansi, apabila berlaku.",
       "terms.s4.h": "4. Harga dan Pembayaran",
-      "terms.s4.p1": "Harga layanan ditentukan berdasarkan jenis, volume, tingkat kesulitan, lokasi, material, dan faktor lain yang relevan.",
-      "terms.s4.p2": "Setiap biaya tambahan di luar kesepakatan awal wajib diinformasikan kepada Pengguna dan memperoleh persetujuan Pengguna terlebih dahulu.",
-      "terms.s4.p3": "Pengguna wajib melakukan pembayaran sesuai harga dan metode pembayaran yang tercantum pada Platform dan/atau yang telah disepakati dengan Mitra.",
+      "terms.s4.p1":
+        "Harga layanan ditentukan berdasarkan jenis, volume, tingkat kesulitan, lokasi, material, dan faktor lain yang relevan.",
+      "terms.s4.p2":
+        "Setiap biaya tambahan di luar kesepakatan awal wajib diinformasikan kepada Pengguna dan memperoleh persetujuan Pengguna terlebih dahulu.",
+      "terms.s4.p3":
+        "Pengguna wajib melakukan pembayaran sesuai harga dan metode pembayaran yang tercantum pada Platform dan/atau yang telah disepakati dengan Mitra.",
       "terms.s5.h": "5. Pembatalan dan Perubahan Jadwal",
-      "terms.s5.p1": "Pengguna dapat melakukan pembatalan dan/atau perubahan jadwal sesuai ketentuan yang berlaku pada Platform.",
-      "terms.s5.p2": "Dalam hal pembatalan dilakukan setelah Mitra melakukan perjalanan, survei, pembelian material, atau pekerjaan telah dimulai, Pengguna dapat dikenakan biaya sesuai kondisi dan kebijakan yang berlaku.",
+      "terms.s5.p1":
+        "Pengguna dapat melakukan pembatalan dan/atau perubahan jadwal sesuai ketentuan yang berlaku pada Platform.",
+      "terms.s5.p2":
+        "Dalam hal pembatalan dilakukan setelah Mitra melakukan perjalanan, survei, pembelian material, atau pekerjaan telah dimulai, Pengguna dapat dikenakan biaya sesuai kondisi dan kebijakan yang berlaku.",
       "terms.s6.h": "6. Tanggung Jawab Mitra",
-      "terms.s6.p1": "Mitra bertanggung jawab atas pelaksanaan pekerjaan sesuai ruang lingkup dan kesepakatan dengan Pengguna.",
-      "terms.s6.p2": "Mitra wajib memberikan informasi yang benar mengenai identitas, kompetensi, harga, serta layanan yang ditawarkan dan melaksanakan pekerjaan secara profesional.",
-      "terms.s6.p3": "NMB dapat melakukan verifikasi, evaluasi, pembatasan, penangguhan, atau penghentian akses Mitra apabila ditemukan pelanggaran terhadap ketentuan Platform.",
+      "terms.s6.p1":
+        "Mitra bertanggung jawab atas pelaksanaan pekerjaan sesuai ruang lingkup dan kesepakatan dengan Pengguna.",
+      "terms.s6.p2":
+        "Mitra wajib memberikan informasi yang benar mengenai identitas, kompetensi, harga, serta layanan yang ditawarkan dan melaksanakan pekerjaan secara profesional.",
+      "terms.s6.p3":
+        "NMB dapat melakukan verifikasi, evaluasi, pembatasan, penangguhan, atau penghentian akses Mitra apabila ditemukan pelanggaran terhadap ketentuan Platform.",
       "terms.s7.h": "7. Tanggung Jawab Pengguna",
       "terms.s7.p1": "Pengguna wajib:",
-      "terms.s7.ul1_li1": "memberikan informasi yang benar dan dapat dipertanggungjawabkan;",
-      "terms.s7.ul1_li2": "memastikan lokasi pekerjaan dapat diakses dan berada dalam kondisi yang aman;",
-      "terms.s7.ul1_li3": "memberikan informasi mengenai kondisi khusus lokasi yang dapat memengaruhi pekerjaan;",
+      "terms.s7.ul1_li1":
+        "memberikan informasi yang benar dan dapat dipertanggungjawabkan;",
+      "terms.s7.ul1_li2":
+        "memastikan lokasi pekerjaan dapat diakses dan berada dalam kondisi yang aman;",
+      "terms.s7.ul1_li3":
+        "memberikan informasi mengenai kondisi khusus lokasi yang dapat memengaruhi pekerjaan;",
       "terms.s7.ul1_li4": "memenuhi kewajiban pembayaran; dan",
       "terms.s7.ul1_li5": "menggunakan Platform secara wajar dan sesuai hukum.",
       "terms.s8.h": "8. Garansi dan Komplain",
-      "terms.s8.p1": "Garansi pekerjaan, apabila tersedia, mengikuti ketentuan yang disepakati antara Pengguna dan Mitra untuk masing-masing pekerjaan.",
-      "terms.s8.p2": "Pengguna dapat menyampaikan keluhan melalui kanal pengaduan GO-MANDOR sesuai prosedur yang ditetapkan NMB.",
-      "terms.s8.p3": "NMB dapat membantu memfasilitasi penyelesaian keluhan antara Pengguna dan Mitra sesuai kewenangan dan kebijakan yang berlaku.",
+      "terms.s8.p1":
+        "Garansi pekerjaan, apabila tersedia, mengikuti ketentuan yang disepakati antara Pengguna dan Mitra untuk masing-masing pekerjaan.",
+      "terms.s8.p2":
+        "Pengguna dapat menyampaikan keluhan melalui kanal pengaduan GO-MANDOR sesuai prosedur yang ditetapkan NMB.",
+      "terms.s8.p3":
+        "NMB dapat membantu memfasilitasi penyelesaian keluhan antara Pengguna dan Mitra sesuai kewenangan dan kebijakan yang berlaku.",
       "terms.s9.h": "9. Akun dan Keamanan",
-      "terms.s9.p1": "Pengguna bertanggung jawab menjaga kerahasiaan akun, kata sandi, OTP, dan informasi keamanan lainnya.",
-      "terms.s9.p2": "Segala aktivitas yang dilakukan melalui akun Pengguna menjadi tanggung jawab Pengguna sepanjang tidak terbukti dilakukan tanpa kewenangan.",
-      "terms.s9.p3": "NMB berhak menangguhkan atau menutup akun yang digunakan untuk penipuan, penyalahgunaan, pelanggaran hukum, atau pelanggaran Syarat dan Ketentuan.",
+      "terms.s9.p1":
+        "Pengguna bertanggung jawab menjaga kerahasiaan akun, kata sandi, OTP, dan informasi keamanan lainnya.",
+      "terms.s9.p2":
+        "Segala aktivitas yang dilakukan melalui akun Pengguna menjadi tanggung jawab Pengguna sepanjang tidak terbukti dilakukan tanpa kewenangan.",
+      "terms.s9.p3":
+        "NMB berhak menangguhkan atau menutup akun yang digunakan untuk penipuan, penyalahgunaan, pelanggaran hukum, atau pelanggaran Syarat dan Ketentuan.",
       "terms.s10.h": "10. Hak Kekayaan Intelektual",
-      "terms.s10.p1": "Seluruh nama, merek, logo, desain, sistem, perangkat lunak, konten, database, tampilan, dan elemen lain yang terdapat pada Platform merupakan milik NMB dan/atau pihak yang memberikan hak kepada NMB dan dilindungi berdasarkan peraturan perundang-undangan.",
-      "terms.s10.p2": "Pengguna dilarang menyalin, mengubah, mendistribusikan, mengeksploitasi, melakukan reverse engineering, atau menggunakan Hak Kekayaan Intelektual tersebut tanpa persetujuan tertulis dari NMB.",
+      "terms.s10.p1":
+        "Seluruh nama, merek, logo, desain, sistem, perangkat lunak, konten, database, tampilan, dan elemen lain yang terdapat pada Platform merupakan milik NMB dan/atau pihak yang memberikan hak kepada NMB dan dilindungi berdasarkan peraturan perundang-undangan.",
+      "terms.s10.p2":
+        "Pengguna dilarang menyalin, mengubah, mendistribusikan, mengeksploitasi, melakukan reverse engineering, atau menggunakan Hak Kekayaan Intelektual tersebut tanpa persetujuan tertulis dari NMB.",
       "terms.s11.h": "11. Larangan",
       "terms.s11.p1": "Pengguna dilarang:",
       "terms.s11.ul1_li1": "menggunakan Platform untuk tujuan melawan hukum;",
       "terms.s11.ul1_li2": "memberikan informasi palsu atau menyesatkan;",
       "terms.s11.ul1_li3": "melakukan penipuan atau manipulasi transaksi;",
       "terms.s11.ul1_li4": "mengganggu keamanan atau operasional Platform;",
-      "terms.s11.ul1_li5": "mengunggah konten yang melanggar hukum atau hak pihak lain;",
+      "terms.s11.ul1_li5":
+        "mengunggah konten yang melanggar hukum atau hak pihak lain;",
       "terms.s11.ul1_li6": "menyalahgunakan data Pengguna atau Mitra; dan/atau",
-      "terms.s11.ul1_li7": "melakukan tindakan lain yang dapat merugikan NMB, Mitra, atau Pengguna lainnya.",
+      "terms.s11.ul1_li7":
+        "melakukan tindakan lain yang dapat merugikan NMB, Mitra, atau Pengguna lainnya.",
       "terms.s12.h": "12. Pembatasan Tanggung Jawab",
-      "terms.s12.p1": "NMB berupaya menyediakan Platform secara aman dan berkesinambungan, namun NMB tidak menjamin bahwa Platform akan selalu tersedia, bebas dari gangguan, kesalahan, atau kegagalan teknis.",
-      "terms.s12.p2": "Sejauh diperbolehkan berdasarkan hukum, NMB tidak bertanggung jawab atas kerugian yang timbul akibat tindakan, kelalaian, kualitas, hasil, atau pelaksanaan pekerjaan oleh Mitra, kecuali apabila kerugian tersebut secara langsung disebabkan oleh kesalahan atau kelalaian NMB.",
-      "terms.s12.p3": "Ketentuan ini tidak dimaksudkan untuk mengesampingkan tanggung jawab NMB yang menurut hukum tidak dapat dikecualikan atau dibatasi.",
+      "terms.s12.p1":
+        "NMB berupaya menyediakan Platform secara aman dan berkesinambungan, namun NMB tidak menjamin bahwa Platform akan selalu tersedia, bebas dari gangguan, kesalahan, atau kegagalan teknis.",
+      "terms.s12.p2":
+        "Sejauh diperbolehkan berdasarkan hukum, NMB tidak bertanggung jawab atas kerugian yang timbul akibat tindakan, kelalaian, kualitas, hasil, atau pelaksanaan pekerjaan oleh Mitra, kecuali apabila kerugian tersebut secara langsung disebabkan oleh kesalahan atau kelalaian NMB.",
+      "terms.s12.p3":
+        "Ketentuan ini tidak dimaksudkan untuk mengesampingkan tanggung jawab NMB yang menurut hukum tidak dapat dikecualikan atau dibatasi.",
       "terms.s13.h": "13. Data Pribadi",
-      "terms.s13.p1": "NMB dapat mengumpulkan dan memproses Data Pribadi Pengguna untuk menyediakan, mengembangkan, mengamankan, dan meningkatkan layanan GO-MANDOR sesuai dengan Kebijakan Privasi GO-MANDOR dan peraturan perundang-undangan yang berlaku.",
-      "terms.s13.p2": "Dengan menggunakan Platform, Pengguna menyatakan telah membaca dan memahami Kebijakan Privasi tersebut.",
+      "terms.s13.p1":
+        "NMB dapat mengumpulkan dan memproses Data Pribadi Pengguna untuk menyediakan, mengembangkan, mengamankan, dan meningkatkan layanan GO-MANDOR sesuai dengan Kebijakan Privasi GO-MANDOR dan peraturan perundang-undangan yang berlaku.",
+      "terms.s13.p2":
+        "Dengan menggunakan Platform, Pengguna menyatakan telah membaca dan memahami Kebijakan Privasi tersebut.",
       "terms.s14.h": "14. Perubahan Syarat dan Ketentuan",
-      "terms.s14.p1": "NMB berhak mengubah, menambah, atau memperbarui Syarat dan Ketentuan ini dari waktu ke waktu.",
-      "terms.s14.p2": "Perubahan akan berlaku sejak tanggal yang ditentukan oleh NMB dan, apabila diperlukan, akan diberitahukan melalui Platform atau sarana komunikasi lainnya.",
-      "terms.s14.p3": "Penggunaan Platform setelah perubahan berlaku merupakan persetujuan Pengguna terhadap perubahan tersebut.",
+      "terms.s14.p1":
+        "NMB berhak mengubah, menambah, atau memperbarui Syarat dan Ketentuan ini dari waktu ke waktu.",
+      "terms.s14.p2":
+        "Perubahan akan berlaku sejak tanggal yang ditentukan oleh NMB dan, apabila diperlukan, akan diberitahukan melalui Platform atau sarana komunikasi lainnya.",
+      "terms.s14.p3":
+        "Penggunaan Platform setelah perubahan berlaku merupakan persetujuan Pengguna terhadap perubahan tersebut.",
       "terms.s15.h": "15. Hukum dan Penyelesaian Sengketa",
-      "terms.s15.p1": "Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan hukum Republik Indonesia.",
-      "terms.s15.p2": "Setiap perselisihan yang timbul akan terlebih dahulu diselesaikan secara musyawarah untuk mufakat.",
-      "terms.s15.p3": "Apabila penyelesaian secara musyawarah tidak tercapai, perselisihan akan diselesaikan melalui mekanisme hukum yang berlaku di Republik Indonesia.",
+      "terms.s15.p1":
+        "Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan hukum Republik Indonesia.",
+      "terms.s15.p2":
+        "Setiap perselisihan yang timbul akan terlebih dahulu diselesaikan secara musyawarah untuk mufakat.",
+      "terms.s15.p3":
+        "Apabila penyelesaian secara musyawarah tidak tercapai, perselisihan akan diselesaikan melalui mekanisme hukum yang berlaku di Republik Indonesia.",
       "terms.s16.h": "16. Kontak",
-      "terms.s16.p1": "Pertanyaan, keluhan, atau permintaan terkait Syarat dan Ketentuan dapat disampaikan melalui:<br />PT NIAGA MAKMUR BERJAYA<br />Pengelola GO-MANDOR<br />Email: info@gomandor.id",
-      "terms.s16.p2": "Dengan menekan tombol “Saya Setuju”, melakukan pendaftaran, atau menggunakan Platform GO-MANDOR, Pengguna menyatakan telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini.",
+      "terms.s16.p1":
+        "Pertanyaan, keluhan, atau permintaan terkait Syarat dan Ketentuan dapat disampaikan melalui:<br />PT NIAGA MAKMUR BERJAYA<br />Pengelola GO-MANDOR<br />Email: info@gomandor.id",
+      "terms.s16.p2":
+        "Dengan menekan tombol “Saya Setuju”, melakukan pendaftaran, atau menggunakan Platform GO-MANDOR, Pengguna menyatakan telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini.",
 
       "cara_order.image": "assets/images/Cara-Order-ID.jpg",
     },
@@ -529,7 +621,7 @@
       "nav.cara_pesan": "HOW TO ORDER",
       "nav.testimoni": "TESTIMONIALS",
 
-      "hero.title": "Your Realiable Contractor",
+      "hero.title": "Your Reliable Contractor",
       "hero.desc":
         "A complete solution for construction, renovation, and property maintenance; carried out professionally, systematically, and on time.",
       "hero.cta": "Learn More",
@@ -860,70 +952,105 @@
       "hki.title": "INTELLECTUAL PROPERTY RIGHTS",
       "hki.subtitle": "GO-MANDOR – PT NIAGA MAKMUR BERJAYA",
       "hki.s1.h": "1. Ownership of Intellectual Property Rights",
-      "hki.s1.p1": "All Intellectual Property Rights contained in, used, displayed, developed, or made available through the GO-MANDOR application, website, systems, platform, and all services provided by PT NIAGA MAKMUR BERJAYA (“NMB”), whether already registered or to be registered, are owned by NMB and/or parties that have licensed such rights to NMB, unless expressly stated otherwise.",
-      "hki.s1.p2": "Such Intellectual Property Rights include, but are not limited to:",
+      "hki.s1.p1":
+        "All Intellectual Property Rights contained in, used, displayed, developed, or made available through the GO-MANDOR application, website, systems, platform, and all services provided by PT NIAGA MAKMUR BERJAYA (“NMB”), whether already registered or to be registered, are owned by NMB and/or parties that have licensed such rights to NMB, unless expressly stated otherwise.",
+      "hki.s1.p2":
+        "Such Intellectual Property Rights include, but are not limited to:",
       "hki.s1.ul1_li1": "the name “GO-MANDOR” and its variations;",
-      "hki.s1.ul1_li2": "the logo, symbols, designs, icons, slogans, taglines, and visual identity of GO-MANDOR;",
+      "hki.s1.ul1_li2":
+        "the logo, symbols, designs, icons, slogans, taglines, and visual identity of GO-MANDOR;",
       "hki.s1.ul1_li3": "trademarks and/or service marks;",
-      "hki.s1.ul1_li4": "copyright in the application, website, interface design, layout, content, writing, photographs, illustrations, videos, audio, graphics, and other materials;",
-      "hki.s1.ul1_li5": "software, source code, object code, algorithms, databases, system architecture, APIs, and supporting technology;",
-      "hki.s1.ul1_li6": "the design and appearance of the application (user interface/user experience);",
-      "hki.s1.ul1_li7": "domain names, subdomains, and official GO-MANDOR accounts;",
-      "hki.s1.ul1_li8": "user databases, business information, and database structures to the extent protected under applicable law;",
-      "hki.s1.ul1_li9": "trade secrets, business methods, formulas, processes, operational systems, and technical information; and",
-      "hki.s1.ul1_li10": "other Intellectual Property Rights relating to GO-MANDOR.",
-      "hki.s1.p3": "Protection of such copyright and trademarks is subject to, among others, Law No. 28 of 2014 on Copyright and Law No. 20 of 2016 on Trademarks and Geographical Indications, as applicable.",
+      "hki.s1.ul1_li4":
+        "copyright in the application, website, interface design, layout, content, writing, photographs, illustrations, videos, audio, graphics, and other materials;",
+      "hki.s1.ul1_li5":
+        "software, source code, object code, algorithms, databases, system architecture, APIs, and supporting technology;",
+      "hki.s1.ul1_li6":
+        "the design and appearance of the application (user interface/user experience);",
+      "hki.s1.ul1_li7":
+        "domain names, subdomains, and official GO-MANDOR accounts;",
+      "hki.s1.ul1_li8":
+        "user databases, business information, and database structures to the extent protected under applicable law;",
+      "hki.s1.ul1_li9":
+        "trade secrets, business methods, formulas, processes, operational systems, and technical information; and",
+      "hki.s1.ul1_li10":
+        "other Intellectual Property Rights relating to GO-MANDOR.",
+      "hki.s1.p3":
+        "Protection of such copyright and trademarks is subject to, among others, Law No. 28 of 2014 on Copyright and Law No. 20 of 2016 on Trademarks and Geographical Indications, as applicable.",
       "hki.s2.h": "2. Use of the GO-MANDOR Mark",
-      "hki.s2.p1": "Users are prohibited from using the GO-MANDOR name, mark, logo, symbol, slogan, or identity without NMB's prior written consent.",
+      "hki.s2.p1":
+        "Users are prohibited from using the GO-MANDOR name, mark, logo, symbol, slogan, or identity without NMB's prior written consent.",
       "hki.s2.p2": "Without limiting the foregoing, Users are prohibited from:",
       "hki.s2.ul1_li1": "copying or using the GO-MANDOR logo;",
-      "hki.s2.ul1_li2": "registering a name or mark that is identical or confusingly similar to GO-MANDOR;",
-      "hki.s2.ul1_li3": "using GO-MANDOR as part of a company name, business, product, application, social media account, or domain name;",
-      "hki.s2.ul1_li4": "using the GO-MANDOR mark to create the impression that the User has a relationship, affiliation, partnership, sponsorship, or endorsement from NMB; or",
-      "hki.s2.ul1_li5": "engaging in any other act that may cause confusion regarding the relationship between the User and NMB.",
+      "hki.s2.ul1_li2":
+        "registering a name or mark that is identical or confusingly similar to GO-MANDOR;",
+      "hki.s2.ul1_li3":
+        "using GO-MANDOR as part of a company name, business, product, application, social media account, or domain name;",
+      "hki.s2.ul1_li4":
+        "using the GO-MANDOR mark to create the impression that the User has a relationship, affiliation, partnership, sponsorship, or endorsement from NMB; or",
+      "hki.s2.ul1_li5":
+        "engaging in any other act that may cause confusion regarding the relationship between the User and NMB.",
       "hki.s3.h": "3. Copyright in the Application",
-      "hki.s3.p1": "The GO-MANDOR application and all elements contained therein constitute a work protected under Copyright law.",
-      "hki.s3.p2": "Except as permitted by law or in writing by NMB, Users are prohibited from:",
+      "hki.s3.p1":
+        "The GO-MANDOR application and all elements contained therein constitute a work protected under Copyright law.",
+      "hki.s3.p2":
+        "Except as permitted by law or in writing by NMB, Users are prohibited from:",
       "hki.s3.ul1_li1": "copying the application;",
       "hki.s3.ul1_li2": "reproducing, modifying, or creating derivative works;",
-      "hki.s3.ul1_li3": "reverse engineering, decompiling, disassembling, or attempting to obtain the source code;",
-      "hki.s3.ul1_li4": "selling, leasing, licensing, distributing, or exploiting the application;",
-      "hki.s3.ul1_li5": "using the application to build a directly competing application or service; or",
+      "hki.s3.ul1_li3":
+        "reverse engineering, decompiling, disassembling, or attempting to obtain the source code;",
+      "hki.s3.ul1_li4":
+        "selling, leasing, licensing, distributing, or exploiting the application;",
+      "hki.s3.ul1_li5":
+        "using the application to build a directly competing application or service; or",
       "hki.s3.ul1_li6": "removing any copyright and/or ownership notices.",
       "hki.s4.h": "4. User Content",
-      "hki.s4.p1": "Where a User uploads photographs, videos, writing, reviews, comments, or other materials through GO-MANDOR (“User Content”), the User retains ownership of such User Content to the extent such rights are indeed held by the User.",
-      "hki.s4.p2": "However, the User grants NMB a non-exclusive, royalty-free, worldwide, transferable, and sublicensable license, to the extent necessary to:",
+      "hki.s4.p1":
+        "Where a User uploads photographs, videos, writing, reviews, comments, or other materials through GO-MANDOR (“User Content”), the User retains ownership of such User Content to the extent such rights are indeed held by the User.",
+      "hki.s4.p2":
+        "However, the User grants NMB a non-exclusive, royalty-free, worldwide, transferable, and sublicensable license, to the extent necessary to:",
       "hki.s4.ul1_li1": "provide GO-MANDOR's services;",
-      "hki.s4.ul1_li2": "display User Content to parties with an interest in the transaction;",
+      "hki.s4.ul1_li2":
+        "display User Content to parties with an interest in the transaction;",
       "hki.s4.ul1_li3": "promote and market GO-MANDOR;",
       "hki.s4.ul1_li4": "improve service quality;",
       "hki.s4.ul1_li5": "conduct analysis and product development; and",
       "hki.s4.ul1_li6": "fulfil legal obligations.",
-      "hki.s4.p3": "The User warrants that the User Content does not infringe the rights of any third party.",
+      "hki.s4.p3":
+        "The User warrants that the User Content does not infringe the rights of any third party.",
       "hki.s5.h": "5. Infringement of Intellectual Property Rights",
-      "hki.s5.p1": "NMB reserves the right to take action against any party suspected of infringing Intellectual Property Rights, including:",
+      "hki.s5.p1":
+        "NMB reserves the right to take action against any party suspected of infringing Intellectual Property Rights, including:",
       "hki.s5.ul1_li1": "removing content;",
       "hki.s5.ul1_li2": "deactivating accounts;",
       "hki.s5.ul1_li3": "restricting access to the service;",
       "hki.s5.ul1_li4": "issuing warnings;",
       "hki.s5.ul1_li5": "claiming damages; and/or",
-      "hki.s5.ul1_li6": "taking civil or criminal legal action in accordance with applicable law.",
+      "hki.s5.ul1_li6":
+        "taking civil or criminal legal action in accordance with applicable law.",
       "privacy.title": "GO-MANDOR PRIVACY POLICY – PT NIAGA MAKMUR BERJAYA",
       "privacy.s1.h": "1. GENERAL",
-      "privacy.s1.p1": "PT Niaga Makmur Berjaya (“NMB”, “We”) is committed to protecting the Personal Data of GO-MANDOR (“Platform”) Users. This Privacy Policy explains the collection, use, storage, disclosure, protection, and deletion of Personal Data in accordance with Law No. 27 of 2022 on Personal Data Protection and applicable laws and regulations.",
-      "privacy.s1.p2": "By using the Platform, the User is deemed to have read, understood, and agreed to this Privacy Policy.",
+      "privacy.s1.p1":
+        "PT Niaga Makmur Berjaya (“NMB”, “We”) is committed to protecting the Personal Data of GO-MANDOR (“Platform”) Users. This Privacy Policy explains the collection, use, storage, disclosure, protection, and deletion of Personal Data in accordance with Law No. 27 of 2022 on Personal Data Protection and applicable laws and regulations.",
+      "privacy.s1.p2":
+        "By using the Platform, the User is deemed to have read, understood, and agreed to this Privacy Policy.",
       "privacy.s2.h": "2. DATA CONTROLLER",
-      "privacy.s2.p1": "PT. NIAGA MAKMUR BERJAYA<br />Address: Mitra Gading Villa, Jl. Kelapa Hibrida I No. G1/3m, RT 7/RW 11, Kelapa Gading Barat, Kec. Kelapa Gading, North Jakarta, 14250<br />Email: info@gomandor.id",
-      "privacy.s2.p2": "NMB acts as the Personal Data Controller in the processing of Personal Data through the Platform in accordance with the functions and services provided.",
+      "privacy.s2.p1":
+        "PT. NIAGA MAKMUR BERJAYA<br />Address: Mitra Gading Villa, Jl. Kelapa Hibrida I No. G1/3m, RT 7/RW 11, Kelapa Gading Barat, Kec. Kelapa Gading, North Jakarta, 14250<br />Email: info@gomandor.id",
+      "privacy.s2.p2":
+        "NMB acts as the Personal Data Controller in the processing of Personal Data through the Platform in accordance with the functions and services provided.",
       "privacy.s3.h": "3. DATA COLLECTED",
-      "privacy.s3.p1": "NMB may collect Personal Data necessary for the provision of its services, including:",
+      "privacy.s3.p1":
+        "NMB may collect Personal Data necessary for the provision of its services, including:",
       "privacy.s3.ul1_li1": "name, phone number, and email address;",
       "privacy.s3.ul1_li2": "address and/or job location;",
       "privacy.s3.ul1_li3": "Order details and type of service;",
-      "privacy.s3.ul1_li4": "photographs or information regarding the location/job;",
+      "privacy.s3.ul1_li4":
+        "photographs or information regarding the location/job;",
       "privacy.s3.ul1_li5": "transaction and communication history; and",
-      "privacy.s3.ul1_li6": "technical data, device information, logs, and location where necessary for the Platform's functions.",
-      "privacy.s3.p2": "NMB only collects Personal Data that is relevant and necessary for the purpose of processing.",
+      "privacy.s3.ul1_li6":
+        "technical data, device information, logs, and location where necessary for the Platform's functions.",
+      "privacy.s3.p2":
+        "NMB only collects Personal Data that is relevant and necessary for the purpose of processing.",
       "privacy.s4.h": "4. PURPOSE OF PROCESSING",
       "privacy.s4.p1": "Personal Data is used to:",
       "privacy.s4.ul1_li1": "create and manage accounts;",
@@ -936,99 +1063,157 @@
       "privacy.s4.ul1_li8": "prevent fraud and misuse; and",
       "privacy.s4.ul1_li9": "fulfil legal obligations.",
       "privacy.s5.h": "5. BASIS OF PROCESSING",
-      "privacy.s5.p1": "Personal Data is processed on grounds permitted under applicable laws and regulations, including the User's consent, performance of an agreement, fulfilment of legal obligations, vital interests, and/or other applicable legal bases.",
+      "privacy.s5.p1":
+        "Personal Data is processed on grounds permitted under applicable laws and regulations, including the User's consent, performance of an agreement, fulfilment of legal obligations, vital interests, and/or other applicable legal bases.",
       "privacy.s6.h": "6. DISCLOSURE OF DATA",
       "privacy.s6.p1": "NMB does not sell Users' Personal Data.",
-      "privacy.s6.p2": "Data may be disclosed on a limited basis to Partners/Professionals, technology and payment service providers, supporting service providers, professional advisors, auditors, and government agencies or law enforcement authorities where required or permitted by law.",
-      "privacy.s6.p3": "Disclosure is made only to the extent necessary for lawful purposes and in accordance with applicable laws and regulations.",
+      "privacy.s6.p2":
+        "Data may be disclosed on a limited basis to Partners/Professionals, technology and payment service providers, supporting service providers, professional advisors, auditors, and government agencies or law enforcement authorities where required or permitted by law.",
+      "privacy.s6.p3":
+        "Disclosure is made only to the extent necessary for lawful purposes and in accordance with applicable laws and regulations.",
       "privacy.s7.h": "7. DATA STORAGE AND SECURITY",
-      "privacy.s7.p1": "NMB retains Personal Data for as long as necessary for the provision of services, fulfilment of legal obligations, dispute resolution, and security purposes.",
-      "privacy.s7.p2": "NMB implements reasonable technical and organisational measures to protect Personal Data from unauthorised access, use, alteration, loss, or disclosure.",
-      "privacy.s7.p3": "Once no longer needed, Personal Data will be deleted, destroyed, or anonymised in accordance with applicable law.",
+      "privacy.s7.p1":
+        "NMB retains Personal Data for as long as necessary for the provision of services, fulfilment of legal obligations, dispute resolution, and security purposes.",
+      "privacy.s7.p2":
+        "NMB implements reasonable technical and organisational measures to protect Personal Data from unauthorised access, use, alteration, loss, or disclosure.",
+      "privacy.s7.p3":
+        "Once no longer needed, Personal Data will be deleted, destroyed, or anonymised in accordance with applicable law.",
       "privacy.s8.h": "8. USER RIGHTS",
-      "privacy.s8.p1": "In accordance with applicable laws and regulations, Users have the right to obtain information regarding the processing of Personal Data, access and correct Personal Data, request deletion or restriction of processing under certain conditions, withdraw consent, and exercise other rights granted by law.",
-      "privacy.s8.p2": "Requests relating to Personal Data may be submitted to:<br />Email: info@gomandor.id",
+      "privacy.s8.p1":
+        "In accordance with applicable laws and regulations, Users have the right to obtain information regarding the processing of Personal Data, access and correct Personal Data, request deletion or restriction of processing under certain conditions, withdraw consent, and exercise other rights granted by law.",
+      "privacy.s8.p2":
+        "Requests relating to Personal Data may be submitted to:<br />Email: info@gomandor.id",
       "privacy.s9.h": "9. COOKIES AND SIMILAR TECHNOLOGIES",
-      "privacy.s9.p1": "GO-MANDOR may use cookies, SDKs, device identifiers, log files, and similar technologies to operate the Platform's functions, maintain security, conduct analysis, and improve services.",
+      "privacy.s9.p1":
+        "GO-MANDOR may use cookies, SDKs, device identifiers, log files, and similar technologies to operate the Platform's functions, maintain security, conduct analysis, and improve services.",
       "privacy.s10.h": "10. CHILDREN'S DATA",
-      "privacy.s10.p1": "GO-MANDOR is not intended to obtain children's Personal Data without the basis and consent required by law. Should NMB become aware that a child's Personal Data has been improperly collected, NMB may take the necessary steps in accordance with applicable law.",
+      "privacy.s10.p1":
+        "GO-MANDOR is not intended to obtain children's Personal Data without the basis and consent required by law. Should NMB become aware that a child's Personal Data has been improperly collected, NMB may take the necessary steps in accordance with applicable law.",
       "privacy.s11.h": "11. DATA TRANSFER AND PROCESSING",
-      "privacy.s11.p1": "Personal Data may be processed or stored in Indonesia and/or outside Indonesia through service providers used by NMB, while continuing to observe the Personal Data protection requirements under applicable law.",
+      "privacy.s11.p1":
+        "Personal Data may be processed or stored in Indonesia and/or outside Indonesia through service providers used by NMB, while continuing to observe the Personal Data protection requirements under applicable law.",
       "privacy.s12.h": "12. PERSONAL DATA PROTECTION FAILURE",
-      "privacy.s12.p1": "In the event of a Personal Data protection failure, NMB will carry out handling and notification to relevant parties in accordance with its obligations under applicable laws and regulations.",
+      "privacy.s12.p1":
+        "In the event of a Personal Data protection failure, NMB will carry out handling and notification to relevant parties in accordance with its obligations under applicable laws and regulations.",
       "privacy.s13.h": "13. CHANGES TO THIS PRIVACY POLICY",
-      "privacy.s13.p1": "NMB may amend this Privacy Policy from time to time. Material changes will be notified through the Platform and/or other communication channels.",
+      "privacy.s13.p1":
+        "NMB may amend this Privacy Policy from time to time. Material changes will be notified through the Platform and/or other communication channels.",
       "privacy.s14.h": "14. RELATIONSHIP WITH THE TERMS AND CONDITIONS",
-      "privacy.s14.p1": "This Privacy Policy forms an integral part of the GO-MANDOR Terms and Conditions.",
-      "privacy.s14.p2": "By accessing or using GO-MANDOR, the User represents that they have read, understood, and agreed to this Privacy Policy.",
+      "privacy.s14.p1":
+        "This Privacy Policy forms an integral part of the GO-MANDOR Terms and Conditions.",
+      "privacy.s14.p2":
+        "By accessing or using GO-MANDOR, the User represents that they have read, understood, and agreed to this Privacy Policy.",
       "terms.title": "GO-MANDOR TERMS AND CONDITIONS - PT NIAGA MAKMUR BERJAYA",
       "terms.s1.h": "1. General Provisions",
-      "terms.s1.p1": "These Terms and Conditions (“Terms and Conditions”) govern the use of the GO-MANDOR application, website, and/or platform (“Platform”) operated by PT Niaga Makmur Berjaya (“NMB”).",
-      "terms.s1.p2": "By accessing, registering for, or using the Platform, the User represents that they have read, understood, and agreed to these Terms and Conditions and the GO-MANDOR Privacy Policy in their entirety.",
-      "terms.s1.p3": "If the User does not agree to these Terms and Conditions, the User must stop using the Platform.",
+      "terms.s1.p1":
+        "These Terms and Conditions (“Terms and Conditions”) govern the use of the GO-MANDOR application, website, and/or platform (“Platform”) operated by PT Niaga Makmur Berjaya (“NMB”).",
+      "terms.s1.p2":
+        "By accessing, registering for, or using the Platform, the User represents that they have read, understood, and agreed to these Terms and Conditions and the GO-MANDOR Privacy Policy in their entirety.",
+      "terms.s1.p3":
+        "If the User does not agree to these Terms and Conditions, the User must stop using the Platform.",
       "terms.s2.h": "2. GO-MANDOR Services",
-      "terms.s2.p1": "GO-MANDOR is a platform that connects Users with handymen, technicians, skilled professionals, contractors, and/or other service providers (“Partners”) to obtain various services according to the categories available on the Platform.",
-      "terms.s2.p2": "NMB may assist with the ordering process, communication, scheduling, payment, and/or delivery of information relating to services in accordance with the features available.",
+      "terms.s2.p1":
+        "GO-MANDOR is a platform that connects Users with handymen, technicians, skilled professionals, contractors, and/or other service providers (“Partners”) to obtain various services according to the categories available on the Platform.",
+      "terms.s2.p2":
+        "NMB may assist with the ordering process, communication, scheduling, payment, and/or delivery of information relating to services in accordance with the features available.",
       "terms.s3.h": "3. Ordering and Performance of Services",
-      "terms.s3.p1": "The User must provide true, complete, and accurate information regarding the job required, location, timing of performance, and other necessary information.",
-      "terms.s3.p2": "For certain jobs, the Partner may conduct a survey before providing a price quotation and/or scope of work.",
-      "terms.s3.p3": "Work may only be carried out after the User and the Partner have agreed on, at a minimum, the type of work, scope, price, materials, timing of performance, and warranty terms, where applicable.",
+      "terms.s3.p1":
+        "The User must provide true, complete, and accurate information regarding the job required, location, timing of performance, and other necessary information.",
+      "terms.s3.p2":
+        "For certain jobs, the Partner may conduct a survey before providing a price quotation and/or scope of work.",
+      "terms.s3.p3":
+        "Work may only be carried out after the User and the Partner have agreed on, at a minimum, the type of work, scope, price, materials, timing of performance, and warranty terms, where applicable.",
       "terms.s4.h": "4. Price and Payment",
-      "terms.s4.p1": "Service prices are determined based on type, volume, level of difficulty, location, materials, and other relevant factors.",
-      "terms.s4.p2": "Any additional costs outside the initial agreement must be communicated to the User and require the User's prior consent.",
-      "terms.s4.p3": "The User must make payment in accordance with the price and payment method stated on the Platform and/or as agreed with the Partner.",
+      "terms.s4.p1":
+        "Service prices are determined based on type, volume, level of difficulty, location, materials, and other relevant factors.",
+      "terms.s4.p2":
+        "Any additional costs outside the initial agreement must be communicated to the User and require the User's prior consent.",
+      "terms.s4.p3":
+        "The User must make payment in accordance with the price and payment method stated on the Platform and/or as agreed with the Partner.",
       "terms.s5.h": "5. Cancellation and Rescheduling",
-      "terms.s5.p1": "The User may cancel and/or reschedule in accordance with the provisions applicable on the Platform.",
-      "terms.s5.p2": "Where cancellation occurs after the Partner has travelled, conducted a survey, purchased materials, or work has commenced, the User may be charged a fee in accordance with the applicable conditions and policy.",
+      "terms.s5.p1":
+        "The User may cancel and/or reschedule in accordance with the provisions applicable on the Platform.",
+      "terms.s5.p2":
+        "Where cancellation occurs after the Partner has travelled, conducted a survey, purchased materials, or work has commenced, the User may be charged a fee in accordance with the applicable conditions and policy.",
       "terms.s6.h": "6. Partner's Responsibilities",
-      "terms.s6.p1": "The Partner is responsible for carrying out work in accordance with the scope and agreement with the User.",
-      "terms.s6.p2": "The Partner must provide accurate information regarding their identity, competence, price, and services offered, and must carry out work in a professional manner.",
-      "terms.s6.p3": "NMB may verify, evaluate, restrict, suspend, or terminate a Partner's access should any violation of the Platform's provisions be found.",
+      "terms.s6.p1":
+        "The Partner is responsible for carrying out work in accordance with the scope and agreement with the User.",
+      "terms.s6.p2":
+        "The Partner must provide accurate information regarding their identity, competence, price, and services offered, and must carry out work in a professional manner.",
+      "terms.s6.p3":
+        "NMB may verify, evaluate, restrict, suspend, or terminate a Partner's access should any violation of the Platform's provisions be found.",
       "terms.s7.h": "7. User's Responsibilities",
       "terms.s7.p1": "The User must:",
       "terms.s7.ul1_li1": "provide true and accountable information;",
-      "terms.s7.ul1_li2": "ensure the job location is accessible and in a safe condition;",
-      "terms.s7.ul1_li3": "provide information regarding any special conditions of the location that may affect the work;",
+      "terms.s7.ul1_li2":
+        "ensure the job location is accessible and in a safe condition;",
+      "terms.s7.ul1_li3":
+        "provide information regarding any special conditions of the location that may affect the work;",
       "terms.s7.ul1_li4": "fulfil payment obligations; and",
-      "terms.s7.ul1_li5": "use the Platform reasonably and in accordance with the law.",
+      "terms.s7.ul1_li5":
+        "use the Platform reasonably and in accordance with the law.",
       "terms.s8.h": "8. Warranty and Complaints",
-      "terms.s8.p1": "Work warranties, where available, are subject to the terms agreed between the User and the Partner for each job.",
-      "terms.s8.p2": "The User may submit complaints through GO-MANDOR's complaint channel in accordance with the procedure established by NMB.",
-      "terms.s8.p3": "NMB may assist in facilitating the resolution of complaints between the User and the Partner in accordance with its authority and applicable policy.",
+      "terms.s8.p1":
+        "Work warranties, where available, are subject to the terms agreed between the User and the Partner for each job.",
+      "terms.s8.p2":
+        "The User may submit complaints through GO-MANDOR's complaint channel in accordance with the procedure established by NMB.",
+      "terms.s8.p3":
+        "NMB may assist in facilitating the resolution of complaints between the User and the Partner in accordance with its authority and applicable policy.",
       "terms.s9.h": "9. Account and Security",
-      "terms.s9.p1": "The User is responsible for maintaining the confidentiality of their account, password, OTP, and other security information.",
-      "terms.s9.p2": "All activities carried out through the User's account are the User's responsibility, provided they are not proven to have been carried out without authorisation.",
-      "terms.s9.p3": "NMB has the right to suspend or close any account used for fraud, misuse, violation of law, or violation of these Terms and Conditions.",
+      "terms.s9.p1":
+        "The User is responsible for maintaining the confidentiality of their account, password, OTP, and other security information.",
+      "terms.s9.p2":
+        "All activities carried out through the User's account are the User's responsibility, provided they are not proven to have been carried out without authorisation.",
+      "terms.s9.p3":
+        "NMB has the right to suspend or close any account used for fraud, misuse, violation of law, or violation of these Terms and Conditions.",
       "terms.s10.h": "10. Intellectual Property Rights",
-      "terms.s10.p1": "All names, marks, logos, designs, systems, software, content, databases, appearance, and other elements contained on the Platform are owned by NMB and/or parties that have granted rights to NMB and are protected under applicable laws and regulations.",
-      "terms.s10.p2": "The User is prohibited from copying, modifying, distributing, exploiting, reverse engineering, or using such Intellectual Property Rights without NMB's prior written consent.",
+      "terms.s10.p1":
+        "All names, marks, logos, designs, systems, software, content, databases, appearance, and other elements contained on the Platform are owned by NMB and/or parties that have granted rights to NMB and are protected under applicable laws and regulations.",
+      "terms.s10.p2":
+        "The User is prohibited from copying, modifying, distributing, exploiting, reverse engineering, or using such Intellectual Property Rights without NMB's prior written consent.",
       "terms.s11.h": "11. Prohibitions",
       "terms.s11.p1": "The User is prohibited from:",
       "terms.s11.ul1_li1": "using the Platform for unlawful purposes;",
       "terms.s11.ul1_li2": "providing false or misleading information;",
       "terms.s11.ul1_li3": "committing fraud or manipulating transactions;",
-      "terms.s11.ul1_li4": "disrupting the security or operation of the Platform;",
-      "terms.s11.ul1_li5": "uploading content that violates the law or the rights of others;",
+      "terms.s11.ul1_li4":
+        "disrupting the security or operation of the Platform;",
+      "terms.s11.ul1_li5":
+        "uploading content that violates the law or the rights of others;",
       "terms.s11.ul1_li6": "misusing the data of Users or Partners; and/or",
-      "terms.s11.ul1_li7": "engaging in any other act that may harm NMB, Partners, or other Users.",
+      "terms.s11.ul1_li7":
+        "engaging in any other act that may harm NMB, Partners, or other Users.",
       "terms.s12.h": "12. Limitation of Liability",
-      "terms.s12.p1": "NMB endeavours to provide the Platform in a safe and continuous manner; however, NMB does not guarantee that the Platform will always be available, free from disruption, errors, or technical failures.",
-      "terms.s12.p2": "To the extent permitted by law, NMB is not liable for losses arising from the acts, negligence, quality, results, or performance of work by the Partner, unless such loss is directly caused by NMB's fault or negligence.",
-      "terms.s12.p3": "This provision is not intended to exclude any liability of NMB that cannot be excluded or limited under law.",
+      "terms.s12.p1":
+        "NMB endeavours to provide the Platform in a safe and continuous manner; however, NMB does not guarantee that the Platform will always be available, free from disruption, errors, or technical failures.",
+      "terms.s12.p2":
+        "To the extent permitted by law, NMB is not liable for losses arising from the acts, negligence, quality, results, or performance of work by the Partner, unless such loss is directly caused by NMB's fault or negligence.",
+      "terms.s12.p3":
+        "This provision is not intended to exclude any liability of NMB that cannot be excluded or limited under law.",
       "terms.s13.h": "13. Personal Data",
-      "terms.s13.p1": "NMB may collect and process Users' Personal Data to provide, develop, secure, and improve GO-MANDOR's services in accordance with the GO-MANDOR Privacy Policy and applicable laws and regulations.",
-      "terms.s13.p2": "By using the Platform, the User represents that they have read and understood the Privacy Policy.",
+      "terms.s13.p1":
+        "NMB may collect and process Users' Personal Data to provide, develop, secure, and improve GO-MANDOR's services in accordance with the GO-MANDOR Privacy Policy and applicable laws and regulations.",
+      "terms.s13.p2":
+        "By using the Platform, the User represents that they have read and understood the Privacy Policy.",
       "terms.s14.h": "14. Changes to the Terms and Conditions",
-      "terms.s14.p1": "NMB has the right to amend, add to, or update these Terms and Conditions from time to time.",
-      "terms.s14.p2": "Changes shall take effect from the date determined by NMB and, where necessary, will be notified through the Platform or other communication channels.",
-      "terms.s14.p3": "Continued use of the Platform after such changes take effect constitutes the User's agreement to such changes.",
+      "terms.s14.p1":
+        "NMB has the right to amend, add to, or update these Terms and Conditions from time to time.",
+      "terms.s14.p2":
+        "Changes shall take effect from the date determined by NMB and, where necessary, will be notified through the Platform or other communication channels.",
+      "terms.s14.p3":
+        "Continued use of the Platform after such changes take effect constitutes the User's agreement to such changes.",
       "terms.s15.h": "15. Governing Law and Dispute Resolution",
-      "terms.s15.p1": "These Terms and Conditions are governed by and construed in accordance with the laws of the Republic of Indonesia.",
-      "terms.s15.p2": "Any dispute arising shall first be resolved amicably through deliberation for consensus.",
-      "terms.s15.p3": "If an amicable resolution cannot be reached, the dispute shall be resolved through the legal mechanisms applicable in the Republic of Indonesia.",
+      "terms.s15.p1":
+        "These Terms and Conditions are governed by and construed in accordance with the laws of the Republic of Indonesia.",
+      "terms.s15.p2":
+        "Any dispute arising shall first be resolved amicably through deliberation for consensus.",
+      "terms.s15.p3":
+        "If an amicable resolution cannot be reached, the dispute shall be resolved through the legal mechanisms applicable in the Republic of Indonesia.",
       "terms.s16.h": "16. Contact",
-      "terms.s16.p1": "Questions, complaints, or requests relating to these Terms and Conditions may be submitted through:<br />PT NIAGA MAKMUR BERJAYA<br />GO-MANDOR Operator<br />Email: info@gomandor.id",
-      "terms.s16.p2": "By pressing the “I Agree” button, registering, or using the GO-MANDOR Platform, the User represents that they have read, understood, and agreed to these Terms and Conditions.",
+      "terms.s16.p1":
+        "Questions, complaints, or requests relating to these Terms and Conditions may be submitted through:<br />PT NIAGA MAKMUR BERJAYA<br />GO-MANDOR Operator<br />Email: info@gomandor.id",
+      "terms.s16.p2":
+        "By pressing the “I Agree” button, registering, or using the GO-MANDOR Platform, the User represents that they have read, understood, and agreed to these Terms and Conditions.",
 
       "cara_order.image": "assets/images/Cara-Order-EN.jpg",
     },
