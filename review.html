@@ -139,14 +139,14 @@
     <!-- HEADER / NAV -->
     <header class="w-full bg-brand-dark shadow-sm relative z-30">
       <div
-        class="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-6"
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-4"
       >
         <div class="flex items-center gap-4 shrink-0">
           <a href="index.html" class="flex items-center shrink-0">
             <img
-              src="assets/logo/Logo-Text.webp"
+              src="assets/logo/Logo-Mascot-Apps.webp"
               alt="Go-Mandor"
-              class="h-9 md:h-10 w-auto"
+              class="h-10 md:h-16 w-auto"
             />
           </a>
         </div>
@@ -269,9 +269,9 @@
         class="flex items-center justify-between px-4 py-4 border-b border-white/20"
       >
         <img
-          src="assets/logo/Logo-Text.webp"
+          src="assets/logo/Logo-Mascot-Apps.webp"
           alt="Go-Mandor"
-          class="h-8 w-auto"
+          class="h-10 w-auto"
         />
         <button id="mobileMenuClose" aria-label="Tutup menu" class="text-white">
           <svg
@@ -376,374 +376,1106 @@
 
     <!-- TESTIMONI -->
     <section class="bg-brand-red py-16">
-      <div class="max-w-6xl mx-auto px-4 md:px-8">
-        <h2
-          class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-12 text-center"
-          data-i18n="testimoni.heading"
-        >
-          Testimoni Klien
-        </h2>
+      <div class="flex flex-col-reverse md:flex-row px-4 md:px-8">
+        <img
+          src="assets/logo/Mascot-Go-Mandor.svg"
+          loading="lazy"
+          decoding="async"
+          alt="Mascot Go-Mandor"
+          class="h-auto w-auto md:w-1/3"
+        />
 
-        <div class="relative">
-          <button
-            id="reviewPrev"
-            type="button"
-            aria-label="Sebelumnya"
-            class="hidden md:flex absolute -left-5 lg:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+        <div class="w-full md:w-7/12">
+          <h2
+            class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-12 text-center"
+            data-i18n="testimoni.heading"
           >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
+            Testimoni Klien
+          </h2>
 
-          <div class="overflow-hidden">
-            <div
-              id="reviewPagesWrapper"
-              class="flex transition-transform duration-500 ease-in-out"
+          <!-- DESKTOP CAROUSEL (2x2 grid per page) -->
+          <div class="relative hidden md:block">
+            <button
+              id="reviewPrev"
+              type="button"
+              aria-label="Sebelumnya"
+              class="flex absolute -left-5 lg:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
             >
-              <!-- PAGE 1 -->
-              <div
-                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 content-start"
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <!-- Card 1 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p
-                    class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
-                    data-i18n="review.andi.quote"
-                  >
-                    Go-Mandor benar-benar membantu saya dari awal sampai akhir.
-                    Timnya profesional, komunikasinya lancar, dan hasil renovasi
-                    rumah saya melebihi ekspektasi. Saya pasti pakai jasa mereka
-                    lagi.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      AW
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      ANDI WIJAYA
-                    </p>
-                    <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.andi.role"
-                    >
-                      Renovasi Rumah
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 2 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p
-                    class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
-                    data-i18n="review.siti.quote"
-                  >
-                    Proyek ruko saya selesai tepat waktu dan sesuai anggaran.
-                    Go-Mandor punya tim yang bertanggung jawab dan materialnya
-                    berkualitas. Sangat puas!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      SR
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      SITI RAHMAWATI
-                    </p>
-                    <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.siti.role"
-                    >
-                      Pembangunan Ruko
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 3 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p
-                    class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
-                    data-i18n="review.budi.quote"
-                  >
-                    Saya sudah beberapa kali pakai jasa kontraktor, tapi
-                    Go-Mandor yang paling oke. Pengerjaan rapi, cepat, dan
-                    mereka selalu kasih solusi kalau ada kendala di lapangan.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      BS
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      BUDI SANTOSO
-                    </p>
-                    <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.budi.role"
-                    >
-                      Renovasi Kantor
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 4 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p
-                    class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
-                    data-i18n="review.dian.quote"
-                  >
-                    Proses pembangunan rumah impian saya jadi lebih tenang
-                    karena Go-Mandor mengurus semuanya. Dari perizinan sampai
-                    finishing, semua terkelola dengan baik. Terima kasih
-                    Go-Mandor!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      DP
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      DIAN PERMATA
-                    </p>
-                    <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.dian.role"
-                    >
-                      Pembangunan Rumah
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 5 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p
-                    class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
-                    data-i18n="review.rudi.quote"
-                  >
-                    Restoran saya harus cepat selesai karena mau buka. Go-Mandor
-                    berhasil menyelesaikan renovasi tepat waktu tanpa mengurangi
-                    kualitas. Pelanggan saya juga puas dengan tampilan barunya.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      RH
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      RUDI HARTONO
-                    </p>
-                    <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.rudi.role"
-                    >
-                      Renovasi Restoran
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 6 -->
-                <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
-                >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
-                  >
-                  <p
-                    class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
-                    data-i18n="review.maya.quote"
-                  >
-                    Go-Mandor memberikan rekomendasi desain yang efisien untuk
-                    gudang saya. Pengerjaan kokoh, hemat biaya, dan koordinasi
-                    dengan tim sangat mudah. Rekomendasi banget!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
-                    >
-                      MA
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      MAYA ANGGRAINI
-                    </p>
-                    <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.maya.role"
-                    >
-                      Pembangunan Gudang
-                    </p>
-                  </div>
-                </div>
-              </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
 
-              <!-- PAGE 2 -->
+            <div class="overflow-hidden">
               <div
-                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 content-start"
+                id="reviewPagesWrapper"
+                class="flex transition-transform duration-500 ease-in-out"
               >
-                <!-- Card 7 -->
+                <!-- PAGE 1 -->
                 <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  class="w-full shrink-0 grid grid-cols-1 md:grid-cols-2 gap-6 content-start px-2"
                 >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
                   >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Go-Mandor transformed our outdated villa into a modern
-                    tropical masterpiece. Their team was punctual,
-                    detail-oriented, and handled everything from design to
-                    construction. Highly recommended!
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
                     >
-                      JA
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      JAMES ANDERSON
-                    </p>
                     <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.james.role"
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.anizah.quote"
                     >
-                      Villa Renovation
+                      Alhamdulillah, AC saya sudah kembali dingin. Dapat tukang
+                      yang jujur dan cepat, tidak lelet, dan tepat waktu.
+                      Mantap!
                     </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AS
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Anizah Sakinah
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.agrareeves.quote"
+                    >
+                      Saya kesulitan cari tukang untuk pasang elektrik kabel
+                      listrik, untungnya ada aplikasi ini, respon time cepat dan
+                      tukangnya pas kebetulan dapat yang bagus. Setengah hari
+                      selesai semua pekerjaan.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AG
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        agrareeves
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.raka.quote"
+                    >
+                      Alhamdulillah, telah selesai pengerjaan renovasi tempat
+                      kopi saya menggunakan jasa Go-Mandor. Terlebih saya
+                      cenderung puas dengan jasa yang diberikan oleh Go-Mandor
+                      dikarenakan mendapat mandor dan para tukang yang
+                      berpengalaman, dengan menghasilkan kerja yang cukup rapi
+                      dan baik.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        RP
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Raka A. Pratama
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.diandrd.quote"
+                    >
+                      Memuaskan menggunakan Go-Mandor terutama untuk hal yang
+                      urgent. Sehari setelah survei dilakukan, pengerjaan sudah
+                      selesai. Admin sangat membantu dan cekatan. Mandor sopan
+                      dan ramah.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        DI
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        diandrd
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <!-- Card 8 -->
+
+                <!-- PAGE 2 -->
                 <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  class="w-full shrink-0 grid grid-cols-1 md:grid-cols-2 gap-6 content-start px-2"
                 >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
                   >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    We entrusted Go-Mandor with our boutique hotel project in
-                    Ubud, and they exceeded our expectations. Excellent project
-                    management, quality materials, and they truly understand the
-                    local building culture. Absolutely satisfied.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
                     >
-                      LC
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      LAURA CHEN
-                    </p>
                     <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.laura.role"
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.amanda.quote"
                     >
-                      Hotel Construction
+                      Saya kesulitan mencari tukang untuk renovasi rumah karena
+                      mendekati periode Lebaran, dan menemukan aplikasi
+                      Go-Mandor ini. Tukangnya sangat helpful, sopan, dan selalu
+                      datang tepat waktu serta mengerti betul bagaimana harus
+                      melakukan pekerjaannya.
                     </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AM
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Amanda!
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.ralin.quote"
+                    >
+                      Aplikasinya sangat membantu mempertemukan calon pengguna
+                      jasa dengan tenaga ahli yang dimiliki oleh Go-Mandor.
+                      Semoga aplikasinya semakin berkembang dan semakin baik.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        RA
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        ralin aris
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.aji.quote"
+                    >
+                      Tampilannya user friendly, jenis servicenya banyak,
+                      sungguh membantu banget.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AP
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Aji Permana
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.tomsss.quote"
+                    >
+                      Untuk aplikasi UI-nya perlu ditingkatkan, dan penawaran
+                      serta perbaikan-perbaikan perlu ditambahkan lagi. Hasil
+                      kerja lumayan bagus.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        TO
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        tomsss__
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <!-- Card 9 -->
+
+                <!-- PAGE 3 -->
                 <div
-                  class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  class="w-full shrink-0 grid grid-cols-1 md:grid-cols-2 gap-6 content-start px-2"
                 >
-                  <span class="text-brand-red text-9xl font-bold leading-none"
-                    >&ldquo;</span
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
                   >
-                  <p class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10">
-                    Go-Mandor delivered our beach club project on time and on
-                    budget. Their professionalism and problem-solving skills
-                    were outstanding. We're already planning our next project
-                    with them.
-                  </p>
-                  <div class="mt-auto flex flex-col items-center">
-                    <div
-                      class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
                     >
-                      DR
-                    </div>
-                    <p class="font-bold text-brand-dark text-sm tracking-wide">
-                      DAVID ROBERTS
-                    </p>
                     <p
-                      class="text-gray-500 text-xs"
-                      data-i18n="review.david.role"
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.lena.quote"
                     >
-                      Club Development
+                      Genteng saya tiba-tiba bocor pas cuaca mendung, saya pesan
+                      lewat Go-Mandor dan dalam waktu singkat sudah bisa
+                      diselesaikan. Semoga sukses.
                     </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        LS
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        LenaShining
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.fuaada.quote"
+                    >
+                      Ini adalah aplikasi terbaik untuk memanggil orang guna
+                      memperbaiki keramik lantai. Orangnya bekerja dengan sangat
+                      baik.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        FH
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        FuaadaHowin
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.hannes.quote"
+                    >
+                      Memanggil teknisi untuk memperbaiki AC saya melalui
+                      Go-Mandor, dan saya harus bilang orangnya sangat
+                      profesional dan tarifnya cukup wajar.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        HS
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Hannes Siboro
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.danae.quote"
+                    >
+                      Ini aplikasi yang sangat berguna untuk semua orang yang
+                      sibuk dan membutuhkan tukang untuk keperluan perbaikan.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        DM
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Danae madubun
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PAGE 4 -->
+                <div
+                  class="w-full shrink-0 grid grid-cols-1 md:grid-cols-2 gap-6 content-start px-2"
+                >
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.lubna.quote"
+                    >
+                      Saya pesan untuk memperbaiki ledeng bocor, sangat cepat
+                      tanggap dan profesional.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        LN
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Lubna Nasution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.charissa.quote"
+                    >
+                      Datang ke rumah sangat santun dan profesional. Good job.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        CH
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Charissa Hutasoit
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.jawhara.quote"
+                    >
+                      Kerja bagus dari developer aplikasi ini. Sangat bagus!
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        JX
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Jawhara Xueman
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.francesco.quote"
+                    >
+                      Aplikasi ini luar biasa! Rumah saya dicat beberapa hari
+                      lalu oleh orang dari Go-Mandor.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        FC
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Francesco Chun
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <button
+              id="reviewNext"
+              type="button"
+              aria-label="Berikutnya"
+              class="flex absolute -right-5 lg:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
           </div>
 
-          <button
-            id="reviewNext"
-            type="button"
-            aria-label="Berikutnya"
-            class="hidden md:flex absolute -right-5 lg:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+          <div
+            id="reviewDots"
+            class="hidden md:flex justify-center gap-2 mt-10"
           >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-        </div>
+            <button
+              type="button"
+              class="review-dot w-2.5 h-2.5 rounded-full bg-white transition"
+              data-index="0"
+              aria-label="Halaman 1"
+            ></button>
+            <button
+              type="button"
+              class="review-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
+              data-index="1"
+              aria-label="Halaman 2"
+            ></button>
+            <button
+              type="button"
+              class="review-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
+              data-index="2"
+              aria-label="Halaman 3"
+            ></button>
+            <button
+              type="button"
+              class="review-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
+              data-index="3"
+              aria-label="Halaman 4"
+            ></button>
+          </div>
 
-        <div id="reviewDots" class="flex justify-center gap-2 mt-10">
-          <button
-            type="button"
-            class="review-dot w-2.5 h-2.5 rounded-full bg-white transition"
-            data-index="0"
-            aria-label="Halaman 1"
-          ></button>
-          <button
-            type="button"
-            class="review-dot w-2.5 h-2.5 rounded-full bg-white/40 transition"
-            data-index="1"
-            aria-label="Halaman 2"
-          ></button>
+          <!-- MOBILE CAROUSEL (1 card per page, nav always visible) -->
+          <div class="relative md:hidden">
+            <button
+              id="reviewPrevMobile"
+              type="button"
+              aria-label="Sebelumnya"
+              class="flex absolute -left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <div class="overflow-hidden px-10">
+              <div
+                id="reviewPagesWrapperMobile"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- CARD 1 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.anizah.quote"
+                    >
+                      Alhamdulillah, AC saya sudah kembali dingin. Dapat tukang
+                      yang jujur dan cepat, tidak lelet, dan tepat waktu.
+                      Mantap!
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AS
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Anizah Sakinah
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.agrareeves.quote"
+                    >
+                      Saya kesulitan cari tukang untuk pasang elektrik kabel
+                      listrik, untungnya ada aplikasi ini, respon time cepat dan
+                      tukangnya pas kebetulan dapat yang bagus. Setengah hari
+                      selesai semua pekerjaan.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AG
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        agrareeves
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.raka.quote"
+                    >
+                      Alhamdulillah, telah selesai pengerjaan renovasi tempat
+                      kopi saya menggunakan jasa Go-Mandor. Terlebih saya
+                      cenderung puas dengan jasa yang diberikan oleh Go-Mandor
+                      dikarenakan mendapat mandor dan para tukang yang
+                      berpengalaman, dengan menghasilkan kerja yang cukup rapi
+                      dan baik.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        RP
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Raka A. Pratama
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.diandrd.quote"
+                    >
+                      Memuaskan menggunakan Go-Mandor terutama untuk hal yang
+                      urgent. Sehari setelah survei dilakukan, pengerjaan sudah
+                      selesai. Admin sangat membantu dan cekatan. Mandor sopan
+                      dan ramah.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        DI
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        diandrd
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.amanda.quote"
+                    >
+                      Saya kesulitan mencari tukang untuk renovasi rumah karena
+                      mendekati periode Lebaran, dan menemukan aplikasi
+                      Go-Mandor ini. Tukangnya sangat helpful, sopan, dan selalu
+                      datang tepat waktu serta mengerti betul bagaimana harus
+                      melakukan pekerjaannya.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AM
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Amanda!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.ralin.quote"
+                    >
+                      Aplikasinya sangat membantu mempertemukan calon pengguna
+                      jasa dengan tenaga ahli yang dimiliki oleh Go-Mandor.
+                      Semoga aplikasinya semakin berkembang dan semakin baik.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        RA
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        ralin aris
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.aji.quote"
+                    >
+                      Tampilannya user friendly, jenis servicenya banyak,
+                      sungguh membantu banget.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        AP
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Aji Permana
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.tomsss.quote"
+                    >
+                      Untuk aplikasi UI-nya perlu ditingkatkan, dan penawaran
+                      serta perbaikan-perbaikan perlu ditambahkan lagi. Hasil
+                      kerja lumayan bagus.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        TO
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        tomsss__
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 9 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.lena.quote"
+                    >
+                      Genteng saya tiba-tiba bocor pas cuaca mendung, saya pesan
+                      lewat Go-Mandor dan dalam waktu singkat sudah bisa
+                      diselesaikan. Semoga sukses.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        LS
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        LenaShining
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 10 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.fuaada.quote"
+                    >
+                      Ini adalah aplikasi terbaik untuk memanggil orang guna
+                      memperbaiki keramik lantai. Orangnya bekerja dengan sangat
+                      baik.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        FH
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        FuaadaHowin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 11 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.hannes.quote"
+                    >
+                      Memanggil teknisi untuk memperbaiki AC saya melalui
+                      Go-Mandor, dan saya harus bilang orangnya sangat
+                      profesional dan tarifnya cukup wajar.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        HS
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Hannes Siboro
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 12 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.danae.quote"
+                    >
+                      Ini aplikasi yang sangat berguna untuk semua orang yang
+                      sibuk dan membutuhkan tukang untuk keperluan perbaikan.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        DM
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Danae madubun
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 13 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.lubna.quote"
+                    >
+                      Saya pesan untuk memperbaiki ledeng bocor, sangat cepat
+                      tanggap dan profesional.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        LN
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Lubna Nasution
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 14 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.charissa.quote"
+                    >
+                      Datang ke rumah sangat santun dan profesional. Good job.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        CH
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Charissa Hutasoit
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 15 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.jawhara.quote"
+                    >
+                      Kerja bagus dari developer aplikasi ini. Sangat bagus!
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        JX
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Jawhara Xueman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 16 -->
+                <div class="w-full shrink-0 px-2 flex">
+                  <div
+                    class="bg-white rounded-lg p-6 flex flex-col items-center text-center w-full h-full"
+                  >
+                    <span class="text-brand-red text-9xl font-bold leading-none"
+                      >&ldquo;</span
+                    >
+                    <p
+                      class="text-sm text-gray-600 leading-relaxed mb-6 -mt-10"
+                      data-i18n="review.francesco.quote"
+                    >
+                      Aplikasi ini luar biasa! Rumah saya dicat beberapa hari
+                      lalu oleh orang dari Go-Mandor.
+                    </p>
+                    <div class="mt-auto flex flex-col items-center">
+                      <div
+                        class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center font-bold text-lg mb-3"
+                      >
+                        FC
+                      </div>
+                      <p
+                        class="font-bold text-brand-dark text-sm tracking-wide"
+                      >
+                        Francesco Chun
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              id="reviewNextMobile"
+              type="button"
+              aria-label="Berikutnya"
+              class="flex absolute -right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-brand-dark hover:bg-black text-white items-center justify-center transition"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -1533,125 +2265,221 @@
             GO-MANDOR – PT NIAGA MAKMUR BERJAYA
           </p>
 
-          <div class="space-y-8 text-gray-700 leading-relaxed text-sm md:text-base">
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="hki.s1.h"
-            >
-              1. Kepemilikan Hak Kekayaan Intelektual
-            </h2>
-            <p class="mt-3" data-i18n="hki.s1.p1">
-              Seluruh Hak Kekayaan Intelektual yang terdapat, digunakan, ditampilkan, dikembangkan, atau tersedia melalui aplikasi GO-MANDOR, situs web, sistem, platform, dan seluruh layanan yang disediakan oleh PT NIAGA MAKMUR BERJAYA (“NMB”), baik yang telah maupun yang akan didaftarkan, merupakan milik NMB dan/atau pihak yang memberikan lisensi kepada NMB, kecuali dinyatakan lain secara tegas.
-            </p>
-            <p class="mt-3" data-i18n="hki.s1.p2">
-              Hak Kekayaan Intelektual tersebut meliputi namun tidak terbatas pada:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="hki.s1.ul1_li1">nama “GO-MANDOR” dan variasinya;</li>
-              <li data-i18n="hki.s1.ul1_li2">logo, simbol, desain, ikon, slogan, tagline dan identitas visual GO-MANDOR;</li>
-              <li data-i18n="hki.s1.ul1_li3">merek dagang dan/atau merek jasa;</li>
-              <li data-i18n="hki.s1.ul1_li4">hak cipta atas aplikasi, situs web, desain antarmuka, tata letak, konten, tulisan, foto, ilustrasi, video, audio, grafis dan materi lainnya;</li>
-              <li data-i18n="hki.s1.ul1_li5">perangkat lunak, source code, object code, algoritma, database, struktur sistem, API dan teknologi pendukung;</li>
-              <li data-i18n="hki.s1.ul1_li6">desain dan tampilan aplikasi (user interface/user experience);</li>
-              <li data-i18n="hki.s1.ul1_li7">nama domain, subdomain dan akun resmi GO-MANDOR;</li>
-              <li data-i18n="hki.s1.ul1_li8">database pengguna, informasi bisnis dan struktur database sepanjang dilindungi berdasarkan peraturan perundang-undangan;</li>
-              <li data-i18n="hki.s1.ul1_li9">rahasia dagang, metode bisnis, formula, proses, sistem operasional dan informasi teknis; dan</li>
-              <li data-i18n="hki.s1.ul1_li10">Hak Kekayaan Intelektual lainnya yang berkaitan dengan GO-MANDOR.</li>
-            </ul>
-            <p class="mt-3" data-i18n="hki.s1.p3">
-              Pelindungan terhadap hak cipta dan merek tersebut antara lain tunduk pada UU No. 28 Tahun 2014 tentang Hak Cipta dan UU No. 20 Tahun 2016 tentang Merek dan Indikasi Geografis sebagaimana berlaku.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="hki.s2.h"
-            >
-              2. Penggunaan Merek GO-MANDOR
-            </h2>
-            <p class="mt-3" data-i18n="hki.s2.p1">
-              Pengguna dilarang menggunakan nama, merek, logo, simbol, slogan, atau identitas GO-MANDOR tanpa persetujuan tertulis terlebih dahulu dari NMB.
-            </p>
-            <p class="mt-3" data-i18n="hki.s2.p2">
-              Tanpa membatasi ketentuan tersebut, pengguna dilarang:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="hki.s2.ul1_li1">menyalin atau menggunakan logo GO-MANDOR;</li>
-              <li data-i18n="hki.s2.ul1_li2">mendaftarkan nama atau merek yang identik atau memiliki kemiripan dengan GO-MANDOR;</li>
-              <li data-i18n="hki.s2.ul1_li3">menggunakan GO-MANDOR sebagai bagian dari nama perusahaan, usaha, produk, aplikasi, akun media sosial atau domain;</li>
-              <li data-i18n="hki.s2.ul1_li4">menggunakan merek GO-MANDOR untuk memberikan kesan seolah-olah pengguna memiliki hubungan, afiliasi, kemitraan, sponsor atau endorsement dari NMB; atau</li>
-              <li data-i18n="hki.s2.ul1_li5">melakukan tindakan lain yang dapat menimbulkan kebingungan mengenai hubungan antara pengguna dengan NMB.</li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="hki.s3.h"
-            >
-              3. Hak Cipta atas Aplikasi
-            </h2>
-            <p class="mt-3" data-i18n="hki.s3.p1">
-              Aplikasi GO-MANDOR beserta seluruh elemen yang terdapat di dalamnya merupakan karya yang dilindungi berdasarkan ketentuan Hak Cipta.
-            </p>
-            <p class="mt-3" data-i18n="hki.s3.p2">
-              Kecuali diperbolehkan berdasarkan hukum atau secara tertulis oleh NMB, pengguna dilarang:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="hki.s3.ul1_li1">menyalin aplikasi;</li>
-              <li data-i18n="hki.s3.ul1_li2">menggandakan, memodifikasi atau membuat karya turunan;</li>
-              <li data-i18n="hki.s3.ul1_li3">melakukan reverse engineering, decompile, disassemble atau mencoba memperoleh source code;</li>
-              <li data-i18n="hki.s3.ul1_li4">menjual, menyewakan, melisensikan, mendistribusikan atau mengeksploitasi aplikasi;</li>
-              <li data-i18n="hki.s3.ul1_li5">menggunakan aplikasi untuk membangun aplikasi atau layanan yang bersaing secara langsung; atau</li>
-              <li data-i18n="hki.s3.ul1_li6">menghilangkan pemberitahuan mengenai hak cipta dan/atau kepemilikan.</li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="hki.s4.h"
-            >
-              4. Konten Pengguna
-            </h2>
-            <p class="mt-3" data-i18n="hki.s4.p1">
-              Dalam hal pengguna mengunggah foto, video, tulisan, ulasan, komentar atau materi lainnya melalui GO-MANDOR (“Konten Pengguna”), pengguna tetap memiliki hak atas Konten Pengguna tersebut sepanjang hak tersebut memang dimiliki oleh pengguna.
-            </p>
-            <p class="mt-3" data-i18n="hki.s4.p2">
-              Namun, pengguna memberikan kepada NMB lisensi non-eksklusif, bebas royalti, berlaku di seluruh dunia, dapat dialihkan dan dapat disublisensikan, sepanjang diperlukan untuk:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="hki.s4.ul1_li1">menyediakan layanan GO-MANDOR;</li>
-              <li data-i18n="hki.s4.ul1_li2">menampilkan Konten Pengguna kepada pihak yang berkepentingan dengan transaksi;</li>
-              <li data-i18n="hki.s4.ul1_li3">melakukan promosi dan pemasaran GO-MANDOR;</li>
-              <li data-i18n="hki.s4.ul1_li4">meningkatkan kualitas layanan;</li>
-              <li data-i18n="hki.s4.ul1_li5">melakukan analisis dan pengembangan produk; dan</li>
-              <li data-i18n="hki.s4.ul1_li6">memenuhi kewajiban hukum.</li>
-            </ul>
-            <p class="mt-3" data-i18n="hki.s4.p3">
-              Pengguna menjamin bahwa Konten Pengguna tidak melanggar hak pihak ketiga.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="hki.s5.h"
-            >
-              5. Pelanggaran HKI
-            </h2>
-            <p class="mt-3" data-i18n="hki.s5.p1">
-              NMB berhak mengambil tindakan terhadap setiap pihak yang diduga melakukan pelanggaran Hak Kekayaan Intelektual, termasuk:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="hki.s5.ul1_li1">menghapus konten;</li>
-              <li data-i18n="hki.s5.ul1_li2">menonaktifkan akun;</li>
-              <li data-i18n="hki.s5.ul1_li3">membatasi akses terhadap layanan;</li>
-              <li data-i18n="hki.s5.ul1_li4">mengirimkan teguran;</li>
-              <li data-i18n="hki.s5.ul1_li5">menuntut ganti rugi; dan/atau</li>
-              <li data-i18n="hki.s5.ul1_li6">mengambil tindakan hukum perdata maupun pidana sesuai ketentuan hukum yang berlaku.</li>
-            </ul>
-          </div>
-        </div>
-
+          <div
+            class="space-y-8 text-gray-700 leading-relaxed text-sm md:text-base"
+          >
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="hki.s1.h"
+              >
+                1. Kepemilikan Hak Kekayaan Intelektual
+              </h2>
+              <p class="mt-3" data-i18n="hki.s1.p1">
+                Seluruh Hak Kekayaan Intelektual yang terdapat, digunakan,
+                ditampilkan, dikembangkan, atau tersedia melalui aplikasi
+                GO-MANDOR, situs web, sistem, platform, dan seluruh layanan yang
+                disediakan oleh PT NIAGA MAKMUR BERJAYA (“NMB”), baik yang telah
+                maupun yang akan didaftarkan, merupakan milik NMB dan/atau pihak
+                yang memberikan lisensi kepada NMB, kecuali dinyatakan lain
+                secara tegas.
+              </p>
+              <p class="mt-3" data-i18n="hki.s1.p2">
+                Hak Kekayaan Intelektual tersebut meliputi namun tidak terbatas
+                pada:
+              </p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="hki.s1.ul1_li1">
+                  nama “GO-MANDOR” dan variasinya;
+                </li>
+                <li data-i18n="hki.s1.ul1_li2">
+                  logo, simbol, desain, ikon, slogan, tagline dan identitas
+                  visual GO-MANDOR;
+                </li>
+                <li data-i18n="hki.s1.ul1_li3">
+                  merek dagang dan/atau merek jasa;
+                </li>
+                <li data-i18n="hki.s1.ul1_li4">
+                  hak cipta atas aplikasi, situs web, desain antarmuka, tata
+                  letak, konten, tulisan, foto, ilustrasi, video, audio, grafis
+                  dan materi lainnya;
+                </li>
+                <li data-i18n="hki.s1.ul1_li5">
+                  perangkat lunak, source code, object code, algoritma,
+                  database, struktur sistem, API dan teknologi pendukung;
+                </li>
+                <li data-i18n="hki.s1.ul1_li6">
+                  desain dan tampilan aplikasi (user interface/user experience);
+                </li>
+                <li data-i18n="hki.s1.ul1_li7">
+                  nama domain, subdomain dan akun resmi GO-MANDOR;
+                </li>
+                <li data-i18n="hki.s1.ul1_li8">
+                  database pengguna, informasi bisnis dan struktur database
+                  sepanjang dilindungi berdasarkan peraturan perundang-undangan;
+                </li>
+                <li data-i18n="hki.s1.ul1_li9">
+                  rahasia dagang, metode bisnis, formula, proses, sistem
+                  operasional dan informasi teknis; dan
+                </li>
+                <li data-i18n="hki.s1.ul1_li10">
+                  Hak Kekayaan Intelektual lainnya yang berkaitan dengan
+                  GO-MANDOR.
+                </li>
+              </ul>
+              <p class="mt-3" data-i18n="hki.s1.p3">
+                Pelindungan terhadap hak cipta dan merek tersebut antara lain
+                tunduk pada UU No. 28 Tahun 2014 tentang Hak Cipta dan UU No. 20
+                Tahun 2016 tentang Merek dan Indikasi Geografis sebagaimana
+                berlaku.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="hki.s2.h"
+              >
+                2. Penggunaan Merek GO-MANDOR
+              </h2>
+              <p class="mt-3" data-i18n="hki.s2.p1">
+                Pengguna dilarang menggunakan nama, merek, logo, simbol, slogan,
+                atau identitas GO-MANDOR tanpa persetujuan tertulis terlebih
+                dahulu dari NMB.
+              </p>
+              <p class="mt-3" data-i18n="hki.s2.p2">
+                Tanpa membatasi ketentuan tersebut, pengguna dilarang:
+              </p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="hki.s2.ul1_li1">
+                  menyalin atau menggunakan logo GO-MANDOR;
+                </li>
+                <li data-i18n="hki.s2.ul1_li2">
+                  mendaftarkan nama atau merek yang identik atau memiliki
+                  kemiripan dengan GO-MANDOR;
+                </li>
+                <li data-i18n="hki.s2.ul1_li3">
+                  menggunakan GO-MANDOR sebagai bagian dari nama perusahaan,
+                  usaha, produk, aplikasi, akun media sosial atau domain;
+                </li>
+                <li data-i18n="hki.s2.ul1_li4">
+                  menggunakan merek GO-MANDOR untuk memberikan kesan seolah-olah
+                  pengguna memiliki hubungan, afiliasi, kemitraan, sponsor atau
+                  endorsement dari NMB; atau
+                </li>
+                <li data-i18n="hki.s2.ul1_li5">
+                  melakukan tindakan lain yang dapat menimbulkan kebingungan
+                  mengenai hubungan antara pengguna dengan NMB.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="hki.s3.h"
+              >
+                3. Hak Cipta atas Aplikasi
+              </h2>
+              <p class="mt-3" data-i18n="hki.s3.p1">
+                Aplikasi GO-MANDOR beserta seluruh elemen yang terdapat di
+                dalamnya merupakan karya yang dilindungi berdasarkan ketentuan
+                Hak Cipta.
+              </p>
+              <p class="mt-3" data-i18n="hki.s3.p2">
+                Kecuali diperbolehkan berdasarkan hukum atau secara tertulis
+                oleh NMB, pengguna dilarang:
+              </p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="hki.s3.ul1_li1">menyalin aplikasi;</li>
+                <li data-i18n="hki.s3.ul1_li2">
+                  menggandakan, memodifikasi atau membuat karya turunan;
+                </li>
+                <li data-i18n="hki.s3.ul1_li3">
+                  melakukan reverse engineering, decompile, disassemble atau
+                  mencoba memperoleh source code;
+                </li>
+                <li data-i18n="hki.s3.ul1_li4">
+                  menjual, menyewakan, melisensikan, mendistribusikan atau
+                  mengeksploitasi aplikasi;
+                </li>
+                <li data-i18n="hki.s3.ul1_li5">
+                  menggunakan aplikasi untuk membangun aplikasi atau layanan
+                  yang bersaing secara langsung; atau
+                </li>
+                <li data-i18n="hki.s3.ul1_li6">
+                  menghilangkan pemberitahuan mengenai hak cipta dan/atau
+                  kepemilikan.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="hki.s4.h"
+              >
+                4. Konten Pengguna
+              </h2>
+              <p class="mt-3" data-i18n="hki.s4.p1">
+                Dalam hal pengguna mengunggah foto, video, tulisan, ulasan,
+                komentar atau materi lainnya melalui GO-MANDOR (“Konten
+                Pengguna”), pengguna tetap memiliki hak atas Konten Pengguna
+                tersebut sepanjang hak tersebut memang dimiliki oleh pengguna.
+              </p>
+              <p class="mt-3" data-i18n="hki.s4.p2">
+                Namun, pengguna memberikan kepada NMB lisensi non-eksklusif,
+                bebas royalti, berlaku di seluruh dunia, dapat dialihkan dan
+                dapat disublisensikan, sepanjang diperlukan untuk:
+              </p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="hki.s4.ul1_li1">
+                  menyediakan layanan GO-MANDOR;
+                </li>
+                <li data-i18n="hki.s4.ul1_li2">
+                  menampilkan Konten Pengguna kepada pihak yang berkepentingan
+                  dengan transaksi;
+                </li>
+                <li data-i18n="hki.s4.ul1_li3">
+                  melakukan promosi dan pemasaran GO-MANDOR;
+                </li>
+                <li data-i18n="hki.s4.ul1_li4">
+                  meningkatkan kualitas layanan;
+                </li>
+                <li data-i18n="hki.s4.ul1_li5">
+                  melakukan analisis dan pengembangan produk; dan
+                </li>
+                <li data-i18n="hki.s4.ul1_li6">memenuhi kewajiban hukum.</li>
+              </ul>
+              <p class="mt-3" data-i18n="hki.s4.p3">
+                Pengguna menjamin bahwa Konten Pengguna tidak melanggar hak
+                pihak ketiga.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="hki.s5.h"
+              >
+                5. Pelanggaran HKI
+              </h2>
+              <p class="mt-3" data-i18n="hki.s5.p1">
+                NMB berhak mengambil tindakan terhadap setiap pihak yang diduga
+                melakukan pelanggaran Hak Kekayaan Intelektual, termasuk:
+              </p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="hki.s5.ul1_li1">menghapus konten;</li>
+                <li data-i18n="hki.s5.ul1_li2">menonaktifkan akun;</li>
+                <li data-i18n="hki.s5.ul1_li3">
+                  membatasi akses terhadap layanan;
+                </li>
+                <li data-i18n="hki.s5.ul1_li4">mengirimkan teguran;</li>
+                <li data-i18n="hki.s5.ul1_li5">
+                  menuntut ganti rugi; dan/atau
+                </li>
+                <li data-i18n="hki.s5.ul1_li6">
+                  mengambil tindakan hukum perdata maupun pidana sesuai
+                  ketentuan hukum yang berlaku.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1695,269 +2523,366 @@
             SYARAT DAN KETENTUAN GO-MANDOR - PT NIAGA MAKMUR BERJAYA
           </h3>
 
-          <div class="space-y-8 text-gray-700 leading-relaxed text-sm md:text-base">
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s1.h"
-            >
-              1. Ketentuan Umum
-            </h2>
-            <p class="mt-3" data-i18n="terms.s1.p1">
-              Syarat dan Ketentuan ini (“Syarat dan Ketentuan”) mengatur penggunaan aplikasi, situs web, dan/atau platform GO-MANDOR (“Platform”) yang dikelola oleh PT Niaga Makmur Berjaya (“NMB”).
-            </p>
-            <p class="mt-3" data-i18n="terms.s1.p2">
-              Dengan mengakses, mendaftar, atau menggunakan Platform, Pengguna menyatakan telah membaca, memahami, dan menyetujui seluruh Syarat dan Ketentuan ini serta Kebijakan Privasi GO-MANDOR.
-            </p>
-            <p class="mt-3" data-i18n="terms.s1.p3">
-              Apabila Pengguna tidak menyetujui Syarat dan Ketentuan ini, Pengguna wajib menghentikan penggunaan Platform.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s2.h"
-            >
-              2. Layanan GO-MANDOR
-            </h2>
-            <p class="mt-3" data-i18n="terms.s2.p1">
-              GO-MANDOR merupakan platform yang mempertemukan Pengguna dengan tukang, teknisi, tenaga ahli, kontraktor, dan/atau penyedia jasa lainnya (“Mitra”) untuk memperoleh berbagai layanan sesuai kategori yang tersedia pada Platform.
-            </p>
-            <p class="mt-3" data-i18n="terms.s2.p2">
-              NMB dapat membantu proses pemesanan, komunikasi, penjadwalan, pembayaran, dan/atau penyampaian informasi terkait layanan sesuai fitur yang tersedia.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s3.h"
-            >
-              3. Pemesanan dan Pelaksanaan Layanan
-            </h2>
-            <p class="mt-3" data-i18n="terms.s3.p1">
-              Pengguna wajib memberikan informasi yang benar, lengkap, dan akurat mengenai kebutuhan pekerjaan, lokasi, waktu pelaksanaan, serta informasi lain yang diperlukan.
-            </p>
-            <p class="mt-3" data-i18n="terms.s3.p2">
-              Untuk pekerjaan tertentu, Mitra dapat melakukan survei terlebih dahulu sebelum memberikan penawaran harga dan/atau ruang lingkup pekerjaan.
-            </p>
-            <p class="mt-3" data-i18n="terms.s3.p3">
-              Pekerjaan hanya dapat dilaksanakan setelah Pengguna dan Mitra menyepakati sekurang-kurangnya mengenai jenis pekerjaan, ruang lingkup, harga, material, waktu pelaksanaan, dan ketentuan garansi, apabila berlaku.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s4.h"
-            >
-              4. Harga dan Pembayaran
-            </h2>
-            <p class="mt-3" data-i18n="terms.s4.p1">
-              Harga layanan ditentukan berdasarkan jenis, volume, tingkat kesulitan, lokasi, material, dan faktor lain yang relevan.
-            </p>
-            <p class="mt-3" data-i18n="terms.s4.p2">
-              Setiap biaya tambahan di luar kesepakatan awal wajib diinformasikan kepada Pengguna dan memperoleh persetujuan Pengguna terlebih dahulu.
-            </p>
-            <p class="mt-3" data-i18n="terms.s4.p3">
-              Pengguna wajib melakukan pembayaran sesuai harga dan metode pembayaran yang tercantum pada Platform dan/atau yang telah disepakati dengan Mitra.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s5.h"
-            >
-              5. Pembatalan dan Perubahan Jadwal
-            </h2>
-            <p class="mt-3" data-i18n="terms.s5.p1">
-              Pengguna dapat melakukan pembatalan dan/atau perubahan jadwal sesuai ketentuan yang berlaku pada Platform.
-            </p>
-            <p class="mt-3" data-i18n="terms.s5.p2">
-              Dalam hal pembatalan dilakukan setelah Mitra melakukan perjalanan, survei, pembelian material, atau pekerjaan telah dimulai, Pengguna dapat dikenakan biaya sesuai kondisi dan kebijakan yang berlaku.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s6.h"
-            >
-              6. Tanggung Jawab Mitra
-            </h2>
-            <p class="mt-3" data-i18n="terms.s6.p1">
-              Mitra bertanggung jawab atas pelaksanaan pekerjaan sesuai ruang lingkup dan kesepakatan dengan Pengguna.
-            </p>
-            <p class="mt-3" data-i18n="terms.s6.p2">
-              Mitra wajib memberikan informasi yang benar mengenai identitas, kompetensi, harga, serta layanan yang ditawarkan dan melaksanakan pekerjaan secara profesional.
-            </p>
-            <p class="mt-3" data-i18n="terms.s6.p3">
-              NMB dapat melakukan verifikasi, evaluasi, pembatasan, penangguhan, atau penghentian akses Mitra apabila ditemukan pelanggaran terhadap ketentuan Platform.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s7.h"
-            >
-              7. Tanggung Jawab Pengguna
-            </h2>
-            <p class="mt-3" data-i18n="terms.s7.p1">
-              Pengguna wajib:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="terms.s7.ul1_li1">memberikan informasi yang benar dan dapat dipertanggungjawabkan;</li>
-              <li data-i18n="terms.s7.ul1_li2">memastikan lokasi pekerjaan dapat diakses dan berada dalam kondisi yang aman;</li>
-              <li data-i18n="terms.s7.ul1_li3">memberikan informasi mengenai kondisi khusus lokasi yang dapat memengaruhi pekerjaan;</li>
-              <li data-i18n="terms.s7.ul1_li4">memenuhi kewajiban pembayaran; dan</li>
-              <li data-i18n="terms.s7.ul1_li5">menggunakan Platform secara wajar dan sesuai hukum.</li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s8.h"
-            >
-              8. Garansi dan Komplain
-            </h2>
-            <p class="mt-3" data-i18n="terms.s8.p1">
-              Garansi pekerjaan, apabila tersedia, mengikuti ketentuan yang disepakati antara Pengguna dan Mitra untuk masing-masing pekerjaan.
-            </p>
-            <p class="mt-3" data-i18n="terms.s8.p2">
-              Pengguna dapat menyampaikan keluhan melalui kanal pengaduan GO-MANDOR sesuai prosedur yang ditetapkan NMB.
-            </p>
-            <p class="mt-3" data-i18n="terms.s8.p3">
-              NMB dapat membantu memfasilitasi penyelesaian keluhan antara Pengguna dan Mitra sesuai kewenangan dan kebijakan yang berlaku.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s9.h"
-            >
-              9. Akun dan Keamanan
-            </h2>
-            <p class="mt-3" data-i18n="terms.s9.p1">
-              Pengguna bertanggung jawab menjaga kerahasiaan akun, kata sandi, OTP, dan informasi keamanan lainnya.
-            </p>
-            <p class="mt-3" data-i18n="terms.s9.p2">
-              Segala aktivitas yang dilakukan melalui akun Pengguna menjadi tanggung jawab Pengguna sepanjang tidak terbukti dilakukan tanpa kewenangan.
-            </p>
-            <p class="mt-3" data-i18n="terms.s9.p3">
-              NMB berhak menangguhkan atau menutup akun yang digunakan untuk penipuan, penyalahgunaan, pelanggaran hukum, atau pelanggaran Syarat dan Ketentuan.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s10.h"
-            >
-              10. Hak Kekayaan Intelektual
-            </h2>
-            <p class="mt-3" data-i18n="terms.s10.p1">
-              Seluruh nama, merek, logo, desain, sistem, perangkat lunak, konten, database, tampilan, dan elemen lain yang terdapat pada Platform merupakan milik NMB dan/atau pihak yang memberikan hak kepada NMB dan dilindungi berdasarkan peraturan perundang-undangan.
-            </p>
-            <p class="mt-3" data-i18n="terms.s10.p2">
-              Pengguna dilarang menyalin, mengubah, mendistribusikan, mengeksploitasi, melakukan reverse engineering, atau menggunakan Hak Kekayaan Intelektual tersebut tanpa persetujuan tertulis dari NMB.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s11.h"
-            >
-              11. Larangan
-            </h2>
-            <p class="mt-3" data-i18n="terms.s11.p1">
-              Pengguna dilarang:
-            </p>
-            <ul class="list-disc list-inside mt-3 space-y-1.5">
-              <li data-i18n="terms.s11.ul1_li1">menggunakan Platform untuk tujuan melawan hukum;</li>
-              <li data-i18n="terms.s11.ul1_li2">memberikan informasi palsu atau menyesatkan;</li>
-              <li data-i18n="terms.s11.ul1_li3">melakukan penipuan atau manipulasi transaksi;</li>
-              <li data-i18n="terms.s11.ul1_li4">mengganggu keamanan atau operasional Platform;</li>
-              <li data-i18n="terms.s11.ul1_li5">mengunggah konten yang melanggar hukum atau hak pihak lain;</li>
-              <li data-i18n="terms.s11.ul1_li6">menyalahgunakan data Pengguna atau Mitra; dan/atau</li>
-              <li data-i18n="terms.s11.ul1_li7">melakukan tindakan lain yang dapat merugikan NMB, Mitra, atau Pengguna lainnya.</li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s12.h"
-            >
-              12. Pembatasan Tanggung Jawab
-            </h2>
-            <p class="mt-3" data-i18n="terms.s12.p1">
-              NMB berupaya menyediakan Platform secara aman dan berkesinambungan, namun NMB tidak menjamin bahwa Platform akan selalu tersedia, bebas dari gangguan, kesalahan, atau kegagalan teknis.
-            </p>
-            <p class="mt-3" data-i18n="terms.s12.p2">
-              Sejauh diperbolehkan berdasarkan hukum, NMB tidak bertanggung jawab atas kerugian yang timbul akibat tindakan, kelalaian, kualitas, hasil, atau pelaksanaan pekerjaan oleh Mitra, kecuali apabila kerugian tersebut secara langsung disebabkan oleh kesalahan atau kelalaian NMB.
-            </p>
-            <p class="mt-3" data-i18n="terms.s12.p3">
-              Ketentuan ini tidak dimaksudkan untuk mengesampingkan tanggung jawab NMB yang menurut hukum tidak dapat dikecualikan atau dibatasi.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s13.h"
-            >
-              13. Data Pribadi
-            </h2>
-            <p class="mt-3" data-i18n="terms.s13.p1">
-              NMB dapat mengumpulkan dan memproses Data Pribadi Pengguna untuk menyediakan, mengembangkan, mengamankan, dan meningkatkan layanan GO-MANDOR sesuai dengan Kebijakan Privasi GO-MANDOR dan peraturan perundang-undangan yang berlaku.
-            </p>
-            <p class="mt-3" data-i18n="terms.s13.p2">
-              Dengan menggunakan Platform, Pengguna menyatakan telah membaca dan memahami Kebijakan Privasi tersebut.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s14.h"
-            >
-              14. Perubahan Syarat dan Ketentuan
-            </h2>
-            <p class="mt-3" data-i18n="terms.s14.p1">
-              NMB berhak mengubah, menambah, atau memperbarui Syarat dan Ketentuan ini dari waktu ke waktu.
-            </p>
-            <p class="mt-3" data-i18n="terms.s14.p2">
-              Perubahan akan berlaku sejak tanggal yang ditentukan oleh NMB dan, apabila diperlukan, akan diberitahukan melalui Platform atau sarana komunikasi lainnya.
-            </p>
-            <p class="mt-3" data-i18n="terms.s14.p3">
-              Penggunaan Platform setelah perubahan berlaku merupakan persetujuan Pengguna terhadap perubahan tersebut.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s15.h"
-            >
-              15. Hukum dan Penyelesaian Sengketa
-            </h2>
-            <p class="mt-3" data-i18n="terms.s15.p1">
-              Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan hukum Republik Indonesia.
-            </p>
-            <p class="mt-3" data-i18n="terms.s15.p2">
-              Setiap perselisihan yang timbul akan terlebih dahulu diselesaikan secara musyawarah untuk mufakat.
-            </p>
-            <p class="mt-3" data-i18n="terms.s15.p3">
-              Apabila penyelesaian secara musyawarah tidak tercapai, perselisihan akan diselesaikan melalui mekanisme hukum yang berlaku di Republik Indonesia.
-            </p>
-          </div>
-          <div>
-            <h2
-              class="text-lg md:text-xl font-bold text-brand-dark mb-3"
-              data-i18n="terms.s16.h"
-            >
-              16. Kontak
-            </h2>
-            <p class="mt-3" data-i18n-html="terms.s16.p1">
-              Pertanyaan, keluhan, atau permintaan terkait Syarat dan Ketentuan dapat disampaikan melalui:<br />PT NIAGA MAKMUR BERJAYA<br />Pengelola GO-MANDOR<br />Email: info@gomandor.id
-            </p>
-            <p class="mt-3" data-i18n="terms.s16.p2">
-              Dengan menekan tombol “Saya Setuju”, melakukan pendaftaran, atau menggunakan Platform GO-MANDOR, Pengguna menyatakan telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini.
-            </p>
-          </div>
-        </div>
+          <div
+            class="space-y-8 text-gray-700 leading-relaxed text-sm md:text-base"
+          >
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s1.h"
+              >
+                1. Ketentuan Umum
+              </h2>
+              <p class="mt-3" data-i18n="terms.s1.p1">
+                Syarat dan Ketentuan ini (“Syarat dan Ketentuan”) mengatur
+                penggunaan aplikasi, situs web, dan/atau platform GO-MANDOR
+                (“Platform”) yang dikelola oleh PT Niaga Makmur Berjaya (“NMB”).
+              </p>
+              <p class="mt-3" data-i18n="terms.s1.p2">
+                Dengan mengakses, mendaftar, atau menggunakan Platform, Pengguna
+                menyatakan telah membaca, memahami, dan menyetujui seluruh
+                Syarat dan Ketentuan ini serta Kebijakan Privasi GO-MANDOR.
+              </p>
+              <p class="mt-3" data-i18n="terms.s1.p3">
+                Apabila Pengguna tidak menyetujui Syarat dan Ketentuan ini,
+                Pengguna wajib menghentikan penggunaan Platform.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s2.h"
+              >
+                2. Layanan GO-MANDOR
+              </h2>
+              <p class="mt-3" data-i18n="terms.s2.p1">
+                GO-MANDOR merupakan platform yang mempertemukan Pengguna dengan
+                tukang, teknisi, tenaga ahli, kontraktor, dan/atau penyedia jasa
+                lainnya (“Mitra”) untuk memperoleh berbagai layanan sesuai
+                kategori yang tersedia pada Platform.
+              </p>
+              <p class="mt-3" data-i18n="terms.s2.p2">
+                NMB dapat membantu proses pemesanan, komunikasi, penjadwalan,
+                pembayaran, dan/atau penyampaian informasi terkait layanan
+                sesuai fitur yang tersedia.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s3.h"
+              >
+                3. Pemesanan dan Pelaksanaan Layanan
+              </h2>
+              <p class="mt-3" data-i18n="terms.s3.p1">
+                Pengguna wajib memberikan informasi yang benar, lengkap, dan
+                akurat mengenai kebutuhan pekerjaan, lokasi, waktu pelaksanaan,
+                serta informasi lain yang diperlukan.
+              </p>
+              <p class="mt-3" data-i18n="terms.s3.p2">
+                Untuk pekerjaan tertentu, Mitra dapat melakukan survei terlebih
+                dahulu sebelum memberikan penawaran harga dan/atau ruang lingkup
+                pekerjaan.
+              </p>
+              <p class="mt-3" data-i18n="terms.s3.p3">
+                Pekerjaan hanya dapat dilaksanakan setelah Pengguna dan Mitra
+                menyepakati sekurang-kurangnya mengenai jenis pekerjaan, ruang
+                lingkup, harga, material, waktu pelaksanaan, dan ketentuan
+                garansi, apabila berlaku.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s4.h"
+              >
+                4. Harga dan Pembayaran
+              </h2>
+              <p class="mt-3" data-i18n="terms.s4.p1">
+                Harga layanan ditentukan berdasarkan jenis, volume, tingkat
+                kesulitan, lokasi, material, dan faktor lain yang relevan.
+              </p>
+              <p class="mt-3" data-i18n="terms.s4.p2">
+                Setiap biaya tambahan di luar kesepakatan awal wajib
+                diinformasikan kepada Pengguna dan memperoleh persetujuan
+                Pengguna terlebih dahulu.
+              </p>
+              <p class="mt-3" data-i18n="terms.s4.p3">
+                Pengguna wajib melakukan pembayaran sesuai harga dan metode
+                pembayaran yang tercantum pada Platform dan/atau yang telah
+                disepakati dengan Mitra.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s5.h"
+              >
+                5. Pembatalan dan Perubahan Jadwal
+              </h2>
+              <p class="mt-3" data-i18n="terms.s5.p1">
+                Pengguna dapat melakukan pembatalan dan/atau perubahan jadwal
+                sesuai ketentuan yang berlaku pada Platform.
+              </p>
+              <p class="mt-3" data-i18n="terms.s5.p2">
+                Dalam hal pembatalan dilakukan setelah Mitra melakukan
+                perjalanan, survei, pembelian material, atau pekerjaan telah
+                dimulai, Pengguna dapat dikenakan biaya sesuai kondisi dan
+                kebijakan yang berlaku.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s6.h"
+              >
+                6. Tanggung Jawab Mitra
+              </h2>
+              <p class="mt-3" data-i18n="terms.s6.p1">
+                Mitra bertanggung jawab atas pelaksanaan pekerjaan sesuai ruang
+                lingkup dan kesepakatan dengan Pengguna.
+              </p>
+              <p class="mt-3" data-i18n="terms.s6.p2">
+                Mitra wajib memberikan informasi yang benar mengenai identitas,
+                kompetensi, harga, serta layanan yang ditawarkan dan
+                melaksanakan pekerjaan secara profesional.
+              </p>
+              <p class="mt-3" data-i18n="terms.s6.p3">
+                NMB dapat melakukan verifikasi, evaluasi, pembatasan,
+                penangguhan, atau penghentian akses Mitra apabila ditemukan
+                pelanggaran terhadap ketentuan Platform.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s7.h"
+              >
+                7. Tanggung Jawab Pengguna
+              </h2>
+              <p class="mt-3" data-i18n="terms.s7.p1">Pengguna wajib:</p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="terms.s7.ul1_li1">
+                  memberikan informasi yang benar dan dapat
+                  dipertanggungjawabkan;
+                </li>
+                <li data-i18n="terms.s7.ul1_li2">
+                  memastikan lokasi pekerjaan dapat diakses dan berada dalam
+                  kondisi yang aman;
+                </li>
+                <li data-i18n="terms.s7.ul1_li3">
+                  memberikan informasi mengenai kondisi khusus lokasi yang dapat
+                  memengaruhi pekerjaan;
+                </li>
+                <li data-i18n="terms.s7.ul1_li4">
+                  memenuhi kewajiban pembayaran; dan
+                </li>
+                <li data-i18n="terms.s7.ul1_li5">
+                  menggunakan Platform secara wajar dan sesuai hukum.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s8.h"
+              >
+                8. Garansi dan Komplain
+              </h2>
+              <p class="mt-3" data-i18n="terms.s8.p1">
+                Garansi pekerjaan, apabila tersedia, mengikuti ketentuan yang
+                disepakati antara Pengguna dan Mitra untuk masing-masing
+                pekerjaan.
+              </p>
+              <p class="mt-3" data-i18n="terms.s8.p2">
+                Pengguna dapat menyampaikan keluhan melalui kanal pengaduan
+                GO-MANDOR sesuai prosedur yang ditetapkan NMB.
+              </p>
+              <p class="mt-3" data-i18n="terms.s8.p3">
+                NMB dapat membantu memfasilitasi penyelesaian keluhan antara
+                Pengguna dan Mitra sesuai kewenangan dan kebijakan yang berlaku.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s9.h"
+              >
+                9. Akun dan Keamanan
+              </h2>
+              <p class="mt-3" data-i18n="terms.s9.p1">
+                Pengguna bertanggung jawab menjaga kerahasiaan akun, kata sandi,
+                OTP, dan informasi keamanan lainnya.
+              </p>
+              <p class="mt-3" data-i18n="terms.s9.p2">
+                Segala aktivitas yang dilakukan melalui akun Pengguna menjadi
+                tanggung jawab Pengguna sepanjang tidak terbukti dilakukan tanpa
+                kewenangan.
+              </p>
+              <p class="mt-3" data-i18n="terms.s9.p3">
+                NMB berhak menangguhkan atau menutup akun yang digunakan untuk
+                penipuan, penyalahgunaan, pelanggaran hukum, atau pelanggaran
+                Syarat dan Ketentuan.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s10.h"
+              >
+                10. Hak Kekayaan Intelektual
+              </h2>
+              <p class="mt-3" data-i18n="terms.s10.p1">
+                Seluruh nama, merek, logo, desain, sistem, perangkat lunak,
+                konten, database, tampilan, dan elemen lain yang terdapat pada
+                Platform merupakan milik NMB dan/atau pihak yang memberikan hak
+                kepada NMB dan dilindungi berdasarkan peraturan
+                perundang-undangan.
+              </p>
+              <p class="mt-3" data-i18n="terms.s10.p2">
+                Pengguna dilarang menyalin, mengubah, mendistribusikan,
+                mengeksploitasi, melakukan reverse engineering, atau menggunakan
+                Hak Kekayaan Intelektual tersebut tanpa persetujuan tertulis
+                dari NMB.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s11.h"
+              >
+                11. Larangan
+              </h2>
+              <p class="mt-3" data-i18n="terms.s11.p1">Pengguna dilarang:</p>
+              <ul class="list-disc list-inside mt-3 space-y-1.5">
+                <li data-i18n="terms.s11.ul1_li1">
+                  menggunakan Platform untuk tujuan melawan hukum;
+                </li>
+                <li data-i18n="terms.s11.ul1_li2">
+                  memberikan informasi palsu atau menyesatkan;
+                </li>
+                <li data-i18n="terms.s11.ul1_li3">
+                  melakukan penipuan atau manipulasi transaksi;
+                </li>
+                <li data-i18n="terms.s11.ul1_li4">
+                  mengganggu keamanan atau operasional Platform;
+                </li>
+                <li data-i18n="terms.s11.ul1_li5">
+                  mengunggah konten yang melanggar hukum atau hak pihak lain;
+                </li>
+                <li data-i18n="terms.s11.ul1_li6">
+                  menyalahgunakan data Pengguna atau Mitra; dan/atau
+                </li>
+                <li data-i18n="terms.s11.ul1_li7">
+                  melakukan tindakan lain yang dapat merugikan NMB, Mitra, atau
+                  Pengguna lainnya.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s12.h"
+              >
+                12. Pembatasan Tanggung Jawab
+              </h2>
+              <p class="mt-3" data-i18n="terms.s12.p1">
+                NMB berupaya menyediakan Platform secara aman dan
+                berkesinambungan, namun NMB tidak menjamin bahwa Platform akan
+                selalu tersedia, bebas dari gangguan, kesalahan, atau kegagalan
+                teknis.
+              </p>
+              <p class="mt-3" data-i18n="terms.s12.p2">
+                Sejauh diperbolehkan berdasarkan hukum, NMB tidak bertanggung
+                jawab atas kerugian yang timbul akibat tindakan, kelalaian,
+                kualitas, hasil, atau pelaksanaan pekerjaan oleh Mitra, kecuali
+                apabila kerugian tersebut secara langsung disebabkan oleh
+                kesalahan atau kelalaian NMB.
+              </p>
+              <p class="mt-3" data-i18n="terms.s12.p3">
+                Ketentuan ini tidak dimaksudkan untuk mengesampingkan tanggung
+                jawab NMB yang menurut hukum tidak dapat dikecualikan atau
+                dibatasi.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s13.h"
+              >
+                13. Data Pribadi
+              </h2>
+              <p class="mt-3" data-i18n="terms.s13.p1">
+                NMB dapat mengumpulkan dan memproses Data Pribadi Pengguna untuk
+                menyediakan, mengembangkan, mengamankan, dan meningkatkan
+                layanan GO-MANDOR sesuai dengan Kebijakan Privasi GO-MANDOR dan
+                peraturan perundang-undangan yang berlaku.
+              </p>
+              <p class="mt-3" data-i18n="terms.s13.p2">
+                Dengan menggunakan Platform, Pengguna menyatakan telah membaca
+                dan memahami Kebijakan Privasi tersebut.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s14.h"
+              >
+                14. Perubahan Syarat dan Ketentuan
+              </h2>
+              <p class="mt-3" data-i18n="terms.s14.p1">
+                NMB berhak mengubah, menambah, atau memperbarui Syarat dan
+                Ketentuan ini dari waktu ke waktu.
+              </p>
+              <p class="mt-3" data-i18n="terms.s14.p2">
+                Perubahan akan berlaku sejak tanggal yang ditentukan oleh NMB
+                dan, apabila diperlukan, akan diberitahukan melalui Platform
+                atau sarana komunikasi lainnya.
+              </p>
+              <p class="mt-3" data-i18n="terms.s14.p3">
+                Penggunaan Platform setelah perubahan berlaku merupakan
+                persetujuan Pengguna terhadap perubahan tersebut.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s15.h"
+              >
+                15. Hukum dan Penyelesaian Sengketa
+              </h2>
+              <p class="mt-3" data-i18n="terms.s15.p1">
+                Syarat dan Ketentuan ini diatur dan ditafsirkan berdasarkan
+                hukum Republik Indonesia.
+              </p>
+              <p class="mt-3" data-i18n="terms.s15.p2">
+                Setiap perselisihan yang timbul akan terlebih dahulu
+                diselesaikan secara musyawarah untuk mufakat.
+              </p>
+              <p class="mt-3" data-i18n="terms.s15.p3">
+                Apabila penyelesaian secara musyawarah tidak tercapai,
+                perselisihan akan diselesaikan melalui mekanisme hukum yang
+                berlaku di Republik Indonesia.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-lg md:text-xl font-bold text-brand-dark mb-3"
+                data-i18n="terms.s16.h"
+              >
+                16. Kontak
+              </h2>
+              <p class="mt-3" data-i18n-html="terms.s16.p1">
+                Pertanyaan, keluhan, atau permintaan terkait Syarat dan
+                Ketentuan dapat disampaikan melalui:<br />PT NIAGA MAKMUR
+                BERJAYA<br />Pengelola GO-MANDOR<br />Email: info@gomandor.id
+              </p>
+              <p class="mt-3" data-i18n="terms.s16.p2">
+                Dengan menekan tombol “Saya Setuju”, melakukan pendaftaran, atau
+                menggunakan Platform GO-MANDOR, Pengguna menyatakan telah
+                membaca, memahami, dan menyetujui Syarat dan Ketentuan ini.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -2132,7 +3057,9 @@
       };
 
       document.getElementById("termsBtn").addEventListener("click", openTerms);
-      document.getElementById("termsClose").addEventListener("click", closeTerms);
+      document
+        .getElementById("termsClose")
+        .addEventListener("click", closeTerms);
       document
         .getElementById("termsBackdrop")
         .addEventListener("click", closeTerms);
@@ -2215,35 +3142,99 @@
         if (e.key === "Escape") closeProject();
       });
 
-      const reviewPagesWrapper = document.getElementById("reviewPagesWrapper");
-      const reviewPages = reviewPagesWrapper.children;
-      const reviewDots = document.querySelectorAll(".review-dot");
-      const reviewPrev = document.getElementById("reviewPrev");
-      const reviewNext = document.getElementById("reviewNext");
-      let reviewIndex = 0;
-
-      const renderReview = () => {
-        reviewPagesWrapper.style.transform = `translateX(-${reviewIndex * 100}%)`;
-        reviewDots.forEach((dot, i) => {
-          dot.classList.toggle("bg-white", i === reviewIndex);
-          dot.classList.toggle("bg-white/40", i !== reviewIndex);
+      function initInfiniteCarousel({ wrapper, prevBtn, nextBtn, dots }) {
+        const realPages = Array.from(wrapper.children);
+        const realCount = realPages.length;
+        const firstClone = realPages[0].cloneNode(true);
+        const lastClone = realPages[realCount - 1].cloneNode(true);
+        [firstClone, lastClone].forEach((clone) => {
+          clone.setAttribute("aria-hidden", "true");
+          clone
+            .querySelectorAll("button, a")
+            .forEach((el) => el.setAttribute("tabindex", "-1"));
         });
-      };
+        wrapper.insertBefore(lastClone, wrapper.firstChild);
+        wrapper.appendChild(firstClone);
 
-      reviewPrev.addEventListener("click", () => {
-        reviewIndex =
-          (reviewIndex - 1 + reviewPages.length) % reviewPages.length;
-        renderReview();
-      });
-      reviewNext.addEventListener("click", () => {
-        reviewIndex = (reviewIndex + 1) % reviewPages.length;
-        renderReview();
-      });
-      reviewDots.forEach((dot) => {
-        dot.addEventListener("click", () => {
-          reviewIndex = Number(dot.dataset.index);
-          renderReview();
+        const total = realCount + 2;
+        let index = 1;
+        let isAnimating = false;
+
+        wrapper.classList.remove(
+          "transition-transform",
+          "duration-500",
+          "ease-in-out",
+        );
+
+        const setTrackPosition = (withTransition) => {
+          wrapper.style.transition = withTransition
+            ? "transform 500ms ease-in-out"
+            : "none";
+          wrapper.style.transform = `translateX(-${index * 100}%)`;
+        };
+
+        const updateDots = () => {
+          if (!dots || !dots.length) return;
+          const realIndex = (((index - 1) % realCount) + realCount) % realCount;
+          dots.forEach((dot, i) => {
+            dot.classList.toggle("bg-white", i === realIndex);
+            dot.classList.toggle("bg-white/40", i !== realIndex);
+          });
+        };
+
+        setTrackPosition(false);
+        updateDots();
+
+        const goToPage = (newIndex) => {
+          if (isAnimating) return;
+          isAnimating = true;
+          index = newIndex;
+          setTrackPosition(true);
+          updateDots();
+        };
+
+        wrapper.addEventListener("transitionend", (e) => {
+          if (e.target !== wrapper || e.propertyName !== "transform") {
+            return;
+          }
+          isAnimating = false;
+          if (index === total - 1) {
+            index = 1;
+            setTrackPosition(false);
+            void wrapper.offsetWidth;
+          } else if (index === 0) {
+            index = realCount;
+            setTrackPosition(false);
+            void wrapper.offsetWidth;
+          }
         });
+
+        const nextPage = () => goToPage(index + 1);
+        const prevPage = () => goToPage(index - 1);
+
+        prevBtn.addEventListener("click", prevPage);
+        nextBtn.addEventListener("click", nextPage);
+        if (dots) {
+          dots.forEach((dot) => {
+            dot.addEventListener("click", () => {
+              goToPage(Number(dot.dataset.index) + 1);
+            });
+          });
+        }
+      }
+
+      initInfiniteCarousel({
+        wrapper: document.getElementById("reviewPagesWrapper"),
+        prevBtn: document.getElementById("reviewPrev"),
+        nextBtn: document.getElementById("reviewNext"),
+        dots: document.querySelectorAll(".review-dot"),
+      });
+
+      initInfiniteCarousel({
+        wrapper: document.getElementById("reviewPagesWrapperMobile"),
+        prevBtn: document.getElementById("reviewPrevMobile"),
+        nextBtn: document.getElementById("reviewNextMobile"),
+        dots: null,
       });
     </script>
   </body>

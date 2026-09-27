@@ -3,6 +3,8 @@
 
   var STORAGE_KEY = "gm_lang";
 
+  var defaultLang = "en";
+
   var translations = {
     id: {
       "nav.beranda": "BERANDA",
@@ -16,12 +18,17 @@
       "hero.title": "Kontraktor Andalan Anda",
       "hero.desc":
         "Solusi menyeluruh untuk pembangunan, renovasi, dan perawatan properti; dikerjakan secara profesional, terstruktur, dan tepat waktu.",
+      "hero.tagline": "BANGUN. RENOVASI. RAWAT.",
+      "hero.subtitle": "Satu kontraktor untuk seluruh kebutuhan properti Anda.",
+      "hero.segments": "Residensial | Komersial | Perhotelan | Korporasi",
       "hero.cta": "Pelajari lebih lanjut",
 
       "proyek.heading": "PROYEK KAMI",
       "proyek.intro":
         "Kami mendokumentasikan setiap proyek dari awal hingga akhir. Mencakup proses pengerjaan dan hasil akhir di berbagai lokasi, ini sebagai bentuk profesionalisme dan integritas kami.",
       "proyek.more": "lebih banyak",
+      "proyek.desc":
+        "Berpengalaman menangani proyek berskala besar, dengan kapabilitas dan perizinan pembangunan gedung hingga 5 lantai serta standar kualitas dan ketepatan waktu yang terjaga.",
 
       "klien.heading": "KLIEN KAMI",
       "klien.intro":
@@ -132,7 +139,7 @@
       "layanan.card1.title": "PERAWATAN & PERBAIKAN",
       "layanan.card1.desc":
         "Solusi perawatan dan perbaikan terpadu untuk memastikan operasional Anda tetap optimal.",
-      "layanan.card2.title": "DESAIN & PEMBANGUNAN",
+      "layanan.card2.title": "PEMBANGUNAN",
       "layanan.card2.desc":
         "Dari konsep hingga konstruksi, kami hadirkan solusi yang terukur dan tahan lama.",
       "layanan.card3.title": "PROJECT MANAGEMENT",
@@ -167,12 +174,12 @@
         "Percayakan perawatan dan perbaikan properti Anda kepada Go-Mandor. Kami hadir untuk menjaga properti Anda tetap prima setiap saat.",
 
       "p2.intro":
-        "Go-Mandor menyediakan layanan desain dan pembangunan terpadu untuk berbagai jenis properti, baik residensial maupun komersial. Kami menawarkan:",
-      "p2.li1_label": "Konsultasi Desain Gratis",
+        "Go-Mandor menyediakan layanan konstruksi terpadu untuk berbagai jenis properti, baik residensial maupun komersial. Kami menawarkan:",
+      "p2.li1_label": "Survey dan Konsultasi",
       "p2.li1_desc":
-        "Diskusi konsep dan kebutuhan ruang Anda tanpa biaya awal.",
+        "Kunjungan lokasi, diskusi konsep dan kebutuhan ruang Anda tanpa biaya awal.",
       "p2.li2_label": "Perencanaan Matang",
-      "p2.li2_desc": "Penyusunan RAB, timeline, dan gambar kerja yang detail.",
+      "p2.li2_desc": "Penyusunan RAB dan timeline kerja yang jelas.",
       "p2.li3_label": "Eksekusi Konstruksi",
       "p2.li3_desc": "Pengerjaan oleh tenaga ahli dengan material berkualitas.",
       "p2.li4_label": "Pengawasan Ketat",
@@ -229,7 +236,7 @@
 
       "subscribe.heading": "SUBSCRIBE",
       "subscribe.desc":
-        "Berlangganan newsletter Go-Mandor. Dapatkan informasi terbaru, tips manajemen proyek, dan update layanan langsung di inbox Anda.",
+        "Berlangganan newsletter Go-Mandor. Dapatkan promo menarik, informasi terbaru, dan update layanan langsung di inbox Anda.",
       "subscribe.placeholder": "Email Anda",
       "subscribe.cta": "SUBSCRIBE",
 
@@ -316,33 +323,38 @@
       "pagination.selanjutnya": "Selanjutnya",
 
       "testimoni.heading": "Testimoni Klien",
-      "review.andi.role": "Renovasi Rumah",
-      "review.andi.quote":
-        "Go-Mandor benar-benar membantu saya dari awal sampai akhir. Timnya profesional, komunikasinya lancar, dan hasil renovasi rumah saya melebihi ekspektasi. Saya pasti pakai jasa mereka lagi.",
-      "review.siti.role": "Pembangunan Ruko",
-      "review.siti.quote":
-        "Proyek ruko saya selesai tepat waktu dan sesuai anggaran. Go-Mandor punya tim yang bertanggung jawab dan materialnya berkualitas. Sangat puas!",
-      "review.budi.role": "Renovasi Kantor",
-      "review.budi.quote":
-        "Saya sudah beberapa kali pakai jasa kontraktor, tapi Go-Mandor yang paling oke. Pengerjaan rapi, cepat, dan mereka selalu kasih solusi kalau ada kendala di lapangan.",
-      "review.dian.role": "Pembangunan Rumah",
-      "review.dian.quote":
-        "Proses pembangunan rumah impian saya jadi lebih tenang karena Go-Mandor mengurus semuanya. Dari perizinan sampai finishing, semua terkelola dengan baik. Terima kasih Go-Mandor!",
-      "review.rudi.role": "Renovasi Restoran",
-      "review.rudi.quote":
-        "Restoran saya harus cepat selesai karena mau buka. Go-Mandor berhasil menyelesaikan renovasi tepat waktu tanpa mengurangi kualitas. Pelanggan saya juga puas dengan tampilan barunya.",
-      "review.maya.role": "Pembangunan Gudang",
-      "review.maya.quote":
-        "Go-Mandor memberikan rekomendasi desain yang efisien untuk gudang saya. Pengerjaan kokoh, hemat biaya, dan koordinasi dengan tim sangat mudah. Rekomendasi banget!",
-      "review.james.role": "Villa Renovation",
-      "review.james.quote":
-        "Go-Mandor transformed our outdated villa into a modern tropical masterpiece. Their team was punctual, detail-oriented, and handled everything from design to construction. Highly recommended!",
-      "review.laura.role": "Hotel Construction",
-      "review.laura.quote":
-        "We entrusted Go-Mandor with our boutique hotel project in Ubud, and they exceeded our expectations. Excellent project management, quality materials, and they truly understand the local building culture. Absolutely satisfied.",
-      "review.david.role": "Club Development",
-      "review.david.quote":
-        "Go-Mandor delivered our beach club project on time and on budget. Their professionalism and problem-solving skills were outstanding. We're already planning our next project with them.",
+      "review.anizah.quote":
+        "Alhamdulillah, AC saya sudah kembali dingin. Dapat tukang yang jujur dan cepat, tidak lelet, dan tepat waktu. Mantap!",
+      "review.agrareeves.quote":
+        "Saya kesulitan cari tukang untuk pasang elektrik kabel listrik, untungnya ada aplikasi ini, respon time cepat dan tukangnya pas kebetulan dapat yang bagus. Setengah hari selesai semua pekerjaan.",
+      "review.raka.quote":
+        "Alhamdulillah, telah selesai pengerjaan renovasi tempat kopi saya menggunakan jasa Go-Mandor. Terlebih saya cenderung puas dengan jasa yang diberikan oleh Go-Mandor dikarenakan mendapat mandor dan para tukang yang berpengalaman, dengan menghasilkan kerja yang cukup rapi dan baik.",
+      "review.diandrd.quote":
+        "Memuaskan menggunakan Go-Mandor terutama untuk hal yang urgent. Sehari setelah survei dilakukan, pengerjaan sudah selesai. Admin sangat membantu dan cekatan. Mandor sopan dan ramah.",
+      "review.amanda.quote":
+        "Saya kesulitan mencari tukang untuk renovasi rumah karena mendekati periode Lebaran, dan menemukan aplikasi Go-Mandor ini. Tukangnya sangat helpful, sopan, dan selalu datang tepat waktu serta mengerti betul bagaimana harus melakukan pekerjaannya.",
+      "review.ralin.quote":
+        "Aplikasinya sangat membantu mempertemukan calon pengguna jasa dengan tenaga ahli yang dimiliki oleh Go-Mandor. Semoga aplikasinya semakin berkembang dan semakin baik.",
+      "review.aji.quote":
+        "Tampilannya user friendly, jenis servicenya banyak, sungguh membantu banget.",
+      "review.tomsss.quote":
+        "Untuk aplikasi UI-nya perlu ditingkatkan, dan penawaran serta perbaikan-perbaikan perlu ditambahkan lagi. Hasil kerja lumayan bagus.",
+      "review.lena.quote":
+        "Genteng saya tiba-tiba bocor pas cuaca mendung, saya pesan lewat Go-Mandor dan dalam waktu singkat sudah bisa diselesaikan. Semoga sukses.",
+      "review.fuaada.quote":
+        "Ini adalah aplikasi terbaik untuk memanggil orang guna memperbaiki keramik lantai. Orangnya bekerja dengan sangat baik.",
+      "review.hannes.quote":
+        "Memanggil teknisi untuk memperbaiki AC saya melalui Go-Mandor, dan saya harus bilang orangnya sangat profesional dan tarifnya cukup wajar.",
+      "review.danae.quote":
+        "Ini aplikasi yang sangat berguna untuk semua orang yang sibuk dan membutuhkan tukang untuk keperluan perbaikan.",
+      "review.lubna.quote":
+        "Saya pesan untuk memperbaiki ledeng bocor, sangat cepat tanggap dan profesional.",
+      "review.charissa.quote":
+        "Datang ke rumah sangat santun dan profesional. Good job.",
+      "review.jawhara.quote":
+        "Kerja bagus dari developer aplikasi ini. Sangat bagus!",
+      "review.francesco.quote":
+        "Aplikasi ini luar biasa! Rumah saya dicat beberapa hari lalu oleh orang dari Go-Mandor.",
 
       "hki.title": "HAK KEKAYAAN INTELEKTUAL",
       "hki.subtitle": "GO-MANDOR – PT NIAGA MAKMUR BERJAYA",
@@ -624,12 +636,17 @@
       "hero.title": "Your Reliable Contractor",
       "hero.desc":
         "A complete solution for construction, renovation, and property maintenance; carried out professionally, systematically, and on time.",
+      "hero.tagline": "BUILD. RENOVATE. MAINTAIN.",
+      "hero.subtitle": "One contractor for all your property needs.",
+      "hero.segments": "Residential | Commercial | Hospitality | Enterprise",
       "hero.cta": "Learn More",
 
       "proyek.heading": "OUR PROJECTS",
       "proyek.intro":
         "We document every project from start to finish. Covering the work process and final results across various locations, as a form of our professionalism and integrity.",
       "proyek.more": "more",
+      "proyek.desc":
+        "Experienced in managing large-scale projects, with the capabilities and necessary permits to undertake building construction projects of up to five floors, while maintaining high standards of quality and timely delivery.",
 
       "klien.heading": "OUR CLIENTS",
       "klien.intro":
@@ -740,7 +757,7 @@
       "layanan.card1.title": "MAINTENANCE & REPAIR",
       "layanan.card1.desc":
         "Integrated maintenance and repair solutions to keep your operations running smoothly.",
-      "layanan.card2.title": "DESIGN & CONSTRUCTION",
+      "layanan.card2.title": "CONSTRUCTION",
       "layanan.card2.desc":
         "From concept to construction, we deliver solutions that are well-measured and built to last.",
       "layanan.card3.title": "PROJECT MANAGEMENT",
@@ -773,12 +790,13 @@
         "Trust Go-Mandor with your property's maintenance and repairs. We're here to keep your property in top condition, every time.",
 
       "p2.intro":
-        "Go-Mandor provides integrated design and construction services for all types of properties, both residential and commercial. We offer:",
-      "p2.li1_label": "Free Design Consultation",
-      "p2.li1_desc": "Discuss your concept and space needs at no upfront cost.",
+        "Go-Mandor provides integrated construction services for all types of properties, both residential and commercial. We offer:",
+      "p2.li1_label": "Survey and Consultation",
+      "p2.li1_desc":
+        "Site visits, concept discussions, and space needs at no upfront cost.",
       "p2.li2_label": "Thorough Planning",
       "p2.li2_desc":
-        "Detailed budgeting (RAB), timeline, and working drawings.",
+        "Clear budgeting (RAB) and a well-defined project timeline.",
       "p2.li3_label": "Construction Execution",
       "p2.li3_desc":
         "Work carried out by skilled professionals using quality materials.",
@@ -834,7 +852,7 @@
 
       "subscribe.heading": "SUBSCRIBE",
       "subscribe.desc":
-        "Subscribe to the Go-Mandor newsletter. Get the latest updates, project management tips, and service updates straight to your inbox.",
+        "Subscribe to the Go-Mandor newsletter. Get exciting promotions, the latest updates, and service updates straight to your inbox.",
       "subscribe.placeholder": "Your Email",
       "subscribe.cta": "SUBSCRIBE",
 
@@ -921,33 +939,38 @@
       "pagination.selanjutnya": "Next",
 
       "testimoni.heading": "Client Testimonials",
-      "review.andi.role": "Home Renovation",
-      "review.andi.quote":
-        "Go-Mandor really helped me from start to finish. Their team was professional, communication was smooth, and the result of my home renovation exceeded expectations. I'll definitely use their service again.",
-      "review.siti.role": "Shophouse Construction",
-      "review.siti.quote":
-        "My shophouse project was completed on time and within budget. Go-Mandor has a responsible team and quality materials. Very satisfied!",
-      "review.budi.role": "Office Renovation",
-      "review.budi.quote":
-        "I've used several contractors before, but Go-Mandor is the best. The work was tidy, fast, and they always offered solutions whenever issues came up on site.",
-      "review.dian.role": "House Construction",
-      "review.dian.quote":
-        "Building my dream house felt much less stressful because Go-Mandor handled everything. From permits to finishing, everything was well managed. Thank you, Go-Mandor!",
-      "review.rudi.role": "Restaurant Renovation",
-      "review.rudi.quote":
-        "My restaurant needed to open quickly, so the renovation had to be fast. Go-Mandor finished it on time without compromising quality. My customers love the new look too.",
-      "review.maya.role": "Warehouse Construction",
-      "review.maya.quote":
-        "Go-Mandor gave us an efficient design recommendation for our warehouse. The build is solid, cost-effective, and coordinating with their team was very easy. Highly recommended!",
-      "review.james.role": "Villa Renovation",
-      "review.james.quote":
-        "Go-Mandor transformed our outdated villa into a modern tropical masterpiece. Their team was punctual, detail-oriented, and handled everything from design to construction. Highly recommended!",
-      "review.laura.role": "Hotel Construction",
-      "review.laura.quote":
-        "We entrusted Go-Mandor with our boutique hotel project in Ubud, and they exceeded our expectations. Excellent project management, quality materials, and they truly understand the local building culture. Absolutely satisfied.",
-      "review.david.role": "Club Development",
-      "review.david.quote":
-        "Go-Mandor delivered our beach club project on time and on budget. Their professionalism and problem-solving skills were outstanding. We're already planning our next project with them.",
+      "review.anizah.quote":
+        "Alhamdulillah, my AC is cold again. Got an honest and fast technician—no dawdling, and right on time. Great!",
+      "review.agrareeves.quote":
+        "I had trouble finding a technician to install electrical wiring. Luckily this app exists—fast response time, and I happened to get a great worker. The whole job was finished in half a day.",
+      "review.raka.quote":
+        "Alhamdulillah, the renovation of my coffee shop is complete using Go-Mandor's service. I'm quite satisfied with the service Go-Mandor provided because I got an experienced foreman and workers, resulting in neat, good work.",
+      "review.diandrd.quote":
+        "A satisfying experience using Go-Mandor, especially for urgent matters. A day after the survey, the work was already finished. The admin was very helpful and responsive. The foreman was polite and friendly.",
+      "review.amanda.quote":
+        "I had trouble finding a worker for my home renovation since it was close to Lebaran, and I found the Go-Mandor app. The worker was very helpful, polite, always arrived on time, and truly understood how to do the job.",
+      "review.ralin.quote":
+        "This app really helps connect prospective service users with the skilled workers Go-Mandor has. Hope the app keeps growing and improving.",
+      "review.aji.quote":
+        "The interface is user-friendly, there are many types of services—really, really helpful.",
+      "review.tomsss.quote":
+        "The app's UI needs improvement, and more offers and enhancements should be added. The work result is pretty good.",
+      "review.lena.quote":
+        "My roof suddenly leaked during cloudy weather. I ordered through Go-Mandor and it was resolved in no time. Wishing them continued success.",
+      "review.fuaada.quote":
+        "This is the best app to call a person for repairing your floor tiles. The man did a really good job.",
+      "review.hannes.quote":
+        "Called a technician for repairing my air conditioner though Go-Mandor and I have to say that the person was really professional and charged me reasonably well.",
+      "review.danae.quote":
+        "This is really useful app for everyone who remains busy and needs a handyman for repair purposes.",
+      "review.lubna.quote":
+        "I ordered to fix a leaking pipe—very responsive and professional.",
+      "review.charissa.quote":
+        "Came to the house very courteous and professional. Good job.",
+      "review.jawhara.quote":
+        "Great job by the developer on this app. This is very good!",
+      "review.francesco.quote":
+        "This app is just awesome! Got my house painted a few days back by a person from Go-Mandor.",
 
       "hki.title": "INTELLECTUAL PROPERTY RIGHTS",
       "hki.subtitle": "GO-MANDOR – PT NIAGA MAKMUR BERJAYA",
@@ -1224,11 +1247,11 @@
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored && translations[stored]) return stored;
     } catch (e) {}
-    return "id";
+    return defaultLang;
   }
 
   function applyLang(lang) {
-    if (!translations[lang]) lang = "id";
+    if (!translations[lang]) lang = defaultLang;
     document.documentElement.setAttribute("lang", lang);
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
@@ -1346,7 +1369,7 @@
   }
 
   function setLang(lang) {
-    if (!translations[lang]) lang = "id";
+    if (!translations[lang]) lang = defaultLang;
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch (e) {}
