@@ -324,15 +324,15 @@
 
       "testimoni.heading": "Testimoni Klien",
       "review.anizah.quote":
-        "Alhamdulillah, AC saya sudah kembali dingin. Dapat tukang yang jujur dan cepat, tidak lelet, dan tepat waktu. Mantap!",
+        "Alhamdulillah AC udah kembali dingin, dapet tukang yg jujur dan cepet ga lelet dan tepat waktu, mantap.",
       "review.agrareeves.quote":
         "Saya kesulitan cari tukang untuk pasang elektrik kabel listrik, untungnya ada aplikasi ini, respon time cepat dan tukangnya pas kebetulan dapat yang bagus. Setengah hari selesai semua pekerjaan.",
       "review.raka.quote":
-        "Alhamdulillah, telah selesai pengerjaan renovasi tempat kopi saya menggunakan jasa Go-Mandor. Terlebih saya cenderung puas dengan jasa yang diberikan oleh Go-Mandor dikarenakan mendapat mandor dan para tukang yang berpengalaman, dengan menghasilkan kerja yang cukup rapi dan baik.",
+        "Alhamdulillah, telah selesai pengerjaan renovasi tempat kopi saya menggunakan jasa Go-Mandor. Terlebih saya cenderung puas dengan jasa yang diberikan oleh Go-Mandor dikarenakan mendapat Mandor dan para Tukang yang berpengalaman, dengan menghasilkan kerja yang cukup rapih dan baik.",
       "review.diandrd.quote":
-        "Memuaskan menggunakan Go-Mandor terutama untuk hal yang urgent. Sehari setelah survei dilakukan, pengerjaan sudah selesai. Admin sangat membantu dan cekatan. Mandor sopan dan ramah.",
+        "Memuaskan menggunakan Go Mandor terutama untuk hal yang urgent. Sehari setelah survey dilakukan, pengerjaan sudah selesai. Admin sangat membantu dan cekatan. Mandor sopan dan ramah.",
       "review.amanda.quote":
-        "Saya kesulitan mencari tukang untuk renovasi rumah karena mendekati periode Lebaran, dan menemukan aplikasi Go-Mandor ini. Tukangnya sangat helpful, sopan, dan selalu datang tepat waktu serta mengerti betul bagaimana harus melakukan pekerjaannya.",
+        "Saya kesulitan mencari tukang untuk renovasi rumah karena mendekati periode lebaran dan menemukan aplikasi go-mandor ini. Tukang sangat helpful, sopan dan selalu datang tepat waktu serta mengerti betul bagaimana harus melakukan pekerjaannya.",
       "review.ralin.quote":
         "Aplikasinya sangat membantu mempertemukan calon pengguna jasa dengan tenaga ahli yang dimiliki oleh Go-Mandor. Semoga aplikasinya semakin berkembang dan semakin baik.",
       "review.aji.quote":
