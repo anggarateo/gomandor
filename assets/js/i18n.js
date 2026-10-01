@@ -233,6 +233,7 @@
 
       "quote.text":
         "“Kami telah membangun dan dipercaya oleh masyarakat Indonesia sejak 2019. Dan kami akan terus berinovasi dan berkembang untuk masa depan lebih baik diindustri konstruksi.”",
+      "quote.hashtag": "#KontraktorAndalanAnda",
 
       "subscribe.heading": "SUBSCRIBE",
       "subscribe.desc":
@@ -849,6 +850,7 @@
 
       "quote.text":
         "“We have built and earned the trust of the Indonesian people since 2019. And we will keep innovating and growing for a better future in the construction industry.”",
+      "quote.hashtag": "#YourReliableContractor",
 
       "subscribe.heading": "SUBSCRIBE",
       "subscribe.desc":
